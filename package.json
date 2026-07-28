@@ -1,0 +1,12 @@
+{
+  "name": "shiiren-adblock-lists",
+  "version": "1.0.0",
+  "private": false,
+  "description": "Automated mirror/build of the public filter lists and scriptlet resources Shiiren's ad blocker uses, published for Shiiren's browsers to fetch directly.",
+  "scripts": {
+    "build": "node scripts/build-lists.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

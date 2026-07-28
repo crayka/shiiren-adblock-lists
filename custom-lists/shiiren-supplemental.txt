@@ -1,0 +1,15 @@
+! Hand-picked, individually verified supplementary rules for gaps confirmed
+! by real testing, not present in the mirrored public lists. Every entry
+! here targets a tracking/measurement endpoint only, never a page's actual
+! functional resource, kept intentionally small to avoid false positives.
+
+! Google Ads viewability-measurement script (reports ad impressions were
+! seen; not the ad creative itself).
+||tpc.googlesyndication.com/sodar/
+
+! DoubleClick cross-device ad-attribution id sync.
+||googleads.g.doubleclick.net/pagead/id
+
+! YouTube's own first-party ad-impression/interaction stats pings.
+||youtube.com/api/stats/ads
+||youtube.com/ptracking
