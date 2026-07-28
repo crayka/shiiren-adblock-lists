@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202607281726
+! Version: 202607282037
 ! Title: EasyPrivacy
-! Last modified: 28 Jul 2026 17:26 UTC
+! Last modified: 28 Jul 2026 20:37 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e7c1e4cbe3fc809329976305d383f9e05ab92578
+! Commit: adc151d936bf3939bfe16efbe2dbf777a6aca9a3
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7500,6 +7500,7 @@ omni.soundestlink.com$image
 ||golfcartlaws.com^
 ||golfersrow.com^
 ||gondolagnome.com^
+||goodfoodtours.com^
 ||gorgeousedge.com^
 ||gorillapage.com^
 ||gossamerwing.com^
@@ -7942,6 +7943,7 @@ omni.soundestlink.com$image
 ||oceancloudhosts.com^$~xmlhttprequest
 ||offerniche.com^
 ||offgridcrops.com^
+||officestylist.com^
 ||offshoreassets.com^
 ||offshorecyclone.com^
 ||offshoregeology.com^
@@ -13533,6 +13535,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||newelements.de/tracker/
 ||nexx.cloud/play/beacon.
 ||nexxtv-events.servicebus.windows.net^
+||nltcs.idfnet.net^
 ||nlytcs.idfnet.net^
 ||ntmb.de/count.html?
 ||oe-static.de^*/wws.js
