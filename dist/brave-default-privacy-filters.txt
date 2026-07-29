@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202607290236
+! Version: 202607290626
 ! Title: EasyPrivacy
-! Last modified: 29 Jul 2026 02:36 UTC
+! Last modified: 29 Jul 2026 06:26 UTC
 ! Expires: 4 days (update frequency)
-! Commit: c4d5284a215b15c7fddd87d7c8ec873455165ede
+! Commit: 9f4f864a7c9abc1775e3097ef6f5626336f4f4e7
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -59520,6 +59520,7 @@ fileditchfiles.me##+js(no-fetch-if, method:POST body:/pageview|engagement/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24154
 ||cza.crazygames.com^
+||web-platform.bytebrew.io/api/game/logs/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/7164
 ||pornhub.*/redirect/$doc,urlskip=/(https%253A%252F%252F[^?#]+)/ -uricomponent -uricomponent
