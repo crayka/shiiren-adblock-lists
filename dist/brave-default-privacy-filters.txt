@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202607291026
+! Version: 202607291408
 ! Title: EasyPrivacy
-! Last modified: 29 Jul 2026 10:26 UTC
+! Last modified: 29 Jul 2026 14:08 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 70092499b77682815ac06dd66f058cf02a657fb3
+! Commit: c02f0bf89196073128b7c0fdd440c7d0d8902368
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -57756,7 +57756,7 @@ allrecipes.com##+js(set-local-storage-item, /_li_duid|_lc2_fpi/, $remove$)
 ||cdn.dsmcdn.com/sfx/mergen/
 trendyol.com,trendyol-milla.com##+js(set, process, {})
 trendyol.com,trendyol-milla.com##+js(set, process.env, {})
-trendyol.com##+js(remove-cookie, /anonUserId|pid|sid/)
+! trendyol.com##+js(remove-cookie, /anonUserId|pid|sid/)
 ! https://www.bostonscally.com/
 bostonscally.com##+js(remove-cookie, /__ta_|_shopify_y/, when, scroll keydown)
 ||api.intelligems.io/v*/track|
