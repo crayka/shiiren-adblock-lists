@@ -13,3 +13,11 @@
 ! YouTube's own first-party ad-impression/interaction stats pings.
 ||youtube.com/api/stats/ads
 ||youtube.com/ptracking
+
+! Sites running anti-adblock-detection plugins (e.g. "CHP Adblock") probe
+! whether this exact script loaded and set window.adsbygoogle before showing
+! a "please disable your ad blocker" wall. Outright blocking it is what
+! trips that check; redirecting it to a harmless local stub (same technique
+! uBlock Origin uses, resource mirrored from their resources.json) satisfies
+! the probe without letting any real ad content through.
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$redirect=googlesyndication_adsbygoogle.js

@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-07-30T17:28:08.247Z",
+  "generatedAt": "2026-07-30T19:54:37.609Z",
   "catalogUrl": "https://raw.githubusercontent.com/brave/adblock-resources/master/filter_lists/list_catalog.json",
   "lists": [
     {
       "uuid": "default",
       "title": "Brave Default Adblock Filters",
       "file": "default.txt",
-      "sha256": "cffb54ae44c5ff63ebd28fa877a38a5bfca499f414e6d7bca18e54ee8a13f116",
-      "bytes": 5360091,
+      "sha256": "2b5c3604c62339289b049a6f02286a889d77c7276cb5da983829658bc10ee8bd",
+      "bytes": 5360549,
       "sourceCount": 22
     },
     {
       "uuid": "4D715457-307C-4383-8873-73A2FD263F71",
       "title": "Brave Default Privacy Filters",
       "file": "brave-default-privacy-filters.txt",
-      "sha256": "f2c52007ee89662038bd85a57f0bf40ccb2771838aa1cdef711bdf049b455cfc",
-      "bytes": 1668017,
+      "sha256": "2912e35d1b2623dfe2e34672e94888a5b2cba900b0012feb533163f407b12a9f",
+      "bytes": 1668156,
       "sourceCount": 2
     },
     {
@@ -38,8 +38,8 @@
       "uuid": "AC023D22-AE88-4060-A978-4FEEEC4221693",
       "title": "Cookie notice blocker",
       "file": "cookie-notice-blocker.txt",
-      "sha256": "0ccc3240666e1be914c05060b45956b86781056f4be8edb278949abd9f30e9f8",
-      "bytes": 1579695,
+      "sha256": "11d394d4913f0d773e7d0951fe88ef8127ac1907b8001e5cb5bc542b18d8a5c6",
+      "bytes": 1579809,
       "sourceCount": 3
     },
     {
@@ -54,14 +54,14 @@
       "uuid": "shiiren-supplemental.txt",
       "title": "shiiren-supplemental.txt",
       "file": "shiiren-supplemental.txt",
-      "sha256": "7528a5c11c1d2361c631696b0889da71806485b3f56aa974535d57166c506d47",
-      "bytes": 766,
+      "sha256": "5f9a42a25fae2e3ec8ccbc7ac023011cabdca321777e751026bf99ac43a7365a",
+      "bytes": 1321,
       "sourceCount": 0
     }
   ],
   "resources": {
     "file": "resources.json",
-    "sha256": "82bb4f95756b3d9fb4cbc762489974e45bcccdd933f76e82ad3502f327c55ce3",
-    "bytes": 589000
+    "sha256": "2ee4fa1b7b81dfa5334c11af105013a7a34c65f123ff298106567205da1c186d",
+    "bytes": 591811
   }
 }
