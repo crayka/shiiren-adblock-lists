@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608031733
+! Version: 202608032041
 ! Title: EasyPrivacy
-! Last modified: 03 Aug 2026 17:33 UTC
+! Last modified: 03 Aug 2026 20:41 UTC
 ! Expires: 4 days (update frequency)
-! Commit: bb845a9ae888dfa8933982c5db7e0afb66a9f741
+! Commit: 74fe12b00c57626713b0efc5a92860c1bacdd5ae
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -2538,6 +2538,7 @@
 /tracking-links.js
 /tracking.asmx/AddTrack?
 /tracking.jsp?sid=
+/tracking/affiliate|$image
 /tracking/airdog
 /tracking/common.html
 /tracking/cookies?
@@ -7356,6 +7357,7 @@ omni.soundestlink.com$image
 ||fancycolorlist.net^
 ||fancydune.com^
 ||fangfeeling.com^
+||fanless.net^
 ||farethief.com^
 ||farmergoldfish.com^
 ||farshake.com^
@@ -7626,6 +7628,7 @@ omni.soundestlink.com$image
 ||hystericalfinger.com^
 ||icywinter.com^
 ||idlecollect.com^
+||idsmodules.com^
 ||illinvention.com^
 ||illustriousoatmeal.com^
 ||imagebuffer.com^
@@ -10238,6 +10241,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||analytics.maileon.com^
 ||analytics.mailmunch.co^
 ||analytics.matchbin.com^
+||analytics.maxx53.com^
 ||analytics.metriko.app^
 ||analytics.midwesternmac.com^
 ||analytics.mlstatic.com^
@@ -12444,6 +12448,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stats.datahjaelp.net^
 ||stats.edicy.com^
 ||stats.esecured.net^
+||stats.externulls.com^
 ||stats.externulls.com^$domain=beeg.com
 ||stats.flixhq.live^
 ||stats.fluorescent.co^
@@ -14385,6 +14390,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||biggylabs.com.br/track-api/v2/track/site?
 ||cdn.pmweb.com.br/df/tag.js
 ||collect.chaordicsystems.com^
+||engagement.coremedia.cloud^
 ||events.chaordicsystems.com^
 ||eventsourcing.ms.harmo.me^
 ||feature-flag-edge.live.clickbus.net^
@@ -14600,6 +14606,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||datanoticias.prisasd.com^
 ||digitalproserver.com/mango-web-metrics/
 ||edisound.com/api/p/medias/stats
+||el.siglo.mx^
 ||enetres.net/StatisticsV1/
 ||epimg.net/js/vr/vrs.
 ||g-stats.openhost.es^
