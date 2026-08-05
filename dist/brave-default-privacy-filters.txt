@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608042045
+! Version: 202608050232
 ! Title: EasyPrivacy
-! Last modified: 04 Aug 2026 20:45 UTC
+! Last modified: 05 Aug 2026 02:32 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 011948179163d31a71b9992b8f79a891e4b49d82
+! Commit: 8e50ddbf1a233fc56826a347a314db089d711dbd
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8462,6 +8462,7 @@ omni.soundestlink.com$image
 ||soleblinds.com^
 ||solidsub.com^
 ||solosduetstrios.com^
+||solsticeblack.com^
 ||solvebots.com^
 ||somberscarecrow.com^
 ||sombersea.com^
@@ -55638,6 +55639,7 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 @@||filme.imyfone.com/assets/js/gatrack.js$~third-party
 @@||firebase.google.com/docs/analytics/$~third-party
 @@||forum.djicdn.com/static/js/sensorsdata.min.js$script,domain=forum.dji.com
+@@||fpt.microsoft.com^$domain=account.microsoft.com|fpt.microsoft.com
 @@||friendbuy.com^$domain=butcherbox.com
 @@||gamezop.com/prebid.js$script,~third-party
 @@||ganyancanavari.com/js/fingerprint2.min.js$~third-party
