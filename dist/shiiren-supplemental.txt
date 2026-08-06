@@ -26,6 +26,16 @@
 ! the probe without letting any real ad content through.
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$redirect=googlesyndication_adsbygoogle.js
 
+! The network-level redirect above can still fail this exact check: some
+! sites also compare the XHR's reported response URL against the requested
+! URL and treat any mismatch as "blocked", which a network-layer content
+! substitution can trip depending on how it's surfaced to script. Injecting
+! a scriptlet that intercepts the request at the JS layer before the page's
+! own detection code runs avoids that entirely -- the mocked response never
+! touches the network, so its reported URL always matches what was asked
+! for, and window.adsbygoogle is defined synchronously either way.
+paradoxscans.com##+js(shiiren-stub-adsbygoogle-request.js)
+
 ! paradoxscans.com's anti-adblock plugin (CHP Adblock) also inserts a bait
 ! div carrying a dozen generic ad-related classes and checks whether it got
 ! hidden. The classes are common enough that some generic cosmetic rule
