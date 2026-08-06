@@ -21,3 +21,25 @@
 ! uBlock Origin uses, resource mirrored from their resources.json) satisfies
 ! the probe without letting any real ad content through.
 ||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js$redirect=googlesyndication_adsbygoogle.js
+
+! paradoxscans.com's anti-adblock plugin (CHP Adblock) also inserts a bait
+! div carrying a dozen generic ad-related classes and checks whether it got
+! hidden. The classes are common enough that some generic cosmetic rule
+! elsewhere always matches one of them, so the bait always reads as
+! "blocked" no matter how the network-level rules are tuned. Un-hiding just
+! these classes on this one domain is the only way to stop the false
+! positive; real ad slots that happen to share a name may show up empty
+! (network-level ad-request blocking still applies) rather than fully
+! hidden, which is an acceptable trade to stop the wall.
+paradoxscans.com#@#.adsbygoogle
+paradoxscans.com#@#.Ad-Container
+paradoxscans.com#@#.sidebar-ad
+paradoxscans.com#@#.ad-slot
+paradoxscans.com#@#.ad
+paradoxscans.com#@#.ads
+paradoxscans.com#@#.doubleclick
+paradoxscans.com#@#.ad-placement
+paradoxscans.com#@#.ad-placeholder
+paradoxscans.com#@#.adbadge
+paradoxscans.com#@#.BannerAd
+paradoxscans.com#@#.adsbox
