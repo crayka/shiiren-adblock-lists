@@ -17513,16 +17513,6 @@ coloringpage.eu,juegosdetiempolibre.org,karaokegratis.com.ar,mammaebambini.it,ri
 googledrivelinks.com##+js(aost, String.prototype.charCodeAt, ai_)
 googledrivelinks.com##+js(aopr, adBlockDetected)
 
-! https://github.com/uBlockOrigin/uAssets/issues/10460
-! https://github.com/uBlockOrigin/uAssets/issues/10939
-*$script,domain=miraculous.to,redirect-rule=noopjs
-@@||miraculous.to/global_data/gtag/js$xhr,1p
-miraculous.to##+js(aeld, hashchange)
-miraculous.to##+js(aeld, popstate)
-miraculous.to##+js(aopw, Fingerprint2)
-miraculous.to##+js(aopr, history.back)
-miraculous.to##+js(nowoif)
-
 ! https://github.com/uBlockOrigin/uAssets/issues/10461
 porngames.club,sexgames.xxx##+js(set, starPop, 1)
 
@@ -33326,6 +33316,7 @@ jsfiddle.net##+js(set, _bsa, {})
 
 ! https://fastpic.org/view/125/2025/0702/_1e5443f0df53345ab069adb631c48c93.png.html
 fastpic.org##+js(trusted-set-cookie, k3a9q, $now$%7C1)
+fastpic.org##+js(trusted-set-local-storage-item, _fpu5664332, 9999\,2147483647)
 
 ! nobledicion.yoveo.xyz detection
 nobledicion.yoveo.xyz##+js(noeval-if, googlesyndication)
@@ -37433,7 +37424,7 @@ aagmaal.*##+js(rpnt, script, break;case $.)
 ! SECTION: Clickadu
 
 ! Clickadu reinjection
-18comic.vip,18comic-gquu.vip,adictox.com,anchira.to,animebr.org,animeworld.ac,anizm.net,anonmp4.help,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,balbums.st,bebasbokep.online,bokepsin.in.net,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,celebritydeeplink.com,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,datawav.club,dciuu.*,ddd-smart.net,depvailon.com,desifakes.com,dvdgayonline.com,easyvidplayer.com,embedseek.online,fapeza.com,fapfappy.com,filester.*,g-porno.com,g-streaming.com,gelbooru.com,goctruyentranhvui17.com,hhkungfu.*,hentai2read.com,hentai2w.com,hentaicube.*,hentaipaw.com,hitomi.la,homemoviestube.com,hornyhill.*,imgbox.com,imx.to,japaneseholes.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javdoe.sh,javfan.one,javfc2.xyz,javfor.tv,javhat.tv,javhd.*,javhdz.today,javlab.net,javideo.net,javmenu.com,javmeta.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,javx357.com,jmanga.*,jpg6.su,klmanga.*,komikmanhwa.me,leaktube.net,lovingsiren.com,luluvdoo.com,luluvids.top,madouqu.com,manga1001.*,mangabats.com,mangago.me,mangakakalot.gg,mangakakalove.com,mangakoma.ac,manganato.gg,mangaraw.*,mangarawjp.*,masahub2.com,movieffm.net,muchohentai.com,myvidplay.com,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,niyaniya.*,nlcosplay.com,nontonhentai.net,novelcrow.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,paipancon.com,pemersatu.link,phimlongtieng.net,player4me.online,play.playkrx18.site,poapan.xyz,popjav.in,odporn.com,porn4fans.com,pornslash.com,porntin.com,qmh.sex,rawkuma.net,rpmplay.online,rule34.xyz,rule34vault.com,savefiles.com,sendvid.com,sexdicted.com,shinshi-manga.net,simpcity.*,spoilerplus.tv,stream18.net,streampoi.com,streamvid.dev,sxyprn.*,syosetu.*,taboodude.com,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,thotchicks.com,tojav.net,turbo.cr,turbovid.*,twitchnosub.com,upload18.com,upns.online,ups2up.fun,vegamoviese.*,veronica.uk,vidara.so,vidara.to,vide0.net,videplay.us,vids.st,vik1ngfile.site,vipserije.com,watchhentai.net,x-fetish.tube,x-tg.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,xxxpicss.com,youwatch.monster##+js(acs, WebAssembly, atob)
+18comic.vip,18comic-gquu.vip,adictox.com,anchira.to,animefire.io,animeworld.ac,anizm.net,anonmp4.help,archivebate.*,asiaon.*,asianporn.li,asiaontop.com,asmr18.fans,b-hentai.com,balbums.st,bebasbokep.online,bokepsin.in.net,bos21.site,bunkrr.*,cat3movie.org,cdn1.site,celebritydeeplink.com,comohoy.com,cyberdrop.me,daftporn.com,daftsex.net,datawav.club,dciuu.*,ddd-smart.net,depvailon.com,desifakes.com,dvdgayonline.com,easyvidplayer.com,embedseek.online,fapeza.com,fapfappy.com,filester.*,g-porno.com,g-streaming.com,gelbooru.com,goctruyentranhvui17.com,hhkungfu.*,hentai2read.com,hentai2w.com,hentaicube.*,hentaipaw.com,hitomi.la,homemoviestube.com,hornyhill.*,imgbox.com,imx.to,japaneseholes.com,jav-fun.cc,jav.direct,jav.si,javboys.com,javbraze.com,javdoe.sh,javfan.one,javfc2.xyz,javfor.tv,javhat.tv,javhd.*,javhdz.today,javlab.net,javideo.net,javmenu.com,javmeta.com,javmix.tv,javpas.com,javseen.tv,javtiful.com,javx357.com,jmanga.*,jpg6.su,klmanga.*,komikmanhwa.me,leaktube.net,lovingsiren.com,luluvdoo.com,luluvids.top,madouqu.com,manga1001.*,mangabats.com,mangago.me,mangakakalot.gg,mangakakalove.com,mangakoma.ac,manganato.gg,mangaraw.*,mangarawjp.*,masahub2.com,movieffm.net,muchohentai.com,myvidplay.com,natomanga.com,nekopoi.*,nelomanga.*,netfapx.com,niyaniya.*,nlcosplay.com,nontonhentai.net,novelcrow.com,nsfwr34.com,nsfwyoutube.com,nudogram.com,nukibooks.com,paipancon.com,pemersatu.link,phimlongtieng.net,player4me.online,play.playkrx18.site,poapan.xyz,popjav.in,odporn.com,porn4fans.com,pornslash.com,porntin.com,qmh.sex,rawkuma.net,rpmplay.online,rule34.xyz,rule34vault.com,savefiles.com,sendvid.com,sexdicted.com,shinshi-manga.net,simpcity.*,spoilerplus.tv,stream18.net,streampoi.com,streamvid.dev,sxyprn.*,syosetu.*,taboodude.com,taxi69.com,teenager365.to,thefappening.pro,thefappeningblog.com,thotchicks.com,tojav.net,turbo.cr,turbovid.*,twitchnosub.com,upload18.com,upns.online,ups2up.fun,vegamoviese.*,veronica.uk,vidara.so,vidara.to,vide0.net,videplay.us,vids.st,vik1ngfile.site,vipserije.com,watchhentai.net,x-fetish.tube,x-tg.tube,x-x-x.video,xanimeporn.com,xxgasm.com,xxxfree.watch,xxxpicss.com,youwatch.monster##+js(acs, WebAssembly, atob)
 2tencb.*,filmisub.cc##+js(acs, WebAssembly, atob, /^data:/)
 filmisub.cc##+js(aeld, DOMContentLoaded, window.open)
 ||filmisub.cc/wp-content/themes/fmovie/js/code*.js
@@ -37583,7 +37574,7 @@ damitv.app###clickgate
 ! SECTION: FingerprintJS
 
 ! FingerprintJS popups
-arcjav.com,boxingstream.me,buffsports.io,buffstreams.*,embedsports.top,game3rb.com,glodls.to,igg-games.com,manhwalist.com,mc-hacks.net,miraculous.*,muchohentai.com,mycivillinks.com,mzansixporn.co.za,nflstreams.me,s2dfree.to,soap2day.*,tennisstreams.*,tv247.us,vidsrc.*,vipboxtv.*,vipleague.*,woiden.com,wonderapk.com##+js(acs, navigator, FingerprintJS)
+arcjav.com,boxingstream.me,buffsports.io,buffstreams.*,embedsports.top,game3rb.com,glodls.to,manhwalist.com,mc-hacks.net,muchohentai.com,mycivillinks.com,mzansixporn.co.za,nflstreams.me,s2dfree.to,soap2day.*,tennisstreams.*,tv247.us,vidsrc.*,vipboxtv.*,vipleague.*,woiden.com,wonderapk.com##+js(acs, navigator, FingerprintJS)
 manhwalist.com##+js(aost, btoa, /https|stackDepth:3/)
 !#if cap_html_filtering
 bowfile.com,cloudvideo.tv,cloudvideotv.*,coloredmanga.com,cracksports.me,cricstreams.re,embedstream.me,exeo.app,hiphopa.net,kenitv.me,megaup.net,olympicstreams.co,qatarstreams.me,soccerworldcup.me,tv247.us,tvableon.me,uploadhaven.com,userscloud.com,vidsrc.*,vik1ngfile.site##^script:has-text(FingerprintJS)
@@ -39111,7 +39102,7 @@ explorecams.com,minecraft.buzz,rarepike.com##+js(aeld, np.detect)
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vdhrrq/wtf_is_this_from_ublock_it_blocks_copy_paste_here/
 ! https://www.chess.com/game/daily/984248594
 !#if !ext_ubol
-*,~amazon.*,~apple.com,~bing.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~dailymotion.com,~disqus.com,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~google.com,~hcaptcha.com,~instagram.com,~lichess.org,~linkedin.com,~live.com,~microsoft.com,~mozilla.org,~netflix.com,~pinterest.com,~spotify.com,~reddit.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~youtube.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|%LOCALAPPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|%APPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|\[Convert\]::FromBase64String|\[Text\.Encoding\]::UTF8\.GetString|\btry\b\s*\{\s*\birm\b.+?\}\s*\bcatch\b.+?\{\s*\biex\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo\b.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|openssl base64 -d|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ ${text})
+*,~amazon.*,~apple.com,~bing.com,~captcha-delivery.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~dailymotion.com,~disqus.com,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~google.com,~hcaptcha.com,~instagram.com,~lichess.org,~linkedin.com,~live.com,~microsoft.com,~mozilla.org,~netflix.com,~pinterest.com,~spotify.com,~reddit.com,~stripe.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~youtube.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|%LOCALAPPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|%APPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|\[Convert\]::FromBase64String|\[Text\.Encoding\]::UTF8\.GetString|\btry\b\s*\{\s*\birm\b.+?\}\s*\bcatch\b.+?\{\s*\biex\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo\b.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|openssl base64 -d|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ ${text})
 ! Specific cases
 sites.google.com##+js(prevent-clipboard-write, /^mshta |^(bash <<<|curl -kfsSL) \$\(echo\b.+?base64 -d\b|^cmd \/c\b.+?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|powershell.+?\biex\(|powershell.+?Invoke-Expression|powershell.+?Invoke-WebRequest|powershell.+?-UseBasicParsing|\biwr\b.+?-OutFile\b.+?\$env:(TEMP|TMP)\b|\$env:(TEMP|TMP)\b[\/\\].+?\.(exe|bat|ps1|cmd|vbs)\b|\bstart \$env:(TEMP|TMP)\b|%LOCALAPPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|%APPDATA%\\.+?\.(exe|bat|ps1|cmd|vbs)\b|\[Convert\]::FromBase64String|\[Text\.Encoding\]::UTF8\.GetString|\btry\b\s*\{\s*\birm\b.+?\}\s*\bcatch\b.+?\{\s*\biex\b|Add-Type -As System\.Windows\.Forms|Windows\.Forms\.MessageBox|\bcmd.+?\/c.+?-nop\b.+?\biex\(|\b(cmd|powershell)\b.+?recaptcha|\b(cmd|powershell)\b.+?#(Verification|   )|\b(cmd|powershell)\b.+?   #|^osascript |^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo\b.+?base64 (--decode|-D|-d)\b.+?\| (bash|sh)\b|openssl base64 -d|chmod \+x.+?&&|\b(bash|sh|osascript)\b.+?recaptcha|\b(bash|sh|osascript)\b.+?#(Verification|   )|\b(bash|sh|osascript)\b.+?   #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|\/tmp\/.+?chmod \+x.+?&&|\b(apt(-get)?|dpkg)\b .+?http|^wget -q.+?\.(sh|py|bin|elf)\b|C:\\Windows\\system32\\cmd\.exe.+?powershell/msi, domAlert, Copy-paste blocked - 📋🛇❗ - ${text})
 ! add #@# exception for breakages
@@ -53264,7 +53255,6 @@ bus-location.1507t.xyz##div[id]:has(> script[src^="https://adm.shinobi.jp"]):sty
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33097
 ||cloudfront.net/?$script,redirect=noopjs,domain=meuplayeronlinehd.com|multicanaistt.space
-meuplayeronlinehd.com##+js(rmnt, script, _0x, excludes, /source|URLSearchParams/)
 meuplayeronlinehd.com###player:style(display: block !important;)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33144
@@ -53316,6 +53306,9 @@ fo76db.com#@#+js(aeld, DOMContentLoaded, /ads|AmazonCarousel/)
 fo76db.com###fo-ad-modal
 fo76db.com##body.swiper:style(overflow: auto !important; position: static !important;)
 fo76db.com##+js(trusted-rpnt, script, / ads\.map[\S\s\n]+?join\(''\)/)
+
+! https://github.com/uBlockOrigin/uAssets/issues/33996
+flipkart.com#@#div[data-id][style]:has([width][height][fill])
 
 ! ---- source: uBlock Origin filters - link shortners (https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/ubo-link-shorteners.txt) ----
 
@@ -55125,11 +55118,11 @@ qr1.me-qr.com##.px-0.col-12:has(>[class="adsbygoogle"])
 ! ---- source: EasyList (https://easylist.to/easylist/easylist.txt) ----
 
 [Adblock Plus 2.0]
-! Version: 202608070526
+! Version: 202608070846
 ! Title: EasyList
-! Last modified: 07 Aug 2026 05:26 UTC
+! Last modified: 07 Aug 2026 08:46 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 965b3b5fa9a3333968834af6203816560ade7c79
+! Commit: a8d8422b89aaa64ac02fc2e77c91d5b1c4e92541
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -71655,6 +71648,7 @@ browsershots.org#@#.advert_area
 ||68s8.com^
 ||690f8a4082.com^
 ||69b31e7623.com^
+||69g52yplxlrnv53blvk.cfd^
 ||69t84ihi9fli3rbjzx8.cfd^
 ||69tovalid.com^
 ||69v.club^
@@ -75061,6 +75055,7 @@ browsershots.org#@#.advert_area
 ||averralcaking.cfd^
 ||avesmutuspschent.cyou^
 ||aveugleechos.shop^
+||avevmvnn.com^
 ||avfbqhwuowien.online^
 ||avgashaglinfooting.qpon^
 ||avglvolxsgfkp.site^
@@ -79291,6 +79286,7 @@ browsershots.org#@#.advert_area
 ||climaththorter.com^
 ||climbcompulsionwrestling.com^
 ||climbspravous.cyou^
+||clinewigeons.qpon^
 ||clingcratemoistness.com^
 ||clingcupidfootprint.com^
 ||clingertoxins.shop^
@@ -83660,6 +83656,7 @@ browsershots.org#@#.advert_area
 ||eclunhuzuyoia.store^
 ||eclvgswxvthwx.space^
 ||eclzoaiippely.site^
+||ecmdrejarpbyh.online^
 ||ecmlevzhgcdwh.online^
 ||ecnbingejoain.site^
 ||ecnikbpb2gy8zo3u1.cfd^
@@ -83962,6 +83959,7 @@ browsershots.org#@#.advert_area
 ||eiurcesrxusez.website^
 ||eivhjpwzswyjx.website^
 ||eivtciyrmrgkx.online^
+||eiwslffjsmmse.space^
 ||eixgdeonnumrp.site^
 ||eixypottzpleb.space^
 ||eiyyjstblubzo.website^
@@ -88328,6 +88326,7 @@ browsershots.org#@#.advert_area
 ||gmkwefibocegb.online^
 ||gml-grp.com^
 ||gmlamcnuydabl.site^
+||gmlcifodu.com^
 ||gmlhvrwopsiyh.site^
 ||gmmxpyzumnqaa.store^
 ||gmnrndtdliili.website^
@@ -89159,6 +89158,7 @@ browsershots.org#@#.advert_area
 ||gypsyairplanereign.com^
 ||gypsyproducing.com^
 ||gypsytriggerscrazy.com^
+||gyptgkij.com^
 ||gypuwurlmkxrmb.com^
 ||gyrallydaiker.com^
 ||gyrenesnumbs.cyou^
@@ -90323,6 +90323,7 @@ browsershots.org#@#.advert_area
 ||holismsordn.cyou^
 ||holjmynbrubve.online^
 ||hollinjowtersinsyne.cyou^
+||holloainnyardklans.cfd^
 ||hollow-mess.com^
 ||hollow-population.pro^
 ||hollowaglet.cfd^
@@ -90665,6 +90666,7 @@ browsershots.org#@#.advert_area
 ||htufkxrviozxm.space^
 ||htukmobukvkdi.website^
 ||htvwdruzmaqlb.site^
+||hu2e7z5x.xyz^
 ||huanacoheard.cyou^
 ||hubailinks.com^
 ||hubbingslotedhogmace.cyou^
@@ -97360,6 +97362,7 @@ browsershots.org#@#.advert_area
 ||mbdleafdom.cyou^
 ||mbdmildishzontian.cfd^
 ||mbgrgkhawfpyo.website^
+||mbhgnrcwhnatt.online^
 ||mbidadm.com^
 ||mbidinp.com^
 ||mbidpsh.com^
@@ -101854,6 +101857,7 @@ browsershots.org#@#.advert_area
 ||otomiandeleted.cyou^
 ||otowlgplnxtmk.website^
 ||otqbmlcodvbqg.website^
+||otqmunvibzp.in^
 ||otsdpeypxueki.website^
 ||otsoasxgsyabr.online^
 ||otswhtxkfprcy.online^
@@ -101964,6 +101968,7 @@ browsershots.org#@#.advert_area
 ||outstandingspread.com^
 ||outstreamoctober.store^
 ||outtechnicalspiteful.com^
+||outtrotsweepupozaena.cyou^
 ||outviedgeratyawrong.qpon^
 ||outwarddesert.com^
 ||outwardtimetable.com^
@@ -102294,6 +102299,7 @@ browsershots.org#@#.advert_area
 ||paddleweekendnudge.com^
 ||padgzdbyelrca.online^
 ||padinventoryvile.com^
+||padkjmsdyebpy.space^
 ||padlockmanners.com^
 ||padsabs.com^
 ||padsans.com^
@@ -104078,6 +104084,7 @@ browsershots.org#@#.advert_area
 ||ppduaejaozsch.website^
 ||pperkvadtvtxk.online^
 ||ppezbvebaffvx.online^
+||ppgbcmgye.com^
 ||ppggkvponl.com^
 ||pphieftkuwccw.site^
 ||pphnereis.cyou^
@@ -107614,6 +107621,7 @@ browsershots.org#@#.advert_area
 ||robspabah.com^
 ||robust-sail.pro^
 ||robustpsychology.com^
+||robustway.pro^
 ||rocbocmewykty.online^
 ||rochetscogware.qpon^
 ||rocivctofjzka.space^
@@ -114201,6 +114209,7 @@ browsershots.org#@#.advert_area
 ||tydiejoyweed.shop^
 ||tydoqjaofuzge.space^
 ||tydrumgmari.org^
+||tyennnlae.com^
 ||tygcgchryxmqq.website^
 ||tyhxysuulzzmr.site^
 ||tyighduant.qpon^
@@ -117078,6 +117087,7 @@ browsershots.org#@#.advert_area
 ||wailingslow.com^
 ||wailsmasonic.com^
 ||waimooweepi.net^
+||wainfulagnate.com^
 ||wainmenbiopsicer.cyou^
 ||wainsscraighquave.qpon^
 ||wairchstatuacapuli.cfd^
@@ -117497,6 +117507,7 @@ browsershots.org#@#.advert_area
 ||wegnpzpsgjpzx.space^
 ||wegoomtiltootie.net^
 ||wehcqqqrrnxmd.space^
+||weheepellilevoodoos.cyou^
 ||weheeriboseduendes.cfd^
 ||weiekbrbolvvk.online^
 ||weigherdespair.qpon^
@@ -120439,6 +120450,7 @@ browsershots.org#@#.advert_area
 ||yvoirwayscsxt.online^
 ||yvoria.com^
 ||yvpswmiipjhni.life^
+||yvpzvku9lpf1eof.rest^
 ||yvrszirkgpbns.site^
 ||yvshjwqvannfc.space^
 ||yvywmoezamcsk.space^
@@ -121406,6 +121418,7 @@ browsershots.org#@#.advert_area
 ||zyiis.net^
 ||zyjcuzdaazwcj.website^
 ||zyjlsoofkpxrm.space^
+||zyjvyfaihssods.com^
 ||zyjylkltgeduq.online^
 ||zykbfeckdcooo.online^
 ||zymosisticky.cfd^
