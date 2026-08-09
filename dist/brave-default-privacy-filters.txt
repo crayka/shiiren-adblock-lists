@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608090454
+! Version: 202608090829
 ! Title: EasyPrivacy
-! Last modified: 09 Aug 2026 04:54 UTC
+! Last modified: 09 Aug 2026 08:29 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 6cb752a51ce9f44232e4dbc61557915bffc7d203
+! Commit: d100b55e1834e4529d17efc4edd786b8b4984edc
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -59666,10 +59666,8 @@ vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33072#issuecomment-4937969164
-!#if ext_devbuild
 x.com##+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
 x.com##+js(proxy-apply-config, {"dontProxyToString":true})
-!#endif
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12635#issuecomment-4982050273
 telegraph.co.uk##.onward-journey
