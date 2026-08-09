@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608090130
+! Version: 202608090454
 ! Title: EasyPrivacy
-! Last modified: 09 Aug 2026 01:30 UTC
+! Last modified: 09 Aug 2026 04:54 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9fe873ee4d7a78868ac23a69afda981de9e0d06f
+! Commit: 6cb752a51ce9f44232e4dbc61557915bffc7d203
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11048,6 +11048,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||edge-hls.doppiocdn.net/ping
 ||edge.adobedc.net/ee/v1/collect?
 ||edge.bredg.com^$third-party
+||edge.venatusmedia.com^
 ||edrone.me/trace?
 ||edw.edmunds.com/edw/edw1x1.gif
 ||eel.transistor.fm^
@@ -12100,6 +12101,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pr.blogflux.com^
 ||prd-collector-anon.ex.co^
 ||prd-collector-platform.ex.co^
+||prebid.loopmertb.com^
 ||pressjack.com/analyticsProvider/getAnalytics/
 ||presspage.com/statistics/
 ||prf.vagnt.com^
