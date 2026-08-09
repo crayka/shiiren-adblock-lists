@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608090829
+! Version: 202608091236
 ! Title: EasyPrivacy
-! Last modified: 09 Aug 2026 08:29 UTC
+! Last modified: 09 Aug 2026 12:36 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d100b55e1834e4529d17efc4edd786b8b4984edc
+! Commit: 742322c14198c834f39bc40f012a05e689864f4b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -59696,6 +59696,9 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33997
 ||rollercoin.com/static/img/referral_160-600.png$image,redirect=1x1.gif,important
+
+! https://github.com/uBlockOrigin/uAssets/pull/34031
+||s1.hdslb.com/bfs/static/jinkela/video/video.$script,replace=/vd_source:this\.vdSource/vd_source:undefined/,domain=bilibili.com
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
