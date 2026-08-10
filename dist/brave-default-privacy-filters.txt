@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608101258
+! Version: 202608101649
 ! Title: EasyPrivacy
-! Last modified: 10 Aug 2026 12:58 UTC
+! Last modified: 10 Aug 2026 16:49 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 117637b25ecfa1b9988461d63c4f32f0ace977ec
+! Commit: f6e1574b1e09351a44b1b3c08675973ad461d4e4
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7590,6 +7590,7 @@ omni.soundestlink.com$image
 ||hearthow.com^
 ||heavydetail.com^
 ||heavyplayground.com^
+||hellospur.com^
 ||hellounbox.com^
 ||helpcollar.com^
 ||helpflame.com^
@@ -7622,6 +7623,7 @@ omni.soundestlink.com$image
 ||hospitablehall.com^
 ||hospitablehat.com^
 ||howdoesthislook.com^
+||humbleroots.net^
 ||humdrumhobbies.com^
 ||humdrumtouch.com^
 ||humourspot.com^
@@ -57599,6 +57601,12 @@ f6s.com##+js(aeld, , redirect)
 ! https://github.com/uBlockOrigin/uAssets/pull/34040
 ||douban.com/link2/?url=http$doc,urlskip=?url
 douban.com##+js(href-sanitizer, body a[href^="https://www.douban.com/link2/?url=http"], ?url)
+! https://github.com/uBlockOrigin/uAssets/pull/34041
+||ref.gamer.com.tw/redir.php?url=http$doc,urlskip=?url
+gamer.com.tw##+js(href-sanitizer, body a[href^="https://ref.gamer.com.tw/redir.php?url=http"], ?url)
+! https://github.com/uBlockOrigin/uAssets/pull/34042
+||landian.news/go?url=http$doc,urlskip=?url
+landian.news##+js(href-sanitizer, body a[href^="https://www.landian.news/go?url=http"], ?url)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
@@ -59715,6 +59723,9 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 
 ! https://github.com/uBlockOrigin/uAssets/pull/34031
 ||s1.hdslb.com/bfs/static/jinkela/video/video.$script,replace=/vd_source:this\.vdSource/vd_source:undefined/,domain=bilibili.com
+
+! https://github.com/uBlockOrigin/uAssets/issues/34043
+||nuviatoon.com/nuvia-api/analytics/
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
