@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608111300
+! Version: 202608111646
 ! Title: EasyPrivacy
-! Last modified: 11 Aug 2026 13:00 UTC
+! Last modified: 11 Aug 2026 16:46 UTC
 ! Expires: 4 days (update frequency)
-! Commit: e08f01586c1005266287ab09551aefcab75c5991
+! Commit: 61c3a144912ef78e59c197568e450a83d1e0ac5c
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8468,6 +8468,7 @@ omni.soundestlink.com$image
 ||snowpeaksoftware.com^
 ||socialsend.net^
 ||sockpacks.com^
+||softscales.com^
 ||soggysponge.com^
 ||soilcontent.com^
 ||soilphotos.com^
@@ -8520,6 +8521,7 @@ omni.soundestlink.com$image
 ||spookystitch.com^
 ||spoonballoon.com^
 ||spoonsilk.com^
+||sportsclubstat.com^
 ||sportsnearby.com^
 ||sportyforum.com^
 ||spotlessstamp.com^
@@ -57615,6 +57617,12 @@ landian.news##+js(href-sanitizer, body a[href^="https://www.landian.news/go?url=
 ! https://github.com/uBlockOrigin/uAssets/pull/34049
 ||link.zhihu.com/?target=http$doc,urlskip=?target
 zhihu.com##+js(href-sanitizer, body a[href^="https://link.zhihu.com/?target=http"], ?target)
+! https://github.com/uBlockOrigin/uAssets/pull/34057
+||touchgal.ink/redirect?url=http$doc,urlskip=?url
+touchgal.ink##+js(href-sanitizer, body a[href^="/redirect?url=http"], ?url)
+! https://github.com/uBlockOrigin/uAssets/pull/34060
+||sspai.com/link?target=http$doc,urlskip=?target
+sspai.com##+js(href-sanitizer, body a[href^="https://sspai.com/link?target=http"], ?target)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
