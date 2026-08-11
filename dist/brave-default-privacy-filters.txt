@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608110841
+! Version: 202608111300
 ! Title: EasyPrivacy
-! Last modified: 11 Aug 2026 08:41 UTC
+! Last modified: 11 Aug 2026 13:00 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a9b1a6a929b9c38ff6cc115ce2ea04968d8ea570
+! Commit: e08f01586c1005266287ab09551aefcab75c5991
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -54285,6 +54285,7 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 ||ac.dun.163yun.com/v2/collect?
 ||accwww9.53kf.com^
 ||adstats.tencentmusic.com^
+||aichaoxing.com/res/cx_stat.js
 ||al.autohome.com.cn^
 ||alicdn.com/f/pcdn/i.php?
 ||ams.lelong.com.my^
@@ -57611,6 +57612,9 @@ gamer.com.tw##+js(href-sanitizer, body a[href^="https://ref.gamer.com.tw/redir.p
 ! https://github.com/uBlockOrigin/uAssets/pull/34042
 ||landian.news/go?url=http$doc,urlskip=?url
 landian.news##+js(href-sanitizer, body a[href^="https://www.landian.news/go?url=http"], ?url)
+! https://github.com/uBlockOrigin/uAssets/pull/34049
+||link.zhihu.com/?target=http$doc,urlskip=?target
+zhihu.com##+js(href-sanitizer, body a[href^="https://link.zhihu.com/?target=http"], ?target)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24675 - click tracking
 ||cdn.digg.com/fragments/homepage/static/view-frontpage.js
