@@ -1,20 +1,20 @@
 {
-  "generatedAt": "2026-08-12T02:00:41.816Z",
+  "generatedAt": "2026-08-12T05:37:57.560Z",
   "catalogUrl": "https://raw.githubusercontent.com/brave/adblock-resources/master/filter_lists/list_catalog.json",
   "lists": [
     {
       "uuid": "default",
       "title": "Brave Default Adblock Filters",
       "file": "default.txt",
-      "sha256": "af626ed17d1cea974b9e30b93e3424e00703327aca2fd4d5466673f09513e12e",
-      "bytes": 5226592,
+      "sha256": "5612c046cf7bf271e8ec79bf5228b564e89ba52ecdb62c23ac15f2cbbe341c39",
+      "bytes": 5228278,
       "sourceCount": 22
     },
     {
       "uuid": "4D715457-307C-4383-8873-73A2FD263F71",
       "title": "Brave Default Privacy Filters",
       "file": "brave-default-privacy-filters.txt",
-      "sha256": "6bf37e64c0760a93d5b333c3cdd091a619e72932c1d06e500fd9e14adebd6b1c",
+      "sha256": "749e073511dcd1787526b84c3ea496174f72901ac40147c62e051afce2c1f11f",
       "bytes": 1672259,
       "sourceCount": 2
     },
@@ -46,8 +46,8 @@
       "uuid": "2F3DCE16-A19A-493C-A88F-2E110FBD37D6",
       "title": "Mobile app promo blocker",
       "file": "mobile-app-promo-blocker.txt",
-      "sha256": "6988a2a7773f0b9a4ba60e939f750a10a765e6a52064ebb18e30586497ac49e5",
-      "bytes": 49920,
+      "sha256": "d81d49faa6a646bb0fe995d2f37d81a6bf023bb8e3491a1f596d7cd2975a9bd0",
+      "bytes": 49957,
       "sourceCount": 1
     },
     {
