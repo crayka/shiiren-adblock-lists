@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608121255
+! Version: 202608121642
 ! Title: EasyPrivacy
-! Last modified: 12 Aug 2026 12:55 UTC
+! Last modified: 12 Aug 2026 16:42 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ad18c9d4f8923d9899817767bb66ca627c2a5f05
+! Commit: b638f538a78df12bc971a3d3b5aca86d716e1133
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8814,6 +8814,7 @@ omni.soundestlink.com$image
 ||vanfireworks.com^
 ||vanishmemory.com^
 ||vastmillions.com^
+||vectorshirt.com^
 ||velvetquasar.com^
 ||vengefulgrass.com^
 ||venomousvessel.com^
@@ -57329,6 +57330,9 @@ bing.com##+js(href-sanitizer, body a[href^="/rebates/welcome?url=http"], ?url)
 ||bing.com/rebates/welcome?url=http$doc,urlskip=?url
 ||bing.com/alink/link?url=http$doc,urlskip=?url
 ||bing.com/web/xlsc.aspx
+! https://github.com/uBlockOrigin/uAssets/issues/25344#issuecomment-5256727918
+bing.com##+js(href-sanitizer, a[href*="bing.com/ck/a"], ?u /^a1(.*)$/ -base64)
+||bing.com/ck/a*u=a1$doc,urlskip=?u /^a1(.*)$/ -base64
 
 ! https://www.avforums.com/threads/philips-oled908-remote.2478922/
 ||ds1.nl/redirect/*^dai_url=http$doc,urlskip=?dai_url
