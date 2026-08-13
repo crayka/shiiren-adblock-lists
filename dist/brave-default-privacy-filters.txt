@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608130151
+! Version: 202608130529
 ! Title: EasyPrivacy
-! Last modified: 13 Aug 2026 01:51 UTC
+! Last modified: 13 Aug 2026 05:29 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a07d02f6e628b22b28e288f149325651c888ce5e
+! Commit: 2ca3e18d690fa9be5e816ddc9c8293a03722dc0c
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -57334,7 +57334,7 @@ bing.com##+js(href-sanitizer, body a[href^="/rebates/welcome?url=http"], ?url)
 ||bing.com/web/xlsc.aspx
 ! https://github.com/uBlockOrigin/uAssets/issues/25344#issuecomment-5256727918
 bing.com##+js(href-sanitizer, a[href*="bing.com/ck/a"], ?u /^a1(.*)$/ -base64)
-||bing.com/ck/a*u=a1$urlskip=?u /^a1(.*)$/ -safebase64
+||bing.com/ck/a*u=a1$doc,urlskip=?u /^a1(.*)$/ -safebase64
 
 ! https://www.avforums.com/threads/philips-oled908-remote.2478922/
 ||ds1.nl/redirect/*^dai_url=http$doc,urlskip=?dai_url
