@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-08-13T16:56:54.418Z",
+  "generatedAt": "2026-08-13T20:43:31.806Z",
   "catalogUrl": "https://raw.githubusercontent.com/brave/adblock-resources/master/filter_lists/list_catalog.json",
   "lists": [
     {
       "uuid": "default",
       "title": "Brave Default Adblock Filters",
       "file": "default.txt",
-      "sha256": "29d05cf2718e9155edeef80a888f0c752c2330450fefdd720776f4d68dec172f",
-      "bytes": 5238070,
+      "sha256": "cde950d651dac36c66b183a7dd5890fc1550d73b72a4ab000d613a58a69e75b2",
+      "bytes": 5238996,
       "sourceCount": 22
     },
     {
       "uuid": "4D715457-307C-4383-8873-73A2FD263F71",
       "title": "Brave Default Privacy Filters",
       "file": "brave-default-privacy-filters.txt",
-      "sha256": "f99ed6940c70735bc59c2df91e933ecb52389d98c5cd170446a026c04e6b72e8",
-      "bytes": 1673116,
+      "sha256": "6c99d29c6aa1801d5522813a19d1ac0a6f8addd6f30965c90e2cfd4b786051e2",
+      "bytes": 1673134,
       "sourceCount": 2
     },
     {
