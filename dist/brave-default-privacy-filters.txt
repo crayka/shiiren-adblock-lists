@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608140526
+! Version: 202608140858
 ! Title: EasyPrivacy
-! Last modified: 14 Aug 2026 05:26 UTC
+! Last modified: 14 Aug 2026 08:58 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ab7addbca1b389f965754d01ebcc689d93bab2d0
+! Commit: 8bfd6109b53122d850de1338d4eacfe4bde5753c
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -59766,6 +59766,11 @@ $uritransform=/#Echobox=[\d]{10}$//,to=iltalehti.fi|hs.fi
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34043
 ||nuviatoon.com/nuvia-api/analytics/
+
+! https://github.com/uBlockOrigin/uAssets/issues/32911
+||stats.index.hr^
+||index.hr/tracking-beacon
+||index.hr/api/Stats/
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
