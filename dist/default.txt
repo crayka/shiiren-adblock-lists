@@ -35087,6 +35087,7 @@ borntobefuck.com##.vast-container
 ! https://github.com/uBlockOrigin/uAssets/issues/32224
 chatgpt.com##+js(trusted-json-edit, [?.type=="ads"].visibility.status="hidden")
 chatgpt.com##+js(trusted-json-edit, ..suppress_ads=true)
+chatgpt.com##+js(json-prune, messages.*.ads messages.*.renderedAdsHtml)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/32235
 ourcoincash.xyz,softdevelopp.com##+js(noeval-if, Adblock)
@@ -55040,11 +55041,11 @@ uploadao.com.dl0-ad-row
 ! ---- source: EasyList (https://easylist.to/easylist/easylist.txt) ----
 
 [Adblock Plus 2.0]
-! Version: 202608150106
+! Version: 202608150423
 ! Title: EasyList
-! Last modified: 15 Aug 2026 01:06 UTC
+! Last modified: 15 Aug 2026 04:23 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a63a88b840a2be17419142b81cafe1df0d218bcc
+! Commit: 2cafb039df1d0fbae0d116a5b0dc36f127188020
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -71778,6 +71779,7 @@ browsershots.org#@#.advert_area
 ||9lwl6rsk.xyz^
 ||9o924o5rnzb7bor.cfd^
 ||9pub.io^
+||9qbm4q34m29b5o4eh6xkn.rest^
 ||9s4l9nik.de^
 ||9t5.me^
 ||9tp9jd4p.de^
@@ -74393,6 +74395,7 @@ browsershots.org#@#.advert_area
 ||awmradivlamtw.online^
 ||awnedkibbercapcase.cyou^
 ||awnexus.com^
+||awnlesscashboy.cfd^
 ||awnypearch.com^
 ||awokechirked.cfd^
 ||awokekamalas.cfd^
@@ -75445,6 +75448,7 @@ browsershots.org#@#.advert_area
 ||bisa-aja.my.id^
 ||bisetsoliped.com^
 ||biskkonak.cyou^
+||bismerbaskish.qpon^
 ||bistanasa.qpon^
 ||bistrosunsawed.cyou^
 ||bit-ad.com^
@@ -76931,6 +76935,7 @@ browsershots.org#@#.advert_area
 ||cashgzb.com^
 ||cashibohs.digital^
 ||cashiertriplereligion.com^
+||cashingonymitykavi.qpon^
 ||cashingpostman.shop^
 ||cashlayer.com^
 ||cashmachines.biz^
@@ -78372,6 +78377,7 @@ browsershots.org#@#.advert_area
 ||corny-wear.com^
 ||cornyband.pro^
 ||cornychicken.pro^
+||corojohusband.com^
 ||coronaehavance.shop^
 ||coronetbaying.cyou^
 ||corporaldispleased.com^
@@ -78399,6 +78405,7 @@ browsershots.org#@#.advert_area
 ||coscetfec.cfd^
 ||coseismcimeter.qpon^
 ||cosetengarb.com^
+||cosetssovkhoz.com^
 ||cosherslattens.qpon^
 ||cosinescichlid.cyou^
 ||cosmeticsgenerosity.com^
@@ -78649,6 +78656,7 @@ browsershots.org#@#.advert_area
 ||crimsonrhyme.com^
 ||crimsonserene.com^
 ||cringezonearistocracy.com^
+||cringlelotas.cfd^
 ||crinkhartall.cyou^
 ||cripestribune.qpon^
 ||crippletouret.com^
@@ -81825,6 +81833,7 @@ browsershots.org#@#.advert_area
 ||ekgjddiuwwyrv.online^
 ||ekhay.com^
 ||ekhsvsp.com^
+||ekhwbzfks.com^
 ||ekiisawyaretz.online^
 ||ekjjvwrdbm.com^
 ||ekjkfnbgpfrbd.website^
@@ -82736,6 +82745,7 @@ browsershots.org#@#.advert_area
 ||exmainclcknew.com^
 ||exmwfltxyxwmr.website^
 ||exoclick.com^
+||exodiumrasure.qpon^
 ||exodiumriveter.com^
 ||exodosjaunty.cyou^
 ||exodtsamansys.online^
@@ -83515,6 +83525,7 @@ browsershots.org#@#.advert_area
 ||finnocgrates.cfd^
 ||finreporter.net^
 ||fiordedreddled.shop^
+||fiordtossingpenfold.cyou^
 ||fiorewonyhade.online^
 ||fipnhbnfbwxhc.site^
 ||fipnvuixbrwuv.space^
@@ -86164,6 +86175,7 @@ browsershots.org#@#.advert_area
 ||hairdressercurriculum.com^
 ||hairdressergraduate.com^
 ||hairoak.com^
+||hairpincryste.shop^
 ||haiversirkar.cfd^
 ||hakbgofalvjbs.space^
 ||hakkaoekist.com^
@@ -91121,6 +91133,7 @@ browsershots.org#@#.advert_area
 ||lanky-bar.com^
 ||lanky-pin.pro^
 ||lankyteaching.com^
+||lanpeatced.com^
 ||lantodomirus.com^
 ||laojwnvthnuec.online^
 ||lapbqcaykdsn.com^
@@ -92072,6 +92085,7 @@ browsershots.org#@#.advert_area
 ||loperbrattle.com^
 ||lopersmacabi.cyou^
 ||lophiiderugate.cfd^
+||lophineoutsayresave.cyou^
 ||lopsideddebate.com^
 ||loptrrfnfnsnb.space^
 ||lopwhrvtmmhck.store^
@@ -95956,6 +95970,7 @@ browsershots.org#@#.advert_area
 ||offspringthisscarcely.com^
 ||ofgdihwfuo.in^
 ||ofgxwyvlechxd.site^
+||ofhkcsf.com^
 ||ofhypnoer.com^
 ||ofhzqxpfhusrw.website^
 ||ofiywatidyhuq.site^
@@ -97020,6 +97035,7 @@ browsershots.org#@#.advert_area
 ||p6n0g0ia.xyz^
 ||p84eelu36l7ip3xlq9oxuugeoc5.rest^
 ||p8lxfvgnj426gpeemu5k6t.rest^
+||p9pxgx91z15el4b32ecfxo1yvi.cfd^
 ||p9wxctem41wmbn3n3kuh.cfd^
 ||pa5ka.com^
 ||paaeeets.net^
@@ -98353,6 +98369,7 @@ browsershots.org#@#.advert_area
 ||polygonautism.cfd^
 ||polyh-nce.com^
 ||polymersesamin.qpon^
+||polypedyirds.shop^
 ||polypsburrer.cyou^
 ||polyzoaalkenna.cfd^
 ||pomatoapheticfindal.cfd^
@@ -100427,6 +100444,7 @@ browsershots.org#@#.advert_area
 ||raspfact.com^
 ||rasprepress.com^
 ||rasqeemrfzdoq.website^
+||rasslesretest.cyou^
 ||rastikdoggo.cfd^
 ||rastleelastin.shop^
 ||rastleemesa.com^
@@ -102123,6 +102141,7 @@ browsershots.org#@#.advert_area
 ||s3g6.com^
 ||s7227wuo.xyz^
 ||s8ey.com^
+||s99s.net^
 ||sa.entireweb.com^
 ||saatydsobhrtk.space^
 ||saawsedge.com^
@@ -102305,6 +102324,7 @@ browsershots.org#@#.advert_area
 ||sardineoctoberconnecting.com^
 ||sargomiaul.qpon^
 ||sargonould.cyou^
+||sarkinekelter.shop^
 ||sarksyour.cyou^
 ||sarlykidlesse.shop^
 ||sarodsleechy.cfd^
@@ -102739,6 +102759,7 @@ browsershots.org#@#.advert_area
 ||semqraso.net^
 ||semsempeoples.qpon^
 ||semywtuvmzujq.space^
+||sencioalibamu.cyou^
 ||sendexcepting.com^
 ||sendingcoursecryable.cyou^
 ||senegalcarbene.qpon^
@@ -103265,6 +103286,7 @@ browsershots.org#@#.advert_area
 ||sillinessshoplifting.com^
 ||sillinesswoollen.com^
 ||sillorangesladen.com^
+||silver-assets.online^
 ||silverangleshookup.com^
 ||silverforestpath.com^
 ||silverleafroad.com^
@@ -106886,6 +106908,7 @@ browsershots.org#@#.advert_area
 ||tumblerpeacheswry.com^
 ||tumetaipeicalesa.qpon^
 ||tumorskyar.com^
+||tumpspeller.qpon^
 ||tumri.net^
 ||tumuliapodia.cfd^
 ||tumultdisciple.com^
@@ -113254,6 +113277,7 @@ browsershots.org#@#.advert_area
 ||zxlxqzn46yzbn8qxr69.rest^
 ||zxmkhbsmmuikc.online^
 ||zxn2u72vyrejmmw9tnb7wh.cfd^
+||zxnsukgybbfkmz.com^
 ||zxnymrendoxms.space^
 ||zxpvebhtojfvgu.com^
 ||zxqvocyhiggng.site^
@@ -131255,6 +131279,8 @@ bing.com##div[class="ins_exp tds"]
 bing.com##div[class="ins_exp vsp"]
 ! bing.com##li.b_ans[data-partnertag][role="presentation"]
 bing.com##li[data-idx]:has(#mm-ebad)
+! chatgpt
+chatgpt.com##[data-message-role="assistant"] > section[class] > aside[aria-label]:has(> div[role="list"] a[rel][target="_blank"] + span > button[aria-haspopup])
 ! kayak
 checkfelix.com,kayak.*,swoodoo.com###resultWrapper > div > div > [role="button"][tabindex="0"] > .yuAt-pres-rounded
 checkfelix.com,kayak.*,swoodoo.com##.Dp1L
