@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608161234
+! Version: 202608161609
 ! Title: EasyPrivacy
-! Last modified: 16 Aug 2026 12:34 UTC
+! Last modified: 16 Aug 2026 16:09 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 68a56c82cead84e4ef1ad41a211f9af3b9ab5dc0
+! Commit: 02ddf9f47b8df5873ad3680d7f7fa5bd71f95446
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -13858,6 +13858,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||zs.dhl.de^
 ! Arabic
 ||shofonline.org/javashofnet/ti.js
+||stat.kwikmotion.com^
 ||wsimg.com/signals/$script,third-party
 ||wsimg.com/traffic-assets/$script,third-party
 ! French
@@ -54431,6 +54432,7 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 ||s3r.zerkalo.io^
 ||zerkalo.io/stat/
 ! Arabic
+||2m.ma/tracking/
 ||khamsat.com/ajax/account_stats?
 ||mosoah.com/analytics.js
 ||stats.panet.com^
