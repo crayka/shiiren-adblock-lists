@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608170102
+! Version: 202608170429
 ! Title: EasyPrivacy
-! Last modified: 17 Aug 2026 01:02 UTC
+! Last modified: 17 Aug 2026 04:29 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ad1e24e667b7313e190e2cbdf62fa3861b336203
+! Commit: ab4e80a8898271dde2cd92acff8e4be46369cb79
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -15198,6 +15198,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||biosolutions.tv/audience-proxy/
 ||bis.org/metrics/web.gif?
 ||bitchute.com/data/script.js
+||bitdefender.com/geoip
 ||bitwarden.com/plsbl/
 ||blitz-analytics-batch-server.blitz.gg^
 ||blockworks.co/_vercel/insights/
@@ -16274,6 +16275,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||pdffiller.com/funnel.php?
 ||pdffiller.com/mpages/track/
 ||pdfforge.org/api/kd-gdpr-cc
+||pearos.xyz/track.php
 ||pelisfree.site/cdn-cgi/trace
 ||pendo.scopus.com/data/ptm.gif
 ||pepin.padlet.com^
@@ -54271,6 +54273,9 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 ||bellesdemeures.com/Content/dist/js/libs/thor.js
 ||bmly.impots.gouv.fr^
 ||boingtv.fr/track_view
+||cdn.lesnumeriques.com/assets/*/js/eventsTracker-
+||cdn.lesnumeriques.com/assets/*/js/offer-tracking-
+||cdn.lesnumeriques.com/assets/*/js/tracking-
 ||cdtm.cdiscount.com^
 ||centerblog.net/a/in
 ||cesu.urssaf.fr/clm10
@@ -57839,6 +57844,8 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 ! https://github.com/uBlockOrigin/uAssets/issues/33914
 /wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-
 /wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-
+! https://www.rd.com/
+! /wp-content/plugins/tmbi-*/js/*
 !#endif
 ||petametrics.com/*/__activity.
 ||paytr.com/securemetric/
