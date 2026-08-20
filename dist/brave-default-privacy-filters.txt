@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608192019
+! Version: 202608200104
 ! Title: EasyPrivacy
-! Last modified: 19 Aug 2026 20:19 UTC
+! Last modified: 20 Aug 2026 01:04 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 6b5144dbffcb9a25cabbcc2c907f224e98a90f6b
+! Commit: c8d8a516d18d76f132888512dad7e47327585e28
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -6858,6 +6858,7 @@ omni.soundestlink.com$image
 ||bawdybalance.com^
 ||beamvolcano.com^
 ||beancontrol.com^
+||beandelight.com^
 ||beautifulrope.com^
 ||beautylulu.com^
 ||becomemummy.com^
@@ -8068,6 +8069,7 @@ omni.soundestlink.com$image
 ||notrealcat.com^
 ||noundictionary.com^
 ||novaseekers.com^
+||novazen.net^
 ||nowaymail.com^
 ||nucleararea.com^
 ||nudgeduck.com^
@@ -8168,6 +8170,7 @@ omni.soundestlink.com$image
 ||phonecup.com^
 ||phoneresult.com^
 ||photohints.com^
+||photosubscribe.com^
 ||physicstees.com^
 ||pickmicro.com^
 ||pigeonkit.com^
@@ -8208,6 +8211,7 @@ omni.soundestlink.com$image
 ||pointdigestion.com^
 ||pointlesspocket.com^
 ||pointlessprofit.com^
+||pointsshare.com^
 ||poisedfuel.com^
 ||poisedpig.com^
 ||poisonoussnakes.com^
@@ -55777,6 +55781,7 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 @@||cloudflare.com/cdn-cgi/trace$domain=d1milano.com|gingerfulhair.com|infyspringboard.onwingspan.com|injora.com|kiichin.com|myair.resmed.com|twgtea.com
 @@||cloudflareinsights.com/beacon.min.js$script,domain=app.uniswap.org
 @@||cloudfront.net/atrk.js$domain=luxuryrealestate.com
+@@||cloudimanage.com/admin/api/audithub/v1/customers/*/analytics/events/crawl$~third-party
 @@||cloudimg.io/*/analytics.$script,domain=michelinman.com
 @@||cloudinary.com/perimeterx/$image,domain=perimeterx.com
 @@||cnet.com/a/video-player/uvpjs-rv/$script,~third-party
