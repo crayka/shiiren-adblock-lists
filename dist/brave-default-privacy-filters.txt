@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608231616
+! Version: 202608232019
 ! Title: EasyPrivacy
-! Last modified: 23 Aug 2026 16:16 UTC
+! Last modified: 23 Aug 2026 20:19 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ed85bf28d06dc70ce65040af725380d652389cf3
+! Commit: 7926349d25ee9b1ef82faf12d430f0a00cac5648
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -55059,6 +55059,7 @@ x.com##+js(no-xhr-if, /i/api/1.1/flow/viewer.json)
 ||analyzer.fc2.com^
 ||analyzer2.fc2.com^
 ||anyelse.com/stat^
+||api.bus-location.1507t.xyz/3.0/ping
 ||api.mercari.jp/client_events/
 ||apps.nhk.jp/assets/dtm/
 ||askdoctors.jp/assets/packs/js/impression_tracker-
