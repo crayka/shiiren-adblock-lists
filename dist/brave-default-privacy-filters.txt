@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608230818
+! Version: 202608231220
 ! Title: EasyPrivacy
-! Last modified: 23 Aug 2026 08:18 UTC
+! Last modified: 23 Aug 2026 12:20 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 141a95d8e2305de2dda3f61a72a4595efbba0db1
+! Commit: 3b8be7043c7a7fc5422ac81087ca1284b426233e
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7444,6 +7444,7 @@ omni.soundestlink.com$image
 ||fatcoil.com^
 ||faucetfoot.com^
 ||faultycanvas.com^
+||faxcoupons.com^
 ||fearfulfish.com^
 ||fearfulmint.com^
 ||fearlessfaucet.com^
@@ -16144,6 +16145,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||mi.grubhub.com^
 ||miao.baidu.com/abdr?$image
 ||microsoft.com/echo/etc.clientlibs/microsoft/clientlibs/exp-analytics/
+||micstatic.com/common/js/business/global/sensors_track.js$script,domain=made-in-china.com
 ||midas.chase.com^
 ||military1st.com/datalayer/index/events?
 ||mis.ig.com/tracking/
