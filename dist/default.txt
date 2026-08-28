@@ -19474,7 +19474,7 @@ photopea.com##div[style]:has(> a[href*="photopea.com"][href*="ads"])
 ! https://github.com/jared-schwalbe/remove-ads-from-photopea/blob/main/app.js
 ! https://github.com/uBlockOrigin/uAssets/issues/19697
 !#if cap_html_filtering
-||photopea.com^$doc,replace=/<head>/<script>if (localStorage.length === 0 || typeof JSON.parse(localStorage._ppp)['0_uid'] === 'undefined') {Object.defineProperty(window\, 'innerWidth'\, {get() { return document.documentElement.offsetWidth + 320 }\,});}<\/script><head>/
+! ||photopea.com^$doc,replace=/<head>/<script>if (localStorage.length === 0 || typeof JSON.parse(localStorage._ppp)['0_uid'] === 'undefined') {Object.defineProperty(window\, 'innerWidth'\, {get() { return document.documentElement.offsetWidth + 320 }\,});}<\/script><head>/
 !#else
 photopea.com##+js(trusted-create-html, head, <img src='/ad-choices.png' onerror='if (localStorage.length !== 0 || typeof JSON.parse(localStorage._ppp)["0_uid"] !== "undefined") {Object.defineProperty(window\, "innerWidth"\, {get() { return document.documentElement.offsetWidth + 315 }});}'></img>)
 photopea.com##+js(set, __osw, undefined)
@@ -28348,7 +28348,7 @@ voltupload.com##+js(nano-stb, download, 1000, 0.001)
 mylocal.co.uk##main > div > [id].scroll-mt-20:has(.items-center + div:has-text(/^Sponsored$/))
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23219
-@@||poweredby.jads.co^$script,frame,domain=video.pemersatu.org
+video.pemersatu.org##+js(set-attr, iframe#pmt-smart-frame[src="about:blank"][data-pmt-player-src^="http"], src, [data-pmt-player-src])
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22542
 fastapi.tiangolo.com###announce-right .item:has(.sponsor-badge)
@@ -33039,6 +33039,7 @@ leeapk.com##+js(acs, document.querySelectorAll, localStorage)
 leeapk.com##+js(rmnt, script, /adblock|abd/i)
 ! https://github.com/uBlockOrigin/uAssets/issues/32427
 leeapk.com##+js(aeld, click, window.open)
+leeapk.com##+js(aeld, scroll, start)
 leeapk.com###ad-link
 ###zdn-adblock-overlay
 
@@ -33056,7 +33057,9 @@ condorsoft.co##+js(no-xhr-if, googlesyndication)
 ! https://github.com/uBlockOrigin/uAssets/issues/33197
 @@||gsmarena.com^$ghide
 gsmarena.com##div.align-center.justify-center.flex-column.d-flex:has(.ad-c-label)
-gsmarena.com##+js(aeld, DOMContentLoaded, /doubleclick|atob|return new Promise/)
+gsmarena.com###opt300x250
+gsmarena.com##.ad-label
+gsmarena.com##+js(aeld, DOMContentLoaded, /doubleclick|atob|return new Promise|aHR0c/)
 gsmarena.com##+js(remove-cookie, /DeviceID|lpe/)
 gsmarena.com##+js(no-fetch-if, doubleclick)
 
@@ -35775,13 +35778,6 @@ talksport.com##+js(nostif, ()=>, 1000)
 ||freemusiclessons4u.com/AdBlockDetect.js
 ||kingmahali.xyz/js/adBlockDetect.js
 
-! https://chzzk.naver.com - anti-adblock. Login is required.
-! https://github.com/uBlockOrigin/uAssets/issues/34177
-chzzk.naver.com##+js(spoof-css, .banner_ad_wrapper, display, block)
-chzzk.naver.com##+js(no-xhr-if, /(veta.naver.com\/vas|veta.naver.com\/gfp|veta.naver.com\/call)/ method:OPTIONS)
-chzzk.naver.com##+js(trusted-suppress-native-method, atob, c2V0UmVxdWVzdEhlYWRlcg==, prevent, isXhrTampered)
-chzzk.naver.com##+js(trusted-replace-outbound-text, TextDecoder.prototype.decode, '/{"head" *: *{ *"version" *: *"[0-9.]+" *, *"description" *: *"[A-Za-z 0-9]+" *} *, *"requestId" *: *"vas-[a-z0-9]{8}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{4}-[a-z0-9]{12}" *, *"videoAdScheduleId" *: *"[A-Z_]+" *, *"adBreaks" *: *\[{[\[{\]},:" a-z0-9A-Z_-]+\\n?/', '{"head":{"version":"0.0.1","description":"GFP Video Ad Schedule"},"requestId":"vas-00000000-0000-0000-0000-000000000000","videoAdScheduleId":"","adBreaks":[}\n')
-
 ! https://github.com/uBlockOrigin/uAssets/issues/33505
 greeksubsmovies.net##+js(rmnt, script, offsetHeight)
 
@@ -36088,6 +36084,9 @@ bdjobs.com##+js(json-edit, .bannerConfig..advertise.*)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vwje2a/some_ads_creeping_through_on_goodreads_firefoxubo/
 ||goodreads.com/weblab
+
+! https://www.startuphub.ai/ai-news/artificial-intelligence/2026/brave-accounts-passwordless-login-arrives
+||startuphub.ai/api/*^placement=
 
 ! ---- source: uBlock Origin filters - General (https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters-general.txt) ----
 
@@ -38507,12 +38506,13 @@ automobile-catalog.com,hna.de,index.hr,motorbikecatalog.com,skinmc.net##^script:
 9gag.com,animalia.bio,daveockop.com,doviz.com,looopings.nl,pakkotoisto.com##^script:has-text(void 0||window,)
 greenwichmeantime.com,higherorlowergame.com##^script:has-text(void 0 || window,)
 freemcserver.net##^script:has-text(window,void 0)
-base64decode.org,fandom.com,gamewith.jp,sms24.me,urldecoder.org##^script:has-text(').join(String.fromCharCode')
+base64decode.org,fandom.com,gamewith.jp,savvytime.com,sms24.me,urldecoder.org##^script:has-text(').join(String.fromCharCode')
 singjupost.com##^script:has-text(domain=?eventId=&error=)
 sparkchess.com##^script:has-text(html-load.cc)
 brawlytix.com##^script:has-text(nowprocket)
 scribd.com##^script:has-text(adShieldError)
 fossbytes.com,helpdeskgeek.com,perezhilton.com##^script:has-text(';confirm(')
+savvytime.com##^script#savvytime-adshield-light
 1geki.jp,373news.com,50states.com,actugaming.net,aerotrader.com,alc.co.jp,altarofgaming.com,anagram-solver.io,areaconnect.com,as-web.jp,atvtrader.com,aucfree.com,autoby.jp,autoc-one.jp,autofrage.net,automobile-catalog.com,bab.la,babla.*,baseballchannel.jp,buchstaben.com,cadryskitchen.com,cafedelites.com,calculatorsoup.com,carscoops.com,campsitephotos.com,canarystreetcrafts.com,celebritynetworth.com,cesoirtv.com,chanto.jp.net,chef-in-training.com,chocolatecoveredkatie.com,cinetrafic.fr,collinsdictionary.com,commercialtrucktrader.com,computerfrage.net,convertcase.net,costcoinsider.com,crosswordsolver.com,culturequizz.com,curbsideclassic.com,cycletrader.com,dallashoopsjournal.com,dayspedia.com,dexerto.com,dict.cc,dictionary.cambridge.org,dictionnaire.lerobert.com,dnevno.hr,donbalon.com,driveteslacanada.ca,dropgame.jp,ecranlarge.com,eigachannel.jp,equipmenttrader.com,ev-times.com,finanzfrage.net,fixthecfaa.com,flagle.io,footballchannel.jp,freeconvert.com,freemcserver.net,freeride.com,futabanet.jp,futabasha-change.com,fxstreet-id.com,fxstreet-vn.com,fxstreet.*,game8.jp,games.arkadium.com,gamewith.jp,gazetaprawna.pl,geogridgame.com,geoguessr.com,gerbeaud.com,gesundheitsfrage.net,gifu-np.co.jp,gigafile.nu,globalrph.com,golf-live.at,grapee.jp,gutefrage.net,hang.hu,happymoments.lol,harmonikum.co,hb-nippon.com,heureka.cz,hochi.news,horairesdouverture24.fr,hotcopper.co.nz,hotcopper.com.au,hvac-talk.com,ib-game.jp,idokep.hu,indianhealthyrecipes.com,indiatimes.com,infor.pl,insider-gaming.com,invoice-generator.com,iphoneincanada.ca,iza.ne.jp,j-cast.com,j-town.net,j7p.jp,jablickar.cz,javatpoint.com,jigsawexplorer.com,jiji.com,jikayosha.jp,jocjapantravel.com,judgehype.com,kinmaweb.jp,km77.com,kobe-journal.com,krepsinis.net,kreuzwortraetsel.de,kstp.com,kurashinista.jp,kyoteibiyori.com,lacuarta.com,lacuarta.com,laleggepertutti.it,langenscheidt.com,laposte.net,laughingsquid.com,lawyersgunsmoneyblog.com,ldoceonline.com,lessdebt.com,lettersolver.com,liliputing.com,listentotaxman.com,livenewschat.eu,logicieleducatif.fr,luremaga.jp,mafab.hu,mahjongchest.com,mainichi.jp,majorleaguepickleball.co,maketecheasier.com,malaymail.com,mamastar.jp,marineinsight.com,mathplayzone.com,meteo60.fr,midhudsonnews.com,minesweeperquest.com,minkou.jp,modhub.us,modsbase.com,modsfire.com,moin.de,motor-fan.jp,motorbikecatalog.com,motorradfrage.net,motscroises.fr,movie-locations.com,muragon.com,mykoreankitchen.com,namemc.com,nana-press.com,natalie.mu,nationaltoday.com,nbadraft.net,newatlas.com,news.zerkalo.io,newsinlevels.com,newsweekjapan.jp,newsyou.info,niketalk.com,nintendoeverything.com,nlab.itmedia.co.jp,noorderland.nl,nouvelobs.com,nyitvatartas24.hu,oeffnungszeitenbuch.de,onlineradiobox.com,operawire.com,optionsprofitcalculator.com,oraridiapertura24.it,overclock.net,oxfordlearnersdictionaries.com,palabr.as,pashplus.jp,percentagecalculator.net,persoenlich.com,petitfute.com,petitrobert.fr,play-games.com,pllive.xmediaeg.com,pons.com,popdaily.com.tw,powerpyx.com,pptvhd36.com,profitline.hu,puzzlegarage.com,pwctrader.com,quefaire.be,raetsel-hilfe.de,raider.io,ranking.net,rarethief.com,references.be,reisefrage.net,relevantmagazine.com,reptilesmagazine.com,resproleplayer.me,rostercon.com,russianmachineneverbreaks.com,rvtrader.com,samsungmagazine.eu,sankei.com,sanspo.com,scribens.com,scribens.fr,siennachat.com,skyandtelescope.org,slashdot.org,snowmobiletrader.com,soccerdigestweb.com,solitairehut.com,sourceforge.net,southhemitv.com,soxprospects.com,spaghetti-interactive.it,speisekarte.de,spendwithpennies.com,sportalkorea.com,sportlerfrage.net,statecollege.com,stayglam.com,steamidfinder.com,stocktwits.com,sudokutable.com,superhonda.com,syosetu.com,szamoldki.hu,talkwithstranger.com,tastesbetterfromscratch.com,tbs.co.jp,techdico.com,the-crossword-solver.com,thecelticblog.com,thedigestweb.com,thefirearmblog.com,traicy.com,transparentcalifornia.com,transparentnevada.com,trilltrill.jp,tunebat.com,tvtv.ca,tvtv.us,tweaktown.com,twn.hu,tyda.se,ufret.jp,universalis.fr,uptodown.com,uscreditcardguide.com,v8sleuth.com.au,verkaufsoffener-sonntag.com,videocelts.com,vimm.net,wallpapers.com,wamgame.jp,wanderworthy.com,watchdocumentaries.com,wattedoen.be,wdwnt.com,wdwnt.jp,webdesignledger.com,weldingweb.com,welt.de,wetteronline.de,wfmz.com,whec.com,wieistmeineip.*,wielerflits.be,wielerflits.nl,winbuzzer.com,winfuture.de,word-grabber.com,wordfinderx.com,wordhippo.com,worldjournal.com,worldle.teuteuf.fr,wort-suchen.de,woxikon.*,young-machine.com,yugioh-starlight.com,yutura.net,zagreb.info,zakzak.co.jp##^script:has-text(html-load.com)
 ! livedoor-sites
 2chblog.jp,2monkeys.jp,46matome.net,akb48glabo.com,akb48matomemory.com,alfalfalfa.com,all-nationz.com,anihatsu.com,aqua2ch.net,blog.esuteru.com,blog.livedoor.jp,blog.jp,blogo.jp,chaos2ch.com,choco0202.work,crx7601.com,danseisama.com,dareda.net,digital-thread.com,doorblog.jp,exawarosu.net,fgochaldeas.com,football-2ch.com,gekiyaku.com,golog.jp,hacchaka.net,heartlife-matome.com,liblo.jp,fesoku.net,fiveslot777.com,gamejksokuhou.com,girlsreport.net,girlsvip-matome.com,grasoku.com,gundamlog.com,honyaku-channel.net,ikarishintou.com,imas-cg.net,imihu.net,inutomo11.com,itainews.com,itaishinja.com,jin115.com,jisaka.com,jnews1.com,jumpsokuhou.com,jyoseisama.com,keyakizaka46matomemory.net,kidan-m.com,kijoden.com,kijolariat.net,kijolifehack.com,kijomatomelog.com,kijyokatu.com,kijyomatome.com,kijyomatome-ch.com,kijyomita.com,kirarafan.com,kitimama-matome.net,kitizawa.com,konoyubitomare.jp,kotaro269.com,kyousoku.net,ldblog.jp,livedoor.biz,livedoor.blog,majikichi.com,matacoco.com,matomeblade.com,matomelotte.com,matometemitatta.com,mojomojo-licarca.com,morikinoko.com,nandemo-uketori.com,netatama.net,news-buzz1.com,news30over.com,nishinippon.co.jp,nmb48-mtm.com,norisoku.com,npb-news.com,ocsoku.com,okusama-kijyo.com,onecall2ch.com,onihimechan.com,orusoku.com,otakomu.jp,otoko-honne.com,oumaga-times.com,outdoormatome.com,pachinkopachisro.com,paranormal-ch.com,recosoku.com,s2-log.com,saikyo-jump.com,shuraba-matome.com,ske48matome.net,squallchannel.com,sukattojapan.com,sumaburayasan.com,sutekinakijo.com,usi32.com,uwakich.com,uwakitaiken.com,vault76.info,vipnews.jp,vippers.jp,vipsister23.com,vtubernews.jp,watarukiti.com,world-fusigi.net,zakuzaku911.com,zch-vip.com##^script:has-text(html-load.com)
@@ -38614,7 +38614,7 @@ automobile-catalog.com,hna.de,index.hr,motorbikecatalog.com,skinmc.net##+js(rmnt
 9gag.com,animalia.bio,daveockop.com,doviz.com,looopings.nl,pakkotoisto.com##+js(rmnt, script, void 0||window\,)
 greenwichmeantime.com,higherorlowergame.com##+js(rmnt, script, void 0 || window\,)
 freemcserver.net##+js(rmnt, script, window\,void 0)
-base64decode.org,fandom.com,gamewith.jp,sms24.me,urldecoder.org##+js(rmnt, script, ').join(String.fromCharCode')
+base64decode.org,fandom.com,gamewith.jp,savvytime.com,sms24.me,urldecoder.org##+js(rmnt, script, ').join(String.fromCharCode')
 singjupost.com##+js(rmnt, script, domain=?eventId=&error=)
 helpdeskgeek.com##+js(rmnt, script, ;confirm()
 thingiverse.com##+js(rmnt, script, /:\"length\"\}\);$/)
@@ -39212,11 +39212,11 @@ explorecams.com,minecraft.buzz,rarepike.com##+js(aeld, np.detect)
 ! https://www.chess.com/game/daily/984248594
 ! https://github.com/uBlockOrigin/uAssets/issues/34118
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vn8ft3/copypaste_blocked/p3vqbpl/
-*,~amazon.*,~apple.com,~archlinux.org,~azure.com,~bing.com,~captcha-delivery.com,~chatango.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~codeberg.org,~dailymotion.com,~disqus.com,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~gitlab.com,~google.com,~hcaptcha.com,~instagram.com,~kimi.com,~lichess.org,~linkedin.com,~live.com,~mega.nz,~microsoft.com,~mozilla.org,~netflix.com,~openrouter.ai,~pinterest.com,~privacy-mgmt.com,~proton.me,~rakuten.co.jp,~rakuten.com,~recaptcha.net,~reddit.com,~spotify.com,~stripe.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~vscode-cdn.net,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~yandexcloud.net,~youtube.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d |^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+*,~amazon.*,~apple.com,~archlinux.org,~azure.com,~bing.com,~captcha-delivery.com,~chatango.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~codeberg.org,~dailymotion.com,~disqus.com,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~gitlab.com,~google.com,~hcaptcha.com,~instagram.com,~kimi.com,~lichess.org,~linkedin.com,~live.com,~mega.nz,~microsoft.com,~mozilla.org,~netflix.com,~openrouter.ai,~pinterest.com,~privacy-mgmt.com,~proton.me,~rakuten.co.jp,~rakuten.com,~recaptcha.net,~reddit.com,~spotify.com,~stripe.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~vscode-cdn.net,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~yandexcloud.net,~youtube.com,~www.digitalocean.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
 ! https://github.com/uBlockOrigin/uAssets/issues/34022
-community-scripts.org,massgrave.dev#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d |^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+community-scripts.org,massgrave.dev#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
 ! Specific cases
-sites.google.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d |^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd\b.+?\bfor \/f\b.+?\bdelims\b.+?\bpow\b|^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+sites.google.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell.+?-w(indowStyle)? h(idden)?\b|^powershell.+?-W H(idden)?\b|^powershell.+?-NoP\b|^powershell.+?-ep bypass\b|^powershell.+?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .+?\bcurl\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?FromBase64String|^conhost .*?--headless .*?\bcmd\b|^iex\(irm |^irm .+? iex\b/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
 
 ! !SECTION: Temporal
 
@@ -39808,6 +39808,9 @@ portal.librus.pl##advertisement-module:remove()
 ! https://github.com/uBlockOrigin/uAssets/issues/33990
 tuwroclaw.com##.grid__ad
 tuwroclaw.com##.grid__col:has(> .adv)
+
+! https://github.com/uBlockOrigin/uAssets/issues/34271
+stalowemiasto.pl##+js(aeld, load, detect)
 
 ! NOTE: Portuguese/Spanish
 ! https://www.reddit.com/r/uBlockOrigin/comments/1lj84v1/adblock_detected/
@@ -42921,6 +42924,15 @@ strand-co.com##+js(acs, document.createElement, .onerror)
 ||google-meet-call.com^$all
 ||faceit-account.com^$all
 ||kook.bar^$all
+
+! https://www.netskope.com/blog/etherhiding-in-the-browser-clickfix-chain-ends-in-amatera
+igualdad.iaa.csic.es##+js(acs, String.prototype.toLowerCase, Contract)
+||igualdad.iaa.csic.es/nochain-sw.js
+##html > #nochain-demo-frame:not(body)
+##html > #nc-cover:not(body)
+
+! https://x.com/joe4security/status/2092954759237869800
+||openai-backup.one^$all
 
 ! !SECTION: ClickFix
 
@@ -46659,6 +46671,9 @@ top##body > center + .A + .post
 
 ! https://www.reddit.com/r/Scams/comments/1vzdot7/us_is_httpswwwhokaukcom_a_scam_site_that_steals/
 ||hoka-uk.com^$all
+
+! https://github.com/uBlockOrigin/uAssets/issues/34267
+||nextsave.trenched.cfd^$doc
 
 ! ---- source: uBlock Origin filters – Resource abuse (https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/resource-abuse.txt) ----
 
@@ -55310,11 +55325,11 @@ link.snipcash.com##+js(set, blurred, false)
 ! ---- source: EasyList (https://easylist.to/easylist/easylist.txt) ----
 
 [Adblock Plus 2.0]
-! Version: 202608280353
+! Version: 202608281947
 ! Title: EasyList
-! Last modified: 28 Aug 2026 03:53 UTC
+! Last modified: 28 Aug 2026 19:47 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 27a82676e7a320a41f85df19fb1b6c6cef481068
+! Commit: 2a0b0b6fc9be38f91632f4ffa287228b4d64a835
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -71828,6 +71843,7 @@ browsershots.org#@#.advert_area
 ||7jrahgc.de^
 ||7k7zc4ir6m3u6mq64cm.cfd^
 ||7kmbjxhtzh5zv4qghvwtbllzf.rest^
+||7lgp6ww4v7o12yyyk7.rest^
 ||7lrz6ytv1u8hl7xbu27kg91yg1.cfd^
 ||7lyonline.com^
 ||7me0ssd6.de^
@@ -71890,6 +71906,7 @@ browsershots.org#@#.advert_area
 ||870input.net^
 ||87665c98df.com^
 ||87a24216ce.com^
+||87uy133bg3x4xmkz.cfd^
 ||8800source.com^
 ||882793fb7a.com^
 ||8888queue.com^
@@ -73497,6 +73514,7 @@ browsershots.org#@#.advert_area
 ||alatedpume.shop^
 ||alawichesty.cfd^
 ||albarcocorvine.cyou^
+||albatasolates.cfd^
 ||albbwlhyjotcs.website^
 ||albinesspelean.cyou^
 ||albonsa.com^
@@ -74084,6 +74102,7 @@ browsershots.org#@#.advert_area
 ||apromoweb.com^
 ||apronmemorableidentify.com^
 ||apshmpzjmglgj.site^
+||apsqsgwecrclz.site^
 ||apt-shine.com^
 ||apterpastel.shop^
 ||aptianashed.qpon^
@@ -74456,6 +74475,7 @@ browsershots.org#@#.advert_area
 ||atheslkgczrrp.online^
 ||athletewindfall.com^
 ||athlg.com^
+||athodydcentro.com^
 ||athortamoved.cfd^
 ||athorthomedgrushie.cfd^
 ||athrillgimmal.qpon^
@@ -74526,6 +74546,7 @@ browsershots.org#@#.advert_area
 ||attractivecutier9t3.com^
 ||attractivereception.com^
 ||attrapincha.com^
+||attributedbelieving.com^
 ||attributedconcernedamendable.com^
 ||attributedrelease.com^
 ||attrqqbnbjxkg.website^
@@ -74565,6 +74586,8 @@ browsershots.org#@#.advert_area
 ||augakwdximgsz.online^
 ||augpgcsnbrsks.space^
 ||august15download.com^
+||augustemendi.cfd^
+||auhmhbvsortpz.space^
 ||auibdnglnixan.space^
 ||auikeilhosl.com^
 ||aujdoisblpboq.online^
@@ -74750,6 +74773,7 @@ browsershots.org#@#.advert_area
 ||awmplus.com^
 ||awmradivlamtw.online^
 ||awnedkibbercapcase.cyou^
+||awnerbori.cfd^
 ||awnexus.com^
 ||awnlesscashboy.cfd^
 ||awnypearch.com^
@@ -75045,6 +75069,7 @@ browsershots.org#@#.advert_area
 ||balkliving.com^
 ||ballingnanpie.cfd^
 ||ballobarling.qpon^
+||balloncowpat.shop^
 ||ballroomprudentauditorium.com^
 ||ballyaxche.cfd^
 ||balmsmarket.cyou^
@@ -75192,9 +75217,11 @@ browsershots.org#@#.advert_area
 ||bavbfmokxwqtn.space^
 ||bavdxafbegkvr.space^
 ||bavingoiters.cfd^
+||bawarnojtsa.in^
 ||bawattbzy.com^
 ||bawixi.xyz^
 ||bawkeneeder.cyou^
+||bawledfirelit.shop^
 ||bawledtootsie.cfd^
 ||bawnnonsync.shop^
 ||bawosdwu.com^
@@ -75433,6 +75460,7 @@ browsershots.org#@#.advert_area
 ||beknoweutaxy.cfd^
 ||bekpflllvuefn.website^
 ||belamicash.com^
+||belandapardie.shop^
 ||belavoplay.com^
 ||belchlipin.com^
 ||beldamnolos.cfd^
@@ -75539,6 +75567,7 @@ browsershots.org#@#.advert_area
 ||besmeargleor.com^
 ||besognechiru.shop^
 ||bespicedoni.cfd^
+||bespottrismus.qpon^
 ||bessttie.com^
 ||besszeyyafqqe.site^
 ||best-girls-around.com^
@@ -75836,6 +75865,7 @@ browsershots.org#@#.advert_area
 ||bisa-aja.my.id^
 ||bisetsoliped.com^
 ||biskkonak.cyou^
+||bisleysomas.cyou^
 ||bismerbaskish.qpon^
 ||bisporegunja.qpon^
 ||bistanasa.qpon^
@@ -75885,6 +75915,7 @@ browsershots.org#@#.advert_area
 ||bjlwmgypnxmwr.space^
 ||bjmyjrpjqqeep.com^
 ||bjnstrujhqmna.space^
+||bjplwiptdxpls.space^
 ||bjquhxvicujcc.online^
 ||bjrnhbqgaabez.website^
 ||bjsmbnbo.com^
@@ -76079,6 +76110,7 @@ browsershots.org#@#.advert_area
 ||bluntnebulous.com^
 ||blurbreimbursetrombone.com^
 ||blurtsbrerd.com^
+||blushetsphered.shop^
 ||blustercartedfulfils.qpon^
 ||blutrk.click^
 ||blwadijbvbttx.space^
@@ -76264,6 +76296,7 @@ browsershots.org#@#.advert_area
 ||bonesideal.com^
 ||bongacams11.com^
 ||bongacams7.com^
+||bonganotus.cfd^
 ||bonierunsized.cfd^
 ||bonifysenary.shop^
 ||bonjourunwormy.shop^
@@ -76311,6 +76344,7 @@ browsershots.org#@#.advert_area
 ||bootingunpickedusable.com^
 ||bootstraplugin.com^
 ||bootyregisteredcleared.com^
+||boozerlanktwilt.cfd^
 ||boozilyhaircap.cfd^
 ||bopako.com^
 ||bordermotivation.com^
@@ -76627,6 +76661,7 @@ browsershots.org#@#.advert_area
 ||bromesrovers.shop^
 ||bromingigaton.com^
 ||bromoilnapalms.com^
+||bromuscodrus.qpon^
 ||bronca.site^
 ||bronzesong.pro^
 ||broodbelongminiature.com^
@@ -76885,6 +76920,7 @@ browsershots.org#@#.advert_area
 ||burstingsteed.com^
 ||burstythroddymellows.qpon^
 ||burwfuhpwjlme.site^
+||burysmemburdens.qpon^
 ||busherdebates.com^
 ||bushilycoheirsnaggar.qpon^
 ||bushsurprising.com^
@@ -77035,6 +77071,7 @@ browsershots.org#@#.advert_area
 ||bypasspickupfaculty.com^
 ||byplayslaccin.cfd^
 ||byprechaos.cfd^
+||byracucosopenu.com^
 ||byrlingnonfluxdid.cyou^
 ||byrpspiwbqiim.space^
 ||byryqaysgfpwz.website^
@@ -77142,6 +77179,7 @@ browsershots.org#@#.advert_area
 ||cafeqnugevtpm.website^
 ||cafewarriors.com^
 ||caffeicmoonlit.qpon^
+||cafqzdbebpxqo.site^
 ||cagaieedrohdv.site^
 ||cagealas.com^
 ||cagiertrumps.shop^
@@ -77371,6 +77409,7 @@ browsershots.org#@#.advert_area
 ||casatealibi.qpon^
 ||casavaangakok.cyou^
 ||caseours.com^
+||caseumabear.com^
 ||cash-ads.com^
 ||cash-duck.com^
 ||cash-program.com^
@@ -77984,6 +78023,7 @@ browsershots.org#@#.advert_area
 ||churroautre.cyou^
 ||chvvodcmswbgfl.com^
 ||chxfqemkekb.com^
+||chxknzcvpciju.site^
 ||chyjobopse.pro^
 ||chylesmispens.cyou^
 ||chylesunfact.cyou^
@@ -78194,6 +78234,7 @@ browsershots.org#@#.advert_area
 ||cleatsbonks.com^
 ||cleavebullydevaluation.com^
 ||clecfcwjdgsoq.online^
+||cleeknhanfurzy.cyou^
 ||cleftasperly.cfd^
 ||clemmedaztecs.cfd^
 ||clenchedquarterbackluxuriant.com^
@@ -78693,6 +78734,7 @@ browsershots.org#@#.advert_area
 ||confuserage.com^
 ||confusingepisodevest.com^
 ||congecubical.cfd^
+||congedmacupa.qpon^
 ||congerstunish.com^
 ||congestprowessburger.com^
 ||congresscaptainfatal.com^
@@ -78863,6 +78905,7 @@ browsershots.org#@#.advert_area
 ||corajigustful.qpon^
 ||coralcanarydepend.com^
 ||corantotailagedogtie.qpon^
+||corbedpeckers.com^
 ||corbinatoda.cfd^
 ||corcasshanked.shop^
 ||cordaxrelive.cyou^
@@ -78928,6 +78971,7 @@ browsershots.org#@#.advert_area
 ||cosherslattens.qpon^
 ||cosinescichlid.cyou^
 ||cosinescoaxes.cfd^
+||cosinesnorty.cyou^
 ||cosmeticsgenerosity.com^
 ||cosmoidbawlers.shop^
 ||cosmopolitanprawn.com^
@@ -79122,6 +79166,7 @@ browsershots.org#@#.advert_area
 ||crawlsingeshell.com^
 ||crawtaehalp.shop^
 ||crayonunhated.qpon^
+||crazedpeakily.com^
 ||crazefiles.com^
 ||crazesmalto.com^
 ||crazinessheirloom.com^
@@ -79164,6 +79209,7 @@ browsershots.org#@#.advert_area
 ||creesessalvia.cfd^
 ||cremespokily.shop^
 ||crenateoxalylbobbish.qpon^
+||crenatesphyrna.cfd^
 ||crengate.com^
 ||crentexgate.com^
 ||creosolcotoin.shop^
@@ -79206,6 +79252,7 @@ browsershots.org#@#.advert_area
 ||crispterracedamage.com^
 ||cristidial.shop^
 ||cristochris.com^
+||criticalaeroplanepleat.com^
 ||criticaltriggerweather.com^
 ||crittereasilyhangover.com^
 ||crjjqhvbktqc.com^
@@ -79351,6 +79398,7 @@ browsershots.org#@#.advert_area
 ||csygdrdbwobsh.space^
 ||ct11.biz^
 ||ctailhmpxgzlr.online^
+||ctaopbfpep.in^
 ||ctasnet.com^
 ||ctbfleegqpvkx.online^
 ||ctbucqcndifdt.online^
@@ -79392,6 +79440,7 @@ browsershots.org#@#.advert_area
 ||ctypo.com^
 ||ctysfzudaoqlf.online^
 ||ctyywrvwlffgc.online^
+||ctzlvbsxkzvar.space^
 ||ctzsryncxsdkg.site^
 ||ctzzirfslkvcv.website^
 ||cubbyskyful.qpon^
@@ -79448,6 +79497,7 @@ browsershots.org#@#.advert_area
 ||cultivationfrustrationreply.com^
 ||cultivationgabblehaunted.com^
 ||cumbersomeassistance.com^
+||cumbersomeexpressingimplement.com^
 ||cumbersomegarmentmortify.com^
 ||cumbersomeplenty.com^
 ||cumppphnizdyp.space^
@@ -79473,6 +79523,7 @@ browsershots.org#@#.advert_area
 ||cuplwjwkpxjrp.space^
 ||cupoabie.net^
 ||cupolasdaimenfixture.qpon^
+||cuppinghazer.cfd^
 ||cupsligase.qpon^
 ||cuqtrlibylbiv.website^
 ||curatnestful.com^
@@ -79488,6 +79539,7 @@ browsershots.org#@#.advert_area
 ||curledpastpatty.com^
 ||curlsseizuregolan.com^
 ||curneyminks.cyou^
+||curnockxyster.cfd^
 ||curoax.com^
 ||currentreared.com^
 ||curriculture.com^
@@ -80365,6 +80417,7 @@ browsershots.org#@#.advert_area
 ||detoxifylagoonsnugness.com^
 ||deturbcordies.com^
 ||deuxseethe.com^
+||deuzanbellitekryptic.qpon^
 ||deuzanreface.cfd^
 ||devaluequalmrelative.com^
 ||devastatedleech.com^
@@ -80444,6 +80497,7 @@ browsershots.org#@#.advert_area
 ||dgtsowpvnhodi.site^
 ||dgvhzcxksncni.website^
 ||dgwnczabiojka.space^
+||dgyrrnwkqifjt.site^
 ||dgythcrp.com^
 ||dgyy59yc.xyz^
 ||dgzykxavrvekj.site^
@@ -80831,6 +80885,7 @@ browsershots.org#@#.advert_area
 ||djgqucjpunwhs.store^
 ||djinnscratchpalach.qpon^
 ||djinsulnar.com^
+||djizmhnngvfhi.site^
 ||djjzdejdqsfqm.store^
 ||djlhiuwpvqwyf.online^
 ||djmdvnfdbvzjr.website^
@@ -81097,6 +81152,7 @@ browsershots.org#@#.advert_area
 ||doubleview.online^
 ||doublyracism.com^
 ||doubtcigardug.com^
+||doubtsshunned.qpon^
 ||doubtsuseless.com^
 ||douchegibbets.shop^
 ||doucheraisiny.com^
@@ -81195,6 +81251,7 @@ browsershots.org#@#.advert_area
 ||drab-week.com^
 ||drabbedhovenbauxite.cyou^
 ||drabimprovement.com^
+||drablylyard.qpon^
 ||drachmaameers.qpon^
 ||drachmskidder.cfd^
 ||dragglyigdyr.qpon^
@@ -81707,6 +81764,7 @@ browsershots.org#@#.advert_area
 ||dtzvavrnbzemd.space^
 ||dualinvirallyfatuism.cyou^
 ||dualismaflower.qpon^
+||duanekhalal.cyou^
 ||duantgrouped.shop^
 ||dubdylgvgfvgv.site^
 ||dubfrntsjlpwfp.com^
@@ -81749,6 +81807,7 @@ browsershots.org#@#.advert_area
 ||dukumawheeshteclated.qpon^
 ||dulcosefreeing.qpon^
 ||duleonon.com^
+||duliasvod.cyou^
 ||dulillipupan.com^
 ||dullardalbinal.cfd^
 ||dullmilacredolmans.cyou^
@@ -82051,6 +82110,8 @@ browsershots.org#@#.advert_area
 ||earringprecaution.com^
 ||earringsatisfiedsplice.com^
 ||earsoreamellusberendo.qpon^
+||earthaxwise.com^
+||earthsdistant.qpon^
 ||easebestow.com^
 ||easelegbike.com^
 ||easelunawarefunds.com^
@@ -83339,6 +83400,7 @@ browsershots.org#@#.advert_area
 ||excitedassist.pro^
 ||excitedasweattubbier.cfd^
 ||excitedgleamingrefrigerate.com^
+||excitedlyhowlinch.com^
 ||excitedteam.com^
 ||excitementeverybody.com^
 ||exciting-meetcasual.com^
@@ -83486,6 +83548,7 @@ browsershots.org#@#.advert_area
 ||eyesnamda.cfd^
 ||eyesurlyprecaution.com^
 ||eyeviewads.com^
+||eyfeknffvosjl.space^
 ||eyhmhohuflljt.website^
 ||eyiccxilrwhpm.site^
 ||eyidtfpkxbbsl.website^
@@ -83529,6 +83592,7 @@ browsershots.org#@#.advert_area
 ||ezvtaxxurcgdi.website^
 ||ezvtfyjvrdbzx.site^
 ||ezvthdrknbfad.space^
+||ezwknedlwdetk.online^
 ||ezxkarybihqoo.space^
 ||ezzwdkadhgkid.site^
 ||f00e275c9a.com^
@@ -83603,6 +83667,7 @@ browsershots.org#@#.advert_area
 ||fadsipz.com^
 ||fadskis.com^
 ||fadslimz.com^
+||faenusbibbers.shop^
 ||fafeyrfqyxwivk.com^
 ||fafwubji.com^
 ||fafxuylrwwnxg.online^
@@ -83642,6 +83707,7 @@ browsershots.org#@#.advert_area
 ||falhcegbmvooc.site^
 ||falkag.net^
 ||falkwo.com^
+||fallaljungles.cfd^
 ||fallingtumbly.shop^
 ||fallinmatches-paradises.com^
 ||falloffnailbin.cyou^
@@ -83858,6 +83924,7 @@ browsershots.org#@#.advert_area
 ||fe8171c761.com^
 ||feadrope.net^
 ||feakeddronetscribe.qpon^
+||fealtartane.shop^
 ||fearful-forever.pro^
 ||fearinvulnerablediagnosis.com^
 ||fearless-discipline.com^
@@ -84285,6 +84352,7 @@ browsershots.org#@#.advert_area
 ||fkgpewlsrzwiu.website^
 ||fkhqplyxmaafw.space^
 ||fkhwblrosnlrc.space^
+||fkirmgubjpypg.website^
 ||fkiuklhqe.com^
 ||fkjwfmybsqeif.space^
 ||fklfsnsaeijok.space^
@@ -84483,6 +84551,7 @@ browsershots.org#@#.advert_area
 ||fmdyjeawxxqqq.space^
 ||fmeeelobzlamc.space^
 ||fmeokhgaca.in^
+||fmeounjodrepw.site^
 ||fmipurdtuta.com^
 ||fmiszetiqn.in^
 ||fmkains.com^
@@ -84552,6 +84621,7 @@ browsershots.org#@#.advert_area
 ||foghug.site^
 ||fogiedigmeat.shop^
 ||fogvnoq.com^
+||fohshovers.shop^
 ||fohshxrgpzlkj.site^
 ||foicuoxmzjthm.site^
 ||foilbundle.com^
@@ -84559,6 +84629,7 @@ browsershots.org#@#.advert_area
 ||foilunflaweduproot.com^
 ||foineqhrjvek.com^
 ||foitersagwire.qpon^
+||foj12gxjyooqp9ghcqf38t.rest^
 ||fojatepjfrfdc.space^
 ||fojfrrpwyvlhq.website^
 ||fojreuulsyxpi.website^
@@ -84725,6 +84796,7 @@ browsershots.org#@#.advert_area
 ||fourthinvestigation.com^
 ||fouxupoosccwp.space^
 ||fovealkiters.com^
+||foventcasper.qpon^
 ||fowlerydyewoodincite.cfd^
 ||fowlpwlythika.space^
 ||fowlsgum.com^
@@ -84861,6 +84933,7 @@ browsershots.org#@#.advert_area
 ||fregatabromoil.cyou^
 ||fregvoxmietix.website^
 ||freitarriver.com^
+||frenuladears.com^
 ||frenumshearth.shop^
 ||frenumsveined.cfd^
 ||frequentday.com^
@@ -85033,6 +85106,7 @@ browsershots.org#@#.advert_area
 ||ftsucithdgvle.online^
 ||ftv-publicite.fr^
 ||ftwftsvmssggs.online^
+||ftwfzcgtrpvek.space^
 ||ftwrmmayxkopu.space^
 ||ftydheggsttua.site^
 ||ftyspctyrjenw.space^
@@ -85184,6 +85258,7 @@ browsershots.org#@#.advert_area
 ||fwcvdfgoeayyo.site^
 ||fwepmrpj.com^
 ||fwfzomszkhywg.online^
+||fwgqm4p48pci2boenq1w1.cfd^
 ||fwgxxywastlyi.com^
 ||fwhiygzlhmklt.website^
 ||fwllgitl.com^
@@ -85434,6 +85509,7 @@ browsershots.org#@#.advert_area
 ||gastfulabeles.com^
 ||gate4learn.com^
 ||gateageneifs.shop^
+||gateauburkes.qpon^
 ||gatejoseph.com^
 ||gatetodisplaycontent.com^
 ||gatetotrustednetwork.com^
@@ -85473,6 +85549,7 @@ browsershots.org#@#.advert_area
 ||gaycatfollyerpolity.cyou^
 ||gazati.com^
 ||gazeflavour.com^
+||gazerssambara.cfd^
 ||gazfleetly.cyou^
 ||gazkohjzcdbty.online^
 ||gazmoons.com^
@@ -85512,6 +85589,7 @@ browsershots.org#@#.advert_area
 ||gcpafttmstljb.website^
 ||gcpcvtdsdztbz.website^
 ||gcpnnmnuedgs.com^
+||gcpstkgpmcjwtq.com^
 ||gcqsidgeipqtr.online^
 ||gcrvzjxhgaeed.website^
 ||gctolasgflhnc.site^
@@ -85593,6 +85671,7 @@ browsershots.org#@#.advert_area
 ||generationwindscreen.com^
 ||genericdianawitty.com^
 ||genericlink.com^
+||generisroebuck.cfd^
 ||generosityensurebathing.com^
 ||generosityreekweigh.com^
 ||generous-snow.com^
@@ -85691,6 +85770,7 @@ browsershots.org#@#.advert_area
 ||getyoursoft.ru^
 ||gevqylgklqzso.site^
 ||gewjleqnsivvn.site^
+||gewwokr9p5rfh1v4.cfd^
 ||gewxrcuetanau.site^
 ||gexdrbaeokoxr.website^
 ||geynkbwesiohs.online^
@@ -85723,6 +85803,7 @@ browsershots.org#@#.advert_area
 ||gfxdn.pics^
 ||gfxlkemrkltqz.online^
 ||gfzyoomgfbnws.space^
+||gg1m8rkvm3hom3qozfgj74voruq9wgvio.rest^
 ||ggfpasvmhfxyb.website^
 ||gggpppht.com^
 ||gghlevdqepehs.website^
@@ -86638,6 +86719,7 @@ browsershots.org#@#.advert_area
 ||gukzebkckkvxv.website^
 ||gulioamsivgik.site^
 ||gullahsedgingtwilt.cfd^
+||gulliesbaalism.cfd^
 ||guloimmisincamp.qpon^
 ||gulpedcountwhipped.com^
 ||gulsyangtao.guru^
@@ -86657,6 +86739,7 @@ browsershots.org#@#.advert_area
 ||gunkyjossmnla.store^
 ||gunkyslick.cfd^
 ||gunlortnzuzax.space^
+||gunniesunplaid.cfd^
 ||gunont.xyz^
 ||gunselscyan.shop^
 ||gunshopreclasp.cyou^
@@ -86887,6 +86970,7 @@ browsershots.org#@#.advert_area
 ||haircutcrypticunlikely.com^
 ||hairdressercurriculum.com^
 ||hairdressergraduate.com^
+||hairmisdiet.shop^
 ||hairoak.com^
 ||hairpincryste.shop^
 ||haiversirkar.cfd^
@@ -87039,6 +87123,7 @@ browsershots.org#@#.advert_area
 ||haspingplovers.cfd^
 ||hassarbettas.shop^
 ||hassarrespeak.qpon^
+||hastatiformer.shop^
 ||hastediminutiondoes.com^
 ||hastenassume.com^
 ||hastenedassessmentbaking.com^
@@ -87243,6 +87328,7 @@ browsershots.org#@#.advert_area
 ||hedgingfingan.cfd^
 ||hedwigflooredventure.com^
 ||heederkashankiaat.qpon^
+||heedsavalon.cyou^
 ||heeledvallota.cyou^
 ||heeloven.com^
 ||heezieclapper.cyou^
@@ -87281,6 +87367,7 @@ browsershots.org#@#.advert_area
 ||hem41xm47.com^
 ||hemineedunks.com^
 ||hemlinetaglet.cfd^
+||hemmedfengite.qpon^
 ||hemplardoon.qpon^
 ||hemsepopee.shop^
 ||hemvcieezucdp.website^
@@ -87381,6 +87468,7 @@ browsershots.org#@#.advert_area
 ||hftciwcfqrotx.online^
 ||hfulicte.com^
 ||hfusiuuqknbwy.site^
+||hfx9iljey2x9vbenobl.cfd^
 ||hfxvwhstgitib.site^
 ||hfyavgagbiidq.site^
 ||hfyunaiqwrobn.site^
@@ -87731,6 +87819,7 @@ browsershots.org#@#.advert_area
 ||hogard.cyou^
 ||hoggeekangla.qpon^
 ||hoggetforfend.com^
+||hoggiesatieno.com^
 ||hoggsdecreed.shop^
 ||hoglikepicasso.shop^
 ||hogmanezincid.cfd^
@@ -88216,6 +88305,7 @@ browsershots.org#@#.advert_area
 ||hwkxqzuhlqqin.online^
 ||hwlbjqmqcmqfj.site^
 ||hwmesbhun.com^
+||hwmwovselgest.space^
 ||hwocwionv.com^
 ||hwouarlltsgmo.website^
 ||hwpnocpctu.com^
@@ -88309,6 +88399,7 @@ browsershots.org#@#.advert_area
 ||i9q9f69vj5xyf1jvnu133l5.cfd^
 ||iaacknkvbidsc.site^
 ||iaahxcxdjhrsr.space^
+||iaaqrwkl.com^
 ||iadbsntna.com^
 ||iadnsamqheemb.space^
 ||iaeaadfleusbk.site^
@@ -88322,6 +88413,7 @@ browsershots.org#@#.advert_area
 ||ialeompoqcypg.site^
 ||ialukizeiasni.org^
 ||ialyfitnisscn.site^
+||iambinowroze.cfd^
 ||ianoubcdoavip.website^
 ||iaopbzjfhemrb.website^
 ||iapegsvax.com^
@@ -88562,6 +88654,7 @@ browsershots.org#@#.advert_area
 ||ihbvkyub.com^
 ||ihculppauwbhc.online^
 ||ihihvuohkrpvi.online^
+||ihixaaflnjkkp.site^
 ||ihixmyzlqb.com^
 ||ihkkckkiptbbv.site^
 ||ihlfikzmbeyob.space^
@@ -88605,6 +88698,7 @@ browsershots.org#@#.advert_area
 ||iiveklopzolo.com^
 ||iiwkyrrdmmbvw.site^
 ||iiwlirgydeexl.online^
+||iiwswxhgyusee.online^
 ||iiwvrnwxtr.com^
 ||iixaroencqzhnh.com^
 ||iixeerzpuevou.online^
@@ -88951,6 +89045,7 @@ browsershots.org#@#.advert_area
 ||indooritalian.com^
 ||indoorrobotsunnecessary.com^
 ||indoorsscoldbail.com^
+||indrawndiscantunlocks.qpon^
 ||inducestoiles.shop^
 ||indulgeassortmentdone.com^
 ||indulgencelate.com^
@@ -88981,6 +89076,7 @@ browsershots.org#@#.advert_area
 ||infameeagled.com^
 ||infamous-growth.pro^
 ||infantaslaw.cyou^
+||infantile-courage.pro^
 ||infantileclass.pro^
 ||infantilecombination.com^
 ||infantiletransition.com^
@@ -89273,6 +89369,7 @@ browsershots.org#@#.advert_area
 ||invisibleoutfactories.com^
 ||invitationownsnappy.com^
 ||inviteroot.com^
+||invitesdorm.cfd^
 ||invitinghonor.com^
 ||invitingjanuaryneurotic.com^
 ||invl.me^
@@ -89412,7 +89509,9 @@ browsershots.org#@#.advert_area
 ||irhzhtcyxozti.online^
 ||iridiumowenize.cyou^
 ||iridousmutive.cfd^
+||iridousromal.shop^
 ||iridousvises.shop^
+||iringfensterlimine.qpon^
 ||irisinunquitensues.cfd^
 ||irjohtzaorjdd.site^
 ||irjvsxkxfqzkl.online^
@@ -89750,6 +89849,7 @@ browsershots.org#@#.advert_area
 ||jackao.net^
 ||jackcivilization.com^
 ||jackedcrystal.cfd^
+||jacketsjussi.qpon^
 ||jacketzerobelieved.com^
 ||jackknifemonuments.com^
 ||jackpotave.com^
@@ -89866,6 +89966,7 @@ browsershots.org#@#.advert_area
 ||jbuegeejecfca.website^
 ||jbvoejzmaqmjw.top^
 ||jbvoejzmaqqjj.top^
+||jbvoejzvkmyzj.top^
 ||jbwcujtcmchoh.website^
 ||jbxaijiiblsal.site^
 ||jbxgbdetzfgpn.space^
@@ -90059,6 +90160,7 @@ browsershots.org#@#.advert_area
 ||jiaqvigtlyvjgr.com^
 ||jiawavgaksdbq.store^
 ||jibbashacked.qpon^
+||jibberspeelingowd.cfd^
 ||jibcjrikkqjmc.online^
 ||jibsneeannnlz.site^
 ||jibxceatwdcbr.online^
@@ -90171,6 +90273,7 @@ browsershots.org#@#.advert_area
 ||jlawrkjcpahca.space^
 ||jlbmbquodyvxr.site^
 ||jlbowtwjqkxoa.space^
+||jlcwkxglaziun.site^
 ||jldoxjmw.com^
 ||jlecgcsdbleti.online^
 ||jlfdfodxejpxt.space^
@@ -91176,6 +91279,7 @@ browsershots.org#@#.advert_area
 ||kirstengatemen.cfd^
 ||kirtximywmile.site^
 ||kirujh.com^
+||kismatrotesrhaphe.qpon^
 ||kispmoobnkk.in^
 ||kissbaketurpentine.com^
 ||kissoffering.com^
@@ -91378,6 +91482,7 @@ browsershots.org#@#.advert_area
 ||knxvgbbvpymdke.com^
 ||knyhnvzqbsqdc.website^
 ||knzvoajcwwuvg.store^
+||knzxskwpxfpij.site^
 ||knzympordzwua.website^
 ||koaeunhairy.shop^
 ||koawfitxqieyj.site^
@@ -92041,6 +92146,7 @@ browsershots.org#@#.advert_area
 ||lbwdyjxdrzmia.online^
 ||lbwjhzikhdoci.space^
 ||lby2kd27c.com^
+||lbylqervyzroq.top^
 ||lbylqerzmzlzq.top^
 ||lbzyjmblyozor.top^
 ||lbzyjmbvmkovm.top^
@@ -92203,6 +92309,7 @@ browsershots.org#@#.advert_area
 ||leluhrmmslpud.store^
 ||lemanrygussets.shop^
 ||lembsmhpronni.website^
+||lemdlihnjfomw.space^
 ||lemetri.info^
 ||lemfctpvmdccp.store^
 ||lemmaheralds.com^
@@ -92287,6 +92394,7 @@ browsershots.org#@#.advert_area
 ||lexniyqceasrv.online^
 ||lexolbuvjhmau.online^
 ||lexorawebnet.com^
+||leygborxkiehx.space^
 ||lfafacbfqrsom.online^
 ||lfavcwgydohba.store^
 ||lfcnxhdzwwyka.space^
@@ -93019,6 +93127,7 @@ browsershots.org#@#.advert_area
 ||lqljgkcjsuzer.store^
 ||lqlpchhficknp.site^
 ||lqnzjmlhskmez.space^
+||lqsflfggpvveg.website^
 ||lqskzxzoerxjm.website^
 ||lqtktmhwzbyfb.online^
 ||lqtxnaqqmbqxm.space^
@@ -93146,6 +93255,7 @@ browsershots.org#@#.advert_area
 ||lukvmrrxwnxwa.online^
 ||luljmaambnzkd.website^
 ||lulkckpzirebi.space^
+||lulusbardo.qpon^
 ||lumaktoys.com^
 ||lumbarseleme.cyou^
 ||lumbering-wish.pro^
@@ -93378,6 +93488,7 @@ browsershots.org#@#.advert_area
 ||machineryvegetable.com^
 ||machinjumbly.shop^
 ||machogodynamis.com^
+||machounwayed.cfd^
 ||machreewhiz.com^
 ||macingcolombharicot.cfd^
 ||mackelse.cyou^
@@ -93655,6 +93766,7 @@ browsershots.org#@#.advert_area
 ||marzaent.com^
 ||masakeku.com^
 ||masbpi.com^
+||mascarabeltir.com^
 ||mascaraowners.com^
 ||mascarapersonality.com^
 ||masculine-employment.com^
@@ -93749,6 +93861,7 @@ browsershots.org#@#.advert_area
 ||mayhemabjure.com^
 ||mayorcabbagedemolish.com^
 ||mayportfolioshrine.com^
+||maytidedewoolwetchet.cfd^
 ||mayworthutlike.shop^
 ||mayzaent.com^
 ||mazardskokos.qpon^
@@ -93926,6 +94039,7 @@ browsershots.org#@#.advert_area
 ||megpngcejxazj.website^
 ||meibjonjgxjqb.store^
 ||meikleshankies.qpon^
+||meilevinyl.cfd^
 ||meioseshoaxer.cfd^
 ||meioticbanba.cfd^
 ||mejlwlzjcbkjn.space^
@@ -94605,6 +94719,7 @@ browsershots.org#@#.advert_area
 ||monalgarters.cyou^
 ||monarchycurrencyinjury.com^
 ||monarchygrumpy.com^
+||monasapotomac.com^
 ||monasteryabolishment.com^
 ||monaxendymal.qpon^
 ||moncatfgtgdul.website^
@@ -94735,6 +94850,7 @@ browsershots.org#@#.advert_area
 ||motherlyglad.com^
 ||motherlynative.com^
 ||motionless-initiative.pro^
+||motionless-sock.pro^
 ||motionlessarmsvanished.com^
 ||motionlessscholarsmarried.com^
 ||motionspots.com^
@@ -95138,6 +95254,7 @@ browsershots.org#@#.advert_area
 ||mwqxkshueflnl.site^
 ||mwrgi.com^
 ||mwseohimnnfcx.store^
+||mwtwnxrwepytx.site^
 ||mwtwzzeyvnwdx.site^
 ||mwumbd.com^
 ||mwxvbjitipn.com^
@@ -96001,6 +96118,7 @@ browsershots.org#@#.advert_area
 ||nmunljgekpsrj.site^
 ||nmunsrrptdhmf.space^
 ||nmuqvohacmvfz.online^
+||nmwdqatseasqq.website^
 ||nmxefyqfkjemw.site^
 ||nmxzdhybtiwga.online^
 ||nmynalaphswdf.space^
@@ -96321,6 +96439,7 @@ browsershots.org#@#.advert_area
 ||ntkgkyalavlcs.space^
 ||ntkmmopjrpqdx.store^
 ||ntlcsrqm.com^
+||ntmchqsdzhtxl.site^
 ||ntnfiubxkrufo.store^
 ||ntobfyzxjkatt.space^
 ||ntofinaukncec.org^
@@ -96713,6 +96832,7 @@ browsershots.org#@#.advert_area
 ||ocinzfdyslxja.online^
 ||ociurwibnklqw.online^
 ||ocivocakufslc.site^
+||ocjfmzafydzky.site^
 ||ockecpnnrbu.com^
 ||ockerflurn.qpon^
 ||ockremarkedon.com^
@@ -96805,6 +96925,7 @@ browsershots.org#@#.advert_area
 ||odylicplodge.qpon^
 ||odyvcahzbdmlx.website^
 ||odzzperikpir.com^
+||oe4q1ikwfqzj9vn.cfd^
 ||oe6fyhljyu66819umuzwxplqrg.cfd^
 ||oeafttumojrto.site^
 ||oeamsmfhctyfk.site^
@@ -96877,6 +96998,7 @@ browsershots.org#@#.advert_area
 ||official-permit.com^
 ||officialvillage.pro^
 ||offlineentheal.qpon^
+||offlookglaiks.cfd^
 ||offoonguser.com^
 ||offsetgobetween.com^
 ||offspringresolveddiminution.com^
@@ -97085,6 +97207,7 @@ browsershots.org#@#.advert_area
 ||okopuhtgqgelr.space^
 ||okoulvuvtzurb.site^
 ||okqefbozkgqvd.website^
+||okqibzx28hpzc4t.rest^
 ||okrasbj6.de^
 ||okrqmavp.com^
 ||oktmwddlpisrn.site^
@@ -97803,6 +97926,7 @@ browsershots.org#@#.advert_area
 ||owemcnw.com^
 ||oweqehfrmrlfm.space^
 ||owfijkhomxdfo.space^
+||owflibalnnfi.in^
 ||owhauzbiydccz.online^
 ||owhdishcnrrzq.space^
 ||owhnkemicd.com^
@@ -97969,6 +98093,7 @@ browsershots.org#@#.advert_area
 ||pa5ka.com^
 ||paaeeets.net^
 ||paartureen.cyou^
+||pabalosel.cfd^
 ||pacayajudases.cfd^
 ||paceaskhari.com^
 ||pacekami.com^
@@ -98096,6 +98221,7 @@ browsershots.org#@#.advert_area
 ||paniersnocence.cfd^
 ||panjsnlmneasi.store^
 ||pannahazes.com^
+||panodewexyxibo.com^
 ||pansywebsite.com^
 ||pantafives.com^
 ||pantherinvincible.com^
@@ -98722,6 +98848,7 @@ browsershots.org#@#.advert_area
 ||pharmacycoercive.com^
 ||pharmcash.com^
 ||pharosurunday.shop^
+||phasesassyth.cyou^
 ||phaticbutts.qpon^
 ||phbnyvscipzzk.online^
 ||phbtjvjsamolb.website^
@@ -99015,6 +99142,7 @@ browsershots.org#@#.advert_area
 ||pjivecsgaqoip.website^
 ||pjmjzpntmqdux.site^
 ||pjmqwqsw.com^
+||pjnzvzinwwnvn.site^
 ||pjoqdgncunzlk.online^
 ||pjpvyafiviynd.space^
 ||pjqchcfwtw.com^
@@ -99164,6 +99292,7 @@ browsershots.org#@#.advert_area
 ||plocap.com^
 ||plodparticularly.com^
 ||plorexdry.com^
+||plosiondilemmasalpids.qpon^
 ||ploughplbroch.com^
 ||ploughseaters.shop^
 ||ploveryclamor.qpon^
@@ -99244,6 +99373,7 @@ browsershots.org#@#.advert_area
 ||pnn3u5nyuhew8ynwomi.rest^
 ||pnnhbvmouf.com^
 ||pnperf.com^
+||pnpwlunridcqz.site^
 ||pnpyvprphjxwr.site^
 ||pnqptxkdxkhff.site^
 ||pnsmbazkcydwd.site^
@@ -99797,6 +99927,7 @@ browsershots.org#@#.advert_area
 ||prioriexodium.shop^
 ||prioritycucumbers.com^
 ||prioritylotantagonize.com^
+||prioritysaliva.com^
 ||prism-assets.online^
 ||prism-cdn.online^
 ||prisonsupstick.qpon^
@@ -99984,6 +100115,7 @@ browsershots.org#@#.advert_area
 ||protectorincorporatehush.com^
 ||protectstauter.cyou^
 ||protectwborcn.com^
+||proteinbuts.cfd^
 ||proteincalculate.com^
 ||proteinshippingwhether.com^
 ||protextdatura.cyou^
@@ -100465,6 +100597,7 @@ browsershots.org#@#.advert_area
 ||pyramidexciterdeodars.cyou^
 ||pyriteshumean.shop^
 ||pyroium.net^
+||pysdjnutumhyv.site^
 ||pysdvwrawkwjz.space^
 ||pysvfggnwzzf.com^
 ||pytkdwpsaghfp.site^
@@ -100643,6 +100776,7 @@ browsershots.org#@#.advert_area
 ||qffrdxwhd.com^
 ||qfgzjprfvrabq.site^
 ||qfhvdwqycveuf.site^
+||qfiiabgqceggh.site^
 ||qfiobhon.com^
 ||qfjgcntbdvthn.online^
 ||qflcnpyfqxedr.space^
@@ -100654,6 +100788,7 @@ browsershots.org#@#.advert_area
 ||qfqbznmeuztgs.website^
 ||qfqgzbbjjutfs.site^
 ||qfruliwdmaas.com^
+||qfutdvtauigjd.website^
 ||qfxheyyfxnply.site^
 ||qgbhjzjoduaqe.site^
 ||qgcgkwgszxjbd.site^
@@ -101252,6 +101387,7 @@ browsershots.org#@#.advert_area
 ||qz496amxfh87mst.com^
 ||qzaijhdclqlfg.site^
 ||qzarxauvngpfv.space^
+||qzaxbduijtbgs.site^
 ||qzdfeuspwetft.space^
 ||qzdqta.com^
 ||qzhwkhkpnpjxq.com^
@@ -101511,6 +101647,7 @@ browsershots.org#@#.advert_area
 ||raxcaffle.com^
 ||raxedergates.shop^
 ||raxesnoise.cfd^
+||raxjzvenhzxqd.online^
 ||raxpeikufhiyp.site^
 ||raxsqlbokhscx.website^
 ||rayahhulloed.shop^
@@ -101671,6 +101808,7 @@ browsershots.org#@#.advert_area
 ||recanedxylonic.cyou^
 ||recantkeynotecrane.com^
 ||recapscasino.cfd^
+||recapsyorker.cyou^
 ||recartmuleys.qpon^
 ||recaststautens.shop^
 ||recastwilsomeleaves.cyou^
@@ -101843,6 +101981,7 @@ browsershots.org#@#.advert_area
 ||refusalspudvicinity.com^
 ||refuserates.com^
 ||refutationflowerbed.com^
+||refzcaenroiyh.space^
 ||regardingfourteenth.com^
 ||regardingsnappy.com^
 ||regardlived.com^
@@ -102303,6 +102442,7 @@ browsershots.org#@#.advert_area
 ||rhythmmousmee.shop^
 ||riaoz.xyz^
 ||ribaldoinksdalapon.cyou^
+||ribandsdormant.cyou^
 ||ribberstracks.cfd^
 ||ribbonauthentic.com^
 ||ribbytawhid.shop^
@@ -102580,6 +102720,7 @@ browsershots.org#@#.advert_area
 ||rntcycudcyzdu.online^
 ||rnueamamrzu.com^
 ||rnuxzqjkiwiry.website^
+||rnuyqdbtneeqc.space^
 ||rnvondsyjfcjq.online^
 ||rnwswnvddrykq.website^
 ||rnywgmiidmivb.online^
@@ -102978,6 +103119,7 @@ browsershots.org#@#.advert_area
 ||rugbycaricaturescheme.com^
 ||rugbymentalads.com^
 ||rugcookingintersection.com^
+||ruggertheyvedefault.cfd^
 ||rugiomyh2vmr.com^
 ||rugpowerfully.com^
 ||ruhfpcfkysoxw.site^
@@ -103111,6 +103253,7 @@ browsershots.org#@#.advert_area
 ||rwwmbymaezkla.top^
 ||rwwmbymyqvwba.top^
 ||rwzughyokkgua.site^
+||rwzvqzvjlvevy.top^
 ||rwzvqzvqkzowy.top^
 ||rwzweheqfaqct.space^
 ||rwzxsuwwuijen.space^
@@ -103378,6 +103521,7 @@ browsershots.org#@#.advert_area
 ||saooykasbxdts.space^
 ||sapmgtkvtoulm.space^
 ||sapperpokable.cfd^
+||sappiernoisier.qpon^
 ||saptiledispatch.com^
 ||sapuzvinnbuqc.online^
 ||sapwooddeciare.cfd^
@@ -103574,6 +103718,7 @@ browsershots.org#@#.advert_area
 ||scholarlyinteraction.pro^
 ||scholarshipexplosivepopular.com^
 ||scholarsslate.com^
+||schorlkabyle.cfd^
 ||schorlyaxites.qpon^
 ||schouwloto.com^
 ||scientific-doubt.com^
@@ -103611,6 +103756,7 @@ browsershots.org#@#.advert_area
 ||scorchobservedsow.com^
 ||scorchsorchic.com^
 ||scoreafshar.cfd^
+||scorermaungeweekday.cyou^
 ||scornedinseer.shop^
 ||scornfacultative.com^
 ||scornfulleg.com^
@@ -104835,6 +104981,7 @@ browsershots.org#@#.advert_area
 ||smjulynews.com^
 ||smjxeprlptflw.website^
 ||smkitluhhwvdo.space^
+||smkofmxbwyvcf.space^
 ||smkwbcbomcpfuu.com^
 ||smljmp.com^
 ||smlmszewhtcyd.site^
@@ -104897,6 +105044,7 @@ browsershots.org#@#.advert_area
 ||snctfefuvcpvv.website^
 ||sncvjrxcvfkkf.site^
 ||sncyt.com^
+||sneakerorblike.com^
 ||sneakerrfbyupon.cfd^
 ||sneakintriguecasting.com^
 ||sneakunwanted.com^
@@ -104935,6 +105083,7 @@ browsershots.org#@#.advert_area
 ||snoutedsliced.qpon^
 ||snoutwastedeeply.com^
 ||snowdiminutionsponge.com^
+||snowierocuby.cyou^
 ||snowiershiko.shop^
 ||snowkhaab.shop^
 ||snowmanjo.com^
@@ -105491,6 +105640,7 @@ browsershots.org#@#.advert_area
 ||squirkverraykorunas.cyou^
 ||squirmosmosestatar.qpon^
 ||squirtdrsuccession.com^
+||sqvsfzsreghnz.online^
 ||sqwiyhokurecf.online^
 ||sqxbkrmtgei.com^
 ||sqxbojbkjdved.online^
@@ -105631,6 +105781,7 @@ browsershots.org#@#.advert_area
 ||startedwhamble.cfd^
 ||startletrumpdim.com^
 ||startpagea.com^
+||startscururos.shop^
 ||startsflow.com^
 ||starvationcalibergrid.com^
 ||starvedesolatesaturday.com^
@@ -105778,6 +105929,7 @@ browsershots.org#@#.advert_area
 ||stonysuingtartness.com^
 ||stoolsymphony.com^
 ||stoomawy.net^
+||stoondchoisebhowani.qpon^
 ||stoopeddigestaggregation.com^
 ||stoopeddiscourse.com^
 ||stoopsellers.com^
@@ -105849,6 +106001,7 @@ browsershots.org#@#.advert_area
 ||streamsearchclub.com^
 ||streamstv.pro^
 ||streamyourvid.com^
+||streepkonfyt.cyou^
 ||streetmonumentemulate.com^
 ||strekepetrols.com^
 ||stremmaraftage.com^
@@ -106006,6 +106159,7 @@ browsershots.org#@#.advert_area
 ||suburbincriminatesubdue.com^
 ||subwayeachaccompaniment.com^
 ||subwayhumility.com^
+||subwhfrsfjcip.online^
 ||succahodorant.cyou^
 ||succeedknockweapons.com^
 ||successconfusequick.com^
@@ -106025,6 +106179,7 @@ browsershots.org#@#.advert_area
 ||sudarypease.cfd^
 ||sudatetrifler.qpon^
 ||suddlelbinit.com^
+||suddydeclare.shop^
 ||sudoralalaki.cyou^
 ||sudorcoper.shop^
 ||sudrajacamin.cfd^
@@ -106066,6 +106221,7 @@ browsershots.org#@#.advert_area
 ||sukuesca.cyou^
 ||sulafatedeagra.cyou^
 ||suleacoenobe.cyou^
+||sulfatemaioid.shop^
 ||sulfitebedye.shop^
 ||sulingvicaire.cyou^
 ||sulkgrinseafood.com^
@@ -106554,6 +106710,7 @@ browsershots.org#@#.advert_area
 ||talcoidsakis.com^
 ||talcoseliukiu.com^
 ||talesapricot.com^
+||talesklismoicoinfer.cyou^
 ||talipatinmeats.qpon^
 ||talkativeend.com^
 ||talkdodgeticket.com^
@@ -106672,6 +106829,7 @@ browsershots.org#@#.advert_area
 ||tavryuhcshdsr.website^
 ||tawersmylodonvoulge.qpon^
 ||tawnieracheron.shop^
+||tawsnarco.qpon^
 ||tawtieratos.shop^
 ||taxaffections.com^
 ||taxdifferenceinvestor.com^
@@ -106679,6 +106837,7 @@ browsershots.org#@#.advert_area
 ||taxisbowsed.cfd^
 ||taxissunroom.com^
 ||taxitesgyal.top^
+||taxiteshegemon.cyou^
 ||tazlo.cloud^
 ||tb3hrrmcgfumj5fvk.cfd^
 ||tbaiatgrlgsdf.space^
@@ -106691,6 +106850,7 @@ browsershots.org#@#.advert_area
 ||tbmoxtvskajqz.space^
 ||tbpot.com^
 ||tbqmmivolbygsly.com^
+||tbsakweladkbq.website^
 ||tbslehgnmaets.space^
 ||tbtophs.cyou^
 ||tburybrcvclih.online^
@@ -107459,6 +107619,7 @@ browsershots.org#@#.advert_area
 ||tmwzkukvxwdzl.website^
 ||tmztsogzhbbwg.com^
 ||tncycnhulwray.website^
+||tnczawrllvifh.site^
 ||tndkwerwq.com^
 ||tnegeszxnuwpo.space^
 ||tnfjlukzibewa.space^
@@ -107688,6 +107849,7 @@ browsershots.org#@#.advert_area
 ||towerhavenet.com^
 ||towersflimsy.com^
 ||towievisited.cfd^
+||towmastdelawn.cyou^
 ||towsygio.shop^
 ||toxanendhhcjx.site^
 ||toxauncouch.com^
@@ -107917,6 +108079,7 @@ browsershots.org#@#.advert_area
 ||trenchefficaciousworkman.com^
 ||trentbereal.com^
 ||trepidevase.cyou^
+||treppenunky.com^
 ||tressedgibes.shop^
 ||trewssynaxis.shop^
 ||trexer501.com^
@@ -107972,6 +108135,7 @@ browsershots.org#@#.advert_area
 ||trishawbleaks.qpon^
 ||trissinted.com^
 ||trithomed.qpon^
+||tritishherbs.shop^
 ||triumphantthingsreading.com^
 ||triumphcommodity.com^
 ||triumphhello.com^
@@ -108027,11 +108191,13 @@ browsershots.org#@#.advert_area
 ||trothedoctaneshawing.cyou^
 ||trothedpalmer.cfd^
 ||trotscheme.com^
+||troubled-mother.com^
 ||troubleduseful.com^
 ||troublesomemanifest.com^
 ||troublesomepursuing.com^
 ||troughyomen.shop^
 ||troutpeskynest.com^
+||trouvanita.qpon^
 ||trovesleepit.com^
 ||trowedaughkisra.qpon^
 ||trpool.org^
@@ -108468,6 +108634,7 @@ browsershots.org#@#.advert_area
 ||typeytwiners.cfd^
 ||typical-hub.com^
 ||typicallycompoundgaunt.com^
+||typicallyuncovernull.com^
 ||typiccor.com^
 ||typisttuckerspurt.com^
 ||typonymfloriabeffroy.cyou^
@@ -108805,6 +108972,7 @@ browsershots.org#@#.advert_area
 ||ulkhtkbqjrtni.website^
 ||ulkjtanswjdyc.site^
 ||ullabequest.cfd^
+||ulleredana.qpon^
 ||ulljqegjdoqmt.store^
 ||ullmqufjprrcd.space^
 ||ullrqcoqifslu.space^
@@ -109006,6 +109174,7 @@ browsershots.org#@#.advert_area
 ||unflagriffspoppas.cyou^
 ||unflamearna.qpon^
 ||unflametyning.shop^
+||unfolded-shift.pro^
 ||unfoldedclimate.com^
 ||unfortunatechampionship.com^
 ||unfortunatehospitality.com^
@@ -109252,6 +109421,7 @@ browsershots.org#@#.advert_area
 ||uogmaufnar.com^
 ||uohsqzovikvyr.online^
 ||uojcqkdr.com^
+||uojfrvxyopzam.website^
 ||uojkwxvpsgpkk.online^
 ||uokaxbyfrkmnb.website^
 ||uokctomaimarn.site^
@@ -109444,6 +109614,7 @@ browsershots.org#@#.advert_area
 ||urnwhereabouts.com^
 ||urocystfoozler.cyou^
 ||urogrambaskets.cyou^
+||urologyperoses.com^
 ||uroniclucks.cfd^
 ||urophimahuaaedilic.cyou^
 ||urpaldueuqktf.website^
@@ -109550,6 +109721,7 @@ browsershots.org#@#.advert_area
 ||utsqdufhyhwyz.space^
 ||utteredadisappo.com^
 ||utterlyhourglassspent.com^
+||utterlyparoleslogan.com^
 ||utterrender.com^
 ||uttership.pro^
 ||uttgahrpiemjz.space^
@@ -109714,6 +109886,7 @@ browsershots.org#@#.advert_area
 ||v3qlqcfbpb183jg8h.cfd^
 ||v4ek8hmjy2gl58zzhr5k6z12t1er.rest^
 ||v4j76cn2f7m1vv4mqfmnxn.cfd^
+||v5i9kluu83bgm17rkqbl.rest^
 ||v81qrfzbbuv34nu3wfwizo.rest^
 ||v8bihqorimvt441rxeixyc.cfd^
 ||v8yitm9lortkf9y8eghv2rgngw3utolp3ik6.cfd^
@@ -109801,6 +109974,7 @@ browsershots.org#@#.advert_area
 ||vaokbuyvpiyzw.website^
 ||vapedia.com^
 ||vapidnou.qpon^
+||vaplsncgeszec.site^
 ||vapourdifferenceszealot.com^
 ||vaqjgbsmdrqzp.website^
 ||vaquerodoe.shop^
@@ -109853,6 +110027,7 @@ browsershots.org#@#.advert_area
 ||vbcyjhxqcfanz.site^
 ||vbdozzrdqluca.store^
 ||vbeeeleqvjelq.top^
+||vbfssjmbsukaw.site^
 ||vbjibjsftqxkq.site^
 ||vbjuqguxmgrhk.site^
 ||vbkvubotujxh.com^
@@ -109982,6 +110157,7 @@ browsershots.org#@#.advert_area
 ||vengeancearrogancethee.com^
 ||vengeful-egg.com^
 ||vengefulprior.pro^
+||vengertanling.cfd^
 ||vengesagelaus.cyou^
 ||vengingtrental.com^
 ||vengy1zzj6fi89pk8.rest^
@@ -110587,6 +110763,7 @@ browsershots.org#@#.advert_area
 ||vqlpduejkboak.site^
 ||vqooisjexmusf.space^
 ||vqoqlebqqakmq.top^
+||vqoqlebzyzbyq.top^
 ||vqqaelqorzzry.top^
 ||vqqcqfrnugfqm.site^
 ||vqqjqbkzclwav.website^
@@ -110995,6 +111172,7 @@ browsershots.org#@#.advert_area
 ||warrandsupping.qpon^
 ||warranthum.com^
 ||warriorgoofierkip.qpon^
+||warscaroid.qpon^
 ||warshardnessmotivation.com^
 ||warsledspines.com^
 ||waruggeefiljt.space^
@@ -111020,6 +111198,7 @@ browsershots.org#@#.advert_area
 ||wasqimet.net^
 ||wastabljellib.com^
 ||wasteful-clothes.com^
+||wastmeyawling.qpon^
 ||watanabehono.info^
 ||watapessquawks.cyou^
 ||wataxpf.com^
@@ -111050,6 +111229,7 @@ browsershots.org#@#.advert_area
 ||watwait.com^
 ||wauchtsatarasscun.qpon^
 ||waudeesestew.com^
+||waughtsallotedhoicked.cfd^
 ||wauqomhjliawq.store^
 ||waurafree.com^
 ||waust.at^
@@ -111079,6 +111259,7 @@ browsershots.org#@#.advert_area
 ||waywortonement.cyou^
 ||wazcltokdhjwk.online^
 ||wazhogebdylsb.space^
+||wazltouzrfesh.online^
 ||wbaetwsafkqlw.store^
 ||wbamedia.com^
 ||wbaolixcouqle.website^
@@ -111140,6 +111321,7 @@ browsershots.org#@#.advert_area
 ||wcwxkbakmbtct.space^
 ||wcwysdfmiznik.online^
 ||wcxgvwihfoimx.site^
+||wcxzisqponknp.online^
 ||wcydtrbulrgob.online^
 ||wcyvjdpduqxym.site^
 ||wdaybyzzjnpri.online^
@@ -111408,6 +111590,7 @@ browsershots.org#@#.advert_area
 ||wgvmzdmasfoyu.store^
 ||wgzaprexwmzki.site^
 ||wgzgarcunfpjq.space^
+||wgzvazmfvffxo.space^
 ||whackedburdon.com^
 ||whackersophy.shop^
 ||whackschoolboy.com^
@@ -111599,6 +111782,7 @@ browsershots.org#@#.advert_area
 ||widowreseduereseduedescription.com^
 ||widowtea.com^
 ||widtkuztxqrxe.website^
+||wielarediciest.com^
 ||wieldygrover.cyou^
 ||wienersrelatum.shop^
 ||wiezhjlxc.com^
@@ -111689,6 +111873,7 @@ browsershots.org#@#.advert_area
 ||winslinks.com^
 ||winstonplusses.cfd^
 ||winterdistortkey.com^
+||winterybrelaw.qpon^
 ||wintqcf.com^
 ||wintrck.com^
 ||wintrifleromantic.com^
@@ -111799,6 +111984,7 @@ browsershots.org#@#.advert_area
 ||wksfhfswxamwjq.com^
 ||wktcwjlzpeicg.website^
 ||wktowncuthsvf.site^
+||wkvizpnmuwhnj.space^
 ||wkwdmllrmscgp.space^
 ||wkxvopwtaykla.website^
 ||wkxypxkzntijg.site^
@@ -111825,6 +112011,7 @@ browsershots.org#@#.advert_area
 ||wluenozwkxvfe.site^
 ||wlupsmxczpcml.online^
 ||wlvkzwqmyjwoz.top^
+||wlvkzwqzejaqz.top^
 ||wlvrbtcscckvp.space^
 ||wlwxefpldfxoi.website^
 ||wlx5.com^
@@ -112387,6 +112574,7 @@ browsershots.org#@#.advert_area
 ||wzelipmfuva.com^
 ||wzemzootg.in^
 ||wzeocharram.com^
+||wzfozsmbifzzq.space^
 ||wzjosexuyafjz.site^
 ||wzobwendrydoi.website^
 ||wzqotpvpbyqhc.store^
@@ -112449,6 +112637,7 @@ browsershots.org#@#.advert_area
 ||xb3cicbx53m8rjxyi94kumyujr.cfd^
 ||xbbuafyizlkov.space^
 ||xbbxljge.com^
+||xbdthxmpmygwd.space^
 ||xbdvfcqdo.com^
 ||xbeaspolzddtc.space^
 ||xbfoaninfgolq.space^
@@ -112938,6 +113127,7 @@ browsershots.org#@#.advert_area
 ||xszvzvvmmeebl.site^
 ||xszzabiyogfip.online^
 ||xtakfprqxykkt.store^
+||xtbimfzqveqvs.space^
 ||xtehklaqrbpgy.space^
 ||xtewwhvhyrazi.site^
 ||xtgqnwehivjrb.online^
@@ -113098,7 +113288,9 @@ browsershots.org#@#.advert_area
 ||xyexwfbjrrnak.space^
 ||xyhjflxkhqchl.online^
 ||xyicgmkbjemlh.website^
+||xyioldjjxezhe.site^
 ||xylanfdname.com^
+||xylanjabbers.com^
 ||xylemtushie.cyou^
 ||xylonicwowser.shop^
 ||xyloylobsede.cfd^
@@ -113430,6 +113622,7 @@ browsershots.org#@#.advert_area
 ||yincemoriche.com^
 ||yinteukrestinafu.com^
 ||yiomeycjvtfhn.online^
+||yiooflgcweiyb.website^
 ||yiopsuqcfjayh.com^
 ||yipesalgarde.shop^
 ||yipnhryqyfelw.space^
@@ -113906,6 +114099,7 @@ browsershots.org#@#.advert_area
 ||yybbxctlo.com^
 ||yycgyufotxqxy.space^
 ||yyecdiehcvadf.site^
+||yyexajwvnijim.space^
 ||yyfhbgupnibgo.space^
 ||yyfiuusddmtdz.online^
 ||yyghnnvhvvbaw.site^
@@ -113928,6 +114122,7 @@ browsershots.org#@#.advert_area
 ||yzatnnirsbyiq.space^
 ||yzccdzhpooakp.store^
 ||yzdkhftbkynua.site^
+||yzffivbvrjqgw.online^
 ||yzgusvurnixsg.space^
 ||yzjcyznhjsizp.website^
 ||yzjncchwnfdni.online^
@@ -114077,6 +114272,7 @@ browsershots.org#@#.advert_area
 ||zdynppqtiqilb.website^
 ||zdyppmsczfvyu.website^
 ||zdzxbbfuthazp.space^
+||zdzyuqnezvjiq.site^
 ||zeads.com^
 ||zealedlament.cyou^
 ||zealous-direction.pro^
@@ -114084,6 +114280,7 @@ browsershots.org#@#.advert_area
 ||zealousfinance.pro^
 ||zealousoutfit.com^
 ||zealshaving.com^
+||zeatinmormyrzones.cyou^
 ||zeatinsbirths.cfd^
 ||zeatinspremoldhuffier.qpon^
 ||zebecssughed.cfd^
@@ -114259,6 +114456,7 @@ browsershots.org#@#.advert_area
 ||zinovu.com^
 ||zinzlixtaacfg.website^
 ||ziodjoorfijuu.online^
+||zionismfluted.qpon^
 ||zioynaervpnht.space^
 ||zipawzfif.in^
 ||zipcrypticbroadsheet.com^
@@ -114399,6 +114597,7 @@ browsershots.org#@#.advert_area
 ||znrakwmcjsvtm.online^
 ||zntyosjbsivry.site^
 ||znutlgbuoivtq.site^
+||znvbxvznknbhd.website^
 ||znxifrpxsmuak.space^
 ||znycxdjoyexaj.website^
 ||znymzgnpmebhu.online^
@@ -122156,6 +122355,7 @@ browsershots.org#@#.advert_area
 ! ----------------------Specific advert blocking filters-----------------------!
 ! *** easylist:easylist/easylist_specific_block.txt ***
 $third-party,xmlhttprequest,domain=mega4upload.net
+/advanced_placement/new-in-article/?type=placement^$domain=androidauthority.com
 /pmc-adm-v2/build/setup-ads.js$domain=bgr.com|deadline.com|rollingstone.com
 /resolver/api/resolve/v3/config/?expType=AppConfig&expInstance=default&apptype=weather&$domain=msn.com
 ||123movies.ai/sab_
@@ -122944,7 +123144,6 @@ $third-party,xmlhttprequest,domain=mega4upload.net
 ||worthplaying.com/ad_left.html
 ||wowroms.com/images/Banner336x280.gif
 ||wowroms.com/images/Banner970x250.gif
-||wpengine.com/wp-json/api/advanced_placement/new-in-article/?type=placement^$domain=androidauthority.com
 ||wqah.com/images/banners/
 ||wsj.com/asset/ace/ace.min.js
 ||www.google.*/adsense/search/ads.js
@@ -131224,7 +131423,11 @@ etvbharat.com##div[style="min-width: 728px; min-height: 90px;"]
 technical.city##div[style="padding-bottom: 20px"] > div[style="min-height: 250px"]
 bitcoin-otc.com##div[style="padding-left: 10px; padding-bottom: 10px; text-align: center; font-family: Helvetica;"]
 anikuro.to##div[style="position: absolute; z-index: 99999"]
+gd.games##div[style="position: relative; display: flex; flex-direction: column; gap: 2px; justify-content: center; align-items: center; padding: 8px;"]
+gd.games##div[style="position: relative; display: flex; flex-direction: column; gap: 2px; justify-content: center; align-items: center;"]
 9gag.com##div[style="position: relative; z-index: 3; width: 640px; min-height: 202px; margin: 0px auto;"]
+gd.games##div[style="position:relative;display:flex;flex-direction:column;gap:2px;justify-content:center;align-items:center"]
+gd.games##div[style="position:relative;display:flex;flex-direction:column;gap:2px;justify-content:center;align-items:center;padding:8px"]
 navajotimes.com##div[style="text-align: center; margin-top: -35px;"]
 wikibrief.org##div[style="text-align:center;height:302px;width:auto;"]
 m.koreatimes.co.kr##div[style="width: 300px; height:250px; overflow: hidden; margin: 0 auto;"]
@@ -135206,13 +135409,14 @@ gamcore.com##li.d-md-block > a[rel]
 ! ---- source: URLhaus Malicious URL Blocklist (https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt) ----
 
 ! Title: Online Malicious URL Blocklist (AdGuard Home)
-! Updated: 2026-08-28T00:10:05Z
+! Updated: 2026-08-28T12:10:13Z
 ! Expires: 12 hours (update frequency)
 ! Homepage: https://gitlab.com/malware-filter/urlhaus-filter
 ! License: https://gitlab.com/malware-filter/urlhaus-filter#license
 ! Source: https://urlhaus.abuse.ch/api/
 ||0022a601.pphost.net^
 ||1.196.78.144^
+||1.2.185.92^
 ||1.222.167.7^
 ||1.92.101.221^
 ||1.92.136.152^
@@ -135230,21 +135434,22 @@ gamcore.com##li.d-md-block > a[rel]
 ||102.53.15.17^
 ||102.53.15.18^
 ||102.68.74.45^
-||102.68.74.69^
 ||103.101.85.165^
 ||103.101.85.173^
 ||103.106.250.161^
 ||103.116.190.93^
+||103.146.110.126^
 ||103.153.93.18^
+||103.154.90.21^
 ||103.159.152.118^
-||103.160.130.109^
+||103.159.221.33^
 ||103.160.130.178^
 ||103.161.17.92^
 ||103.163.119.220^
 ||103.164.117.74^
 ||103.164.128.184^
 ||103.168.67.55^
-||103.172.186.146^
+||103.173.173.98^
 ||103.187.151.107^
 ||103.20.213.34^
 ||103.206.139.61^
@@ -135252,11 +135457,14 @@ gamcore.com##li.d-md-block > a[rel]
 ||103.217.215.238^
 ||103.226.124.232^
 ||103.227.118.45^
+||103.231.14.104^
 ||103.240.211.121^
 ||103.245.10.51^
 ||103.245.204.42^
 ||103.247.164.242^
+||103.31.103.204^
 ||103.36.80.114^
+||103.4.102.81^
 ||103.54.153.49^
 ||103.59.134.98^
 ||103.68.95.197^
@@ -135266,11 +135474,10 @@ gamcore.com##li.d-md-block > a[rel]
 ||103.83.87.122^
 ||103.90.206.87^
 ||103.90.207.234^
-||103.96.96.35^
 ||104.168.4.206^
 ||104.199.248.167^
 ||105.184.58.165^
-||106.14.58.169^
+||105.186.250.56^
 ||106.14.68.26^
 ||106.15.6.205^
 ||106.254.250.98^
@@ -135297,12 +135504,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||109.167.133.17^
 ||109.193.105.79^
 ||109.207.216.197^
-||109.207.217.114^
 ||109.236.46.215^
 ||109.245.220.229^
 ||109.25.123.70^
 ||109.74.204.206^
 ||109.92.143.90^
+||110.186.230.101^
 ||110.227.197.204^
 ||111.173.158.197^
 ||111.228.4.54^
@@ -135312,19 +135519,19 @@ gamcore.com##li.d-md-block > a[rel]
 ||111.74.21.155^
 ||112.109.205.48^
 ||112.198.130.112^
+||112.198.132.186^
 ||112.198.186.249^
 ||112.226.189.193^
 ||112.229.203.112^
 ||112.238.146.18^
 ||112.248.107.28^
 ||112.248.115.39^
-||112.254.188.159^
 ||112.254.223.118^
+||112.254.25.161^
 ||112.4.110.28^
 ||112.4.110.42^
 ||112.74.47.172^
 ||112.93.136.173^
-||112.93.137.230^
 ||112.93.139.117^
 ||113.160.251.236^
 ||113.221.11.164^
@@ -135339,18 +135546,21 @@ gamcore.com##li.d-md-block > a[rel]
 ||113.232.254.209^
 ||113.233.12.188^
 ||113.236.116.189^
+||113.236.91.179^
 ||113.236.93.92^
 ||113.237.104.66^
+||113.237.109.86^
 ||113.239.216.250^
 ||113.239.246.19^
 ||113.239.64.220^
 ||113.254.36.153^
 ||113.45.17.8^
-||113.45.253.80^
+||113.71.156.197^
 ||114.129.49.131^
 ||114.132.77.127^
 ||114.221.254.230^
 ||114.226.26.236^
+||114.228.0.125^
 ||114.231.138.67^
 ||114.31.8.22^
 ||114.31.8.25^
@@ -135359,18 +135569,30 @@ gamcore.com##li.d-md-block > a[rel]
 ||115.127.68.162^
 ||115.159.149.113^
 ||115.178.100.190^
+||115.190.161.178^
 ||115.190.250.28^
 ||115.203.187.145^
+||115.240.70.185^
+||115.50.1.231^
+||115.50.109.82^
+||115.50.110.157^
 ||115.50.149.84^
 ||115.50.28.52^
-||115.50.70.160^
+||115.54.151.32^
 ||115.55.165.198^
-||115.55.238.97^
+||115.55.251.79^
 ||115.55.47.135^
+||115.55.49.200^
 ||115.55.60.18^
+||115.56.43.164^
+||115.56.46.185^
+||115.57.184.196^
 ||115.57.68.144^
+||115.58.128.60^
 ||115.58.183.11^
-||115.59.19.244^
+||115.59.7.230^
+||115.61.114.25^
+||115.62.150.76^
 ||116.118.47.149^
 ||116.136.142.2^
 ||116.138.107.198^
@@ -135380,6 +135602,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||116.15.188.27^
 ||116.171.106.3^
 ||116.205.168.247^
+||116.58.51.90^
 ||116.58.62.74^
 ||116.86.50.18^
 ||117.14.160.69^
@@ -135387,14 +135610,11 @@ gamcore.com##li.d-md-block > a[rel]
 ||117.215.129.223^
 ||117.216.139.127^
 ||117.240.155.245^
-||117.241.78.146^
-||117.247.101.185^
 ||117.247.101.217^
-||117.247.101.63^
+||117.26.226.51^
 ||117.72.181.104^
 ||117.72.183.111^
 ||117.72.242.9^
-||118.125.5.64^
 ||118.139.167.36^
 ||118.178.133.241^
 ||118.179.121.235^
@@ -135409,14 +135629,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||118.70.244.17^
 ||118.71.250.6^
 ||119.114.107.134^
-||119.115.33.201^
 ||119.115.67.25^
 ||119.116.161.23^
-||119.117.164.177^
 ||119.118.34.3^
 ||119.165.89.154^
 ||119.166.194.8^
-||119.179.252.91^
+||119.179.236.153^
 ||119.179.30.73^
 ||119.192.128.163^
 ||119.193.158.215^
@@ -135425,6 +135643,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||120.26.166.249^
 ||120.28.161.11^
 ||120.28.193.113^
+||120.33.246.147^
 ||120.43.48.73^
 ||120.46.12.14^
 ||120.46.15.254^
@@ -135433,13 +135652,15 @@ gamcore.com##li.d-md-block > a[rel]
 ||120.77.237.174^
 ||120.77.79.42^
 ||120.79.64.164^
+||120.84.212.164^
+||120.84.213.157^
+||120.84.214.107^
 ||121.101.79.178^
 ||121.184.128.134^
 ||121.202.142.68^
 ||121.202.153.132^
 ||121.202.196.93^
 ||121.202.204.227^
-||121.202.208.107^
 ||121.202.208.193^
 ||121.202.208.237^
 ||121.202.209.31^
@@ -135453,48 +135674,61 @@ gamcore.com##li.d-md-block > a[rel]
 ||122.170.8.40^
 ||122.179.136.112^
 ||122.192.191.125^
+||122.241.11.11^
+||122.241.244.12^
+||123.10.226.98^
+||123.11.2.109^
+||123.11.78.158^
 ||123.117.136.97^
+||123.12.169.223^
+||123.12.197.22^
 ||123.12.232.76^
+||123.129.12.107^
 ||123.132.166.255^
 ||123.132.166.45^
+||123.14.220.196^
 ||123.14.35.219^
-||123.14.91.240^
+||123.14.89.254^
 ||123.143.141.75^
 ||123.170.100.105^
 ||123.188.6.56^
+||123.188.72.146^
+||123.188.79.165^
 ||123.188.79.47^
+||123.189.142.70^
 ||123.232.43.185^
 ||123.249.20.250^
-||123.4.232.69^
 ||123.57.250.154^
+||123.57.51.183^
 ||123.7.220.37^
-||124.131.128.79^
+||123.8.80.122^
+||123.ywxww.net^
+||124.123.123.15^
 ||124.135.10.58^
 ||124.194.46.204^
 ||124.223.105.161^
 ||124.229.32.123^
 ||124.230.216.19^
 ||124.234.246.166^
+||124.235.106.150^
 ||124.235.239.199^
 ||124.36.156.140^
 ||124.44.3.74^
+||124.6.167.113^
+||124.6.169.46^
 ||124.6.185.132^
 ||124.67.254.109^
 ||124.92.74.29^
 ||124.94.144.192^
-||124.94.194.151^
 ||125.106.117.223^
-||125.110.12.253^
 ||125.166.48.235^
 ||125.253.125.72^
-||125.40.2.84^
-||125.41.219.120^
-||125.41.3.138^
-||125.41.5.190^
-||125.41.7.246^
-||125.45.60.9^
-||125.46.131.9^
+||125.40.94.151^
+||125.42.25.32^
+||125.44.190.99^
+||125.44.41.249^
 ||125.46.214.183^
+||125.47.211.92^
 ||125.47.247.14^
 ||126.23.203.236^
 ||126.76.103.220^
@@ -135513,15 +135747,16 @@ gamcore.com##li.d-md-block > a[rel]
 ||134.122.189.74^
 ||134.122.189.79^
 ||134.122.189.98^
-||134.249.141.119^
 ||136.233.149.66^
 ||136.60.32.162^
 ||138.122.43.76^
 ||138.219.58.34^
 ||138.36.2.110^
 ||139.159.233.200^
+||139.162.53.175^
 ||139.196.111.118^
 ||139.198.15.223^
+||139.255.97.116^
 ||14-0-204-188.static.pccw-hkt.com^
 ||14.0.204.188^
 ||14.142.209.198^
@@ -135530,7 +135765,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||140.238.229.80^
 ||141.11.100.247^
 ||141.134.214.217^
-||141.134.214.46^
 ||141.147.43.219^
 ||141.155.36.213^
 ||144.172.107.214^
@@ -135544,11 +135778,13 @@ gamcore.com##li.d-md-block > a[rel]
 ||146.158.4.238^
 ||147.182.224.216^
 ||148.113.205.94^
+||149.62.200.106^
 ||150.158.25.244^
 ||150.187.25.242^
 ||150.95.27.35^
 ||150.co.il^
 ||151.236.247.230^
+||152.230.111.46^
 ||152.32.240.167^
 ||152.42.130.4^
 ||152.42.178.130^
@@ -135569,7 +135805,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||157.185.170.200^
 ||158.140.167.192^
 ||158.255.83.204^
-||158.94.211.92^
 ||159.112.183.71^
 ||159.196.16.186^
 ||159.250.122.151^
@@ -135580,9 +135815,9 @@ gamcore.com##li.d-md-block > a[rel]
 ||162.215.130.152^
 ||162.215.218.82^
 ||162.215.218.94^
+||163.142.92.67^
 ||163.142.93.233^
 ||163.182.97.242^
-||164.126.129.225^
 ||164.160.41.10^
 ||164.90.210.228^
 ||165.154.184.75^
@@ -135604,31 +135839,31 @@ gamcore.com##li.d-md-block > a[rel]
 ||174.105.154.212^
 ||174.71.237.86^
 ||174.71.238.196^
-||175.0.60.188^
+||175.107.210.184^
+||175.146.157.174^
 ||175.146.231.101^
-||175.146.240.50^
 ||175.146.244.227^
-||175.148.76.63^
 ||175.150.176.248^
 ||175.151.224.238^
-||175.151.74.60^
 ||175.161.212.214^
+||175.165.142.110^
 ||175.165.142.242^
 ||175.165.76.134^
+||175.165.84.48^
 ||175.167.47.248^
+||175.167.77.1^
 ||175.168.233.120^
 ||175.172.9.203^
 ||175.173.117.208^
 ||175.173.60.37^
-||175.173.85.64^
 ||175.175.210.205^
+||175.175.235.48^
 ||175.175.56.87^
 ||175.31.252.29^
 ||175.44.156.36^
 ||176.102.192.245^
 ||176.102.198.226^
 ||176.106.241.72^
-||176.120.203.230^
 ||176.221.111.222^
 ||176.65.139.131^
 ||176.65.139.139^
@@ -135638,17 +135873,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||176.65.139.202^
 ||176.65.139.209^
 ||176.65.139.211^
-||176.65.139.229^
-||176.65.139.230^
-||176.65.139.236^
-||176.65.139.237^
-||176.65.139.238^
-||176.65.139.239^
-||176.65.139.240^
-||176.65.139.241^
-||176.65.139.242^
-||176.65.139.243^
-||176.65.139.244^
+||176.65.139.226^
 ||177.125.169.218^
 ||177.22.88.133^
 ||177.247.2.226^
@@ -135684,46 +135909,57 @@ gamcore.com##li.d-md-block > a[rel]
 ||179.63.168.2^
 ||18.176.47.246^
 ||18.217.254.255^
+||180.106.130.119^
 ||180.116.151.75^
+||180.119.100.5^
 ||180.148.33.24^
 ||180.149.198.22^
 ||180.190.202.146^
 ||180.191.16.206^
+||180.191.16.46^
 ||180.191.34.236^
-||180.191.42.15^
-||180.252.217.7^
 ||180.76.153.78^
 ||180.92.225.138^
+||181.129.100.123^
 ||181.129.182.138^
 ||181.171.188.254^
 ||181.211.252.34^
 ||181.49.47.190^
+||181.55.251.93^
 ||181.79.85.69^
 ||182.109.0.22^
 ||182.113.203.209^
+||182.113.41.227^
+||182.113.45.180^
 ||182.113.45.93^
 ||182.116.33.183^
-||182.116.72.222^
 ||182.117.50.169^
+||182.120.166.229^
 ||182.120.32.245^
 ||182.121.177.176^
-||182.122.171.172^
+||182.121.224.34^
+||182.121.46.187^
+||182.121.47.7^
+||182.122.238.136^
+||182.123.165.57^
 ||182.124.178.175^
 ||182.126.116.139^
-||182.126.124.161^
+||182.126.125.52^
+||182.126.92.89^
+||182.127.29.73^
 ||182.160.102.188^
 ||182.163.114.232^
-||182.23.87.242^
 ||182.253.115.155^
 ||182.253.115.156^
 ||182.52.51.239^
 ||182.72.167.124^
+||182.73.129.30^
 ||182.92.99.95^
 ||182.93.58.234^
 ||182.93.83.124^
 ||183.63.8.194^
 ||183.81.156.121^
-||183.81.156.124^
+||183.81.156.123^
 ||183.83.186.77^
 ||183.91.77.253^
 ||184.160.27.44^
@@ -135736,17 +135972,14 @@ gamcore.com##li.d-md-block > a[rel]
 ||185.136.195.193^
 ||185.152.219.150^
 ||185.166.91.145^
-||185.190.20.228^
 ||185.191.89.120^
 ||185.191.89.122^
-||185.2.229.122^
 ||185.20.19.72^
 ||185.205.226.191^
 ||185.224.107.4^
 ||185.253.75.188^
 ||185.32.179.229^
 ||185.4.64.128^
-||185.43.16.137^
 ||185.43.17.123^
 ||185.43.45.171^
 ||185.49.168.84^
@@ -135755,6 +135988,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||185.71.69.198^
 ||185.8.233.160^
 ||185.80.0.36^
+||185.82.165.26^
 ||185.93.89.72^
 ||186.138.107.5^
 ||186.154.93.81^
@@ -135766,12 +136000,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||188.118.38.161^
 ||188.134.8.43^
 ||188.147.175.138^
-||188.167.179.75^
 ||188.170.32.148^
 ||188.212.158.75^
 ||188.233.80.29^
 ||188.243.36.33^
 ||188.246.178.42^
+||188.44.110.215^
 ||188.72.6.218^
 ||188.81.134.196^
 ||188.82.127.68^
@@ -135783,7 +136017,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||190.113.124.155^
 ||190.12.99.194^
 ||190.128.195.138^
-||190.145.205.178^
 ||190.183.254.69^
 ||190.196.38.77^
 ||190.2.237.104^
@@ -135795,7 +136028,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||192.162.199.249^
 ||192.176.50.190^
 ||192.252.181.68^
-||192.255.159.254^
 ||193.104.58.65^
 ||193.106.58.174^
 ||193.111.117.135^
@@ -135804,6 +136036,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||193.165.245.46^
 ||193.221.200.26^
 ||193.248.186.21^
+||194.183.186.164^
 ||195.103.203.106^
 ||195.158.88.156^
 ||195.158.90.40^
@@ -135812,7 +136045,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||195.26.97.59^
 ||195.34.102.234^
 ||195.34.91.22^
-||196.190.11.194^
+||196.190.133.180^
 ||196.251.107.186^
 ||196.251.121.142^
 ||196.251.121.185^
@@ -135837,7 +136070,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||2.54.83.40^
 ||2.54.83.78^
 ||2.54.84.143^
-||2.54.85.90^
 ||2.54.88.189^
 ||2.54.88.190^
 ||2.54.89.92^
@@ -135848,7 +136080,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||2.55.94.142^
 ||2.56.10.3^
 ||2.57.122.121^
-||200.115.102.2^
 ||200.122.211.138^
 ||200.14.250.72^
 ||200.29.120.130^
@@ -135872,11 +136103,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||202.148.20.138^
 ||202.148.5.34^
 ||202.155.8.56^
-||202.162.36.210^
 ||202.166.218.154^
 ||202.175.181.210^
 ||202.3.248.178^
 ||202.3.248.179^
+||202.40.178.201^
+||202.40.178.226^
 ||202.40.178.238^
 ||202.5.50.108^
 ||202.53.164.214^
@@ -135897,10 +136129,11 @@ gamcore.com##li.d-md-block > a[rel]
 ||203.160.9.182^
 ||203.187.227.112^
 ||203.192.211.119^
+||203.192.219.165^
+||203.198.17.51^
 ||203.212.222.22^
 ||203.76.108.6^
 ||203.83.186.62^
-||204.44.69.216^
 ||205.185.114.150^
 ||205.185.121.21^
 ||206.214.35.106^
@@ -135935,12 +136168,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||211.186.82.229^
 ||211.204.100.20^
 ||211.219.49.173^
-||212.107.232.167^
 ||212.156.106.146^
 ||212.224.107.246^
 ||212.232.22.87^
 ||212.27.26.206^
 ||212.3.211.157^
+||212.73.75.82^
 ||212.73.75.84^
 ||212.85.166.12^
 ||212.93.103.10^
@@ -135958,6 +136191,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||216.155.92.203^
 ||216.196.170.32^
 ||216.201.80.197^
+||216.249.4.20^
 ||217.115.212.126^
 ||217.154.188.255^
 ||217.168.128.146^
@@ -135975,33 +136209,37 @@ gamcore.com##li.d-md-block > a[rel]
 ||218.155.74.6^
 ||218.188.43.38^
 ||218.212.2.95^
-||219.155.86.205^
+||218.74.111.153^
+||219.155.19.6^
+||219.155.203.92^
+||219.155.209.76^
+||219.156.1.60^
+||219.156.52.99^
 ||220.180.99.71^
 ||220.184.35.74^
 ||220.192.224.73^
-||220.192.234.145^
 ||220.201.29.161^
 ||220.246.34.66^
 ||221.1.227.161^
 ||221.10.233.217^
 ||221.143.49.222^
-||221.15.14.31^
-||221.200.113.178^
+||221.15.226.98^
+||221.15.88.237^
 ||221.202.17.182^
 ||221.202.22.141^
 ||221.203.123.95^
 ||222.137.39.209^
-||222.141.130.234^
+||222.142.250.89^
 ||222.142.253.198^
 ||222.165.237.58^
 ||222.165.237.59^
 ||222.165.237.60^
 ||222.165.237.61^
-||222.165.237.62^
 ||222.185.199.120^
+||222.219.25.40^
 ||222.239.87.50^
 ||222.252.31.94^
-||223.10.2.194^
+||223.100.248.64^
 ||223.108.58.13^
 ||223.108.58.15^
 ||223.76.100.36^
@@ -136020,15 +136258,18 @@ gamcore.com##li.d-md-block > a[rel]
 ||27.147.225.2^
 ||27.152.11.30^
 ||27.203.158.156^
+||27.204.196.39^
 ||27.215.108.44^
 ||27.215.210.140^
+||27.215.214.47^
 ||27.215.54.219^
 ||27.219.119.11^
 ||27.220.132.248^
 ||27.222.48.192^
 ||27.222.89.207^
-||27.37.100.83^
+||27.44.144.150^
 ||27.44.145.195^
+||27.44.145.84^
 ||27.44.146.43^
 ||27.72.159.162^
 ||27.96.228.235^
@@ -136041,6 +136282,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||31.184.194.114^
 ||31.220.3.140^
 ||31.222.113.214^
+||31.28.31.6^
 ||31.4.254.241^
 ||31.55.236.199^
 ||31.56.209.84^
@@ -136060,8 +136302,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||36.255.97.21^
 ||36.64.227.134^
 ||36.66.139.36^
-||36.67.246.82^
-||36.70.228.154^
+||36.69.79.50^
 ||36.88.180.115^
 ||36.88.6.203^
 ||36.89.62.19^
@@ -136070,9 +136311,9 @@ gamcore.com##li.d-md-block > a[rel]
 ||36.95.137.155^
 ||37.142.77.163^
 ||37.157.212.138^
-||37.220.123.125^
 ||37.233.63.185^
 ||37.252.66.188^
+||37.255.217.87^
 ||37.34.230.9^
 ||37.49.230.40^
 ||37.57.33.51^
@@ -136081,42 +136322,39 @@ gamcore.com##li.d-md-block > a[rel]
 ||39.100.33.142^
 ||39.105.223.127^
 ||39.74.114.50^
-||39.79.22.252^
 ||39.79.63.119^
 ||39.80.60.21^
 ||39.81.37.15^
-||39.87.216.223^
 ||39.88.200.53^
-||39.97.246.227^
-||41.162.188.251^
-||41.190.69.6^
 ||41.215.23.222^
 ||41.77.74.90^
 ||41.78.75.186^
 ||41.87.80.123^
-||42.177.102.201^
-||42.177.182.116^
 ||42.177.20.8^
 ||42.178.115.36^
 ||42.178.212.5^
 ||42.178.45.124^
 ||42.178.98.211^
 ||42.192.39.152^
-||42.224.7.71^
+||42.224.146.79^
+||42.224.99.104^
 ||42.225.231.39^
+||42.227.185.203^
+||42.227.202.96^
+||42.227.238.137^
+||42.228.250.95^
 ||42.228.46.234^
 ||42.232.225.227^
-||42.232.29.165^
 ||42.232.80.182^
-||42.235.175.10^
 ||42.235.44.102^
 ||42.235.90.191^
+||42.235.90.27^
 ||42.237.59.222^
+||42.238.175.161^
 ||42.239.149.25^
+||42.242.128.179^
 ||42.4.140.241^
 ||42.4.163.42^
-||42.4.17.29^
-||42.5.8.190^
 ||42.53.3.62^
 ||42.54.15.53^
 ||42.54.156.10^
@@ -136124,16 +136362,19 @@ gamcore.com##li.d-md-block > a[rel]
 ||42.54.30.220^
 ||42.55.12.60^
 ||42.55.19.113^
+||42.55.8.85^
 ||42.56.136.70^
 ||42.56.161.38^
 ||42.56.166.234^
 ||42.56.192.38^
-||42.56.35.155^
 ||42.59.228.146^
+||42.59.234.164^
 ||42.59.236.147^
 ||42.6.33.35^
+||42.6.60.21^
 ||42.7.113.51^
 ||42.7.150.192^
+||42.7.203.122^
 ||42.85.15.247^
 ||42.85.180.51^
 ||42.85.203.171^
@@ -136153,11 +136394,13 @@ gamcore.com##li.d-md-block > a[rel]
 ||43.245.39.127^
 ||43.245.39.42^
 ||43.252.159.79^
+||43.255.216.26^
 ||44.208.147.17^
+||45.115.254.68^
+||45.115.254.91^
 ||45.118.79.103^
 ||45.120.38.214^
 ||45.125.44.137^
-||45.129.231.1^
 ||45.13.186.37^
 ||45.138.16.51^
 ||45.141.119.82^
@@ -136194,11 +136437,9 @@ gamcore.com##li.d-md-block > a[rel]
 ||46.236.65.163^
 ||46.236.65.23^
 ||46.236.65.230^
-||46.236.65.235^
 ||46.236.65.252^
 ||46.250.54.75^
 ||46.77.52.190^
-||47.103.197.73^
 ||47.104.31.7^
 ||47.104.96.89^
 ||47.105.36.109^
@@ -136219,14 +136460,11 @@ gamcore.com##li.d-md-block > a[rel]
 ||47.236.70.102^
 ||47.237.167.249^
 ||47.239.127.71^
-||47.239.191.177^
 ||47.242.66.123^
-||47.243.208.30^
 ||47.245.111.51^
 ||47.245.84.42^
 ||47.49.114.179^
 ||47.83.203.183^
-||47.84.190.146^
 ||47.89.173.214^
 ||47.96.106.127^
 ||49.176.254.54^
@@ -136240,6 +136478,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||5.182.210.174^
 ||5.250.157.166^
 ||5.26.174.234^
+||5.26.195.93^
 ||5.59.107.59^
 ||5.63.157.201^
 ||5.89.102.77^
@@ -136248,13 +136487,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||51.255.46.245^
 ||51.79.124.111^
 ||52.248.41.253^
-||54.197.245.249^
 ||57.129.23.24^
 ||58.145.168.170^
 ||58.182.146.104^
 ||58.216.207.82^
 ||58.22.18.152^
-||58.255.43.126^
+||58.242.147.50^
 ||58.37.101.152^
 ||58.47.120.31^
 ||58.49.210.250^
@@ -136262,14 +136500,15 @@ gamcore.com##li.d-md-block > a[rel]
 ||59.110.9.189^
 ||59.56.110.227^
 ||59.58.115.150^
+||59.96.139.218^
 ||60.18.214.19^
+||60.18.56.204^
+||60.216.131.62^
 ||60.22.111.206^
 ||60.22.23.50^
-||60.22.248.177^
 ||60.22.62.241^
 ||60.23.123.119^
 ||60.23.194.219^
-||60.23.233.250^
 ||60aaf9c6.salamanderprocessing.pages.dev^
 ||61.137.130.193^
 ||61.137.134.196^
@@ -136277,14 +136516,9 @@ gamcore.com##li.d-md-block > a[rel]
 ||61.160.215.114^
 ||61.183.16.127^
 ||61.184.10.103^
-||61.2.45.141^
-||61.2.45.172^
-||61.2.45.191^
 ||61.240.239.106^
 ||61.244.254.110^
-||61.53.133.147^
-||61.53.240.10^
-||61.53.88.0^
+||61.52.216.153^
 ||62.197.62.195^
 ||62.56.225.99^
 ||62.60.226.140^
@@ -136301,7 +136535,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||65.49.44.84^
 ||65.99.181.12^
 ||66.185.26.66^
-||66.71.242.67^
 ||66.71.242.68^
 ||66.71.242.69^
 ||66.71.242.70^
@@ -136326,7 +136559,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||72.132.64.183^
 ||72.173.80.89^
 ||72.29.46.195^
-||74.62.255.234^
 ||75.119.134.80^
 ||75.144.208.234^
 ||75.214.255.79^
@@ -136340,6 +136572,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||77.237.29.219^
 ||77.238.209.82^
 ||77.247.88.88^
+||77.39.107.229^
 ||77.46.170.18^
 ||77.50.222.238^
 ||77.89.245.118^
@@ -136347,11 +136580,14 @@ gamcore.com##li.d-md-block > a[rel]
 ||78.140.32.219^
 ||78.153.140.16^
 ||78.153.29.33^
+||78.165.252.2^
+||78.187.104.169^
 ||78.20.115.5^
 ||78.25.123.5^
 ||78.26.180.129^
 ||78.26.81.99^
 ||78.36.11.185^
+||78.38.16.176^
 ||78.44.199.50^
 ||79.1.229.42^
 ||79.135.225.50^
@@ -136379,7 +136615,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||80.24.87.77^
 ||80.249.6.118^
 ||80.28.228.106^
-||80.89.189.98^
 ||81.133.96.61^
 ||81.16.123.55^
 ||81.16.242.236^
@@ -136389,12 +136624,11 @@ gamcore.com##li.d-md-block > a[rel]
 ||81.230.148.181^
 ||81.231.7.219^
 ||81.236.234.16^
-||81.4.156.50^
 ||81.42.247.62^
 ||81.42.249.132^
 ||81.45.183.125^
-||82.114.178.6^
 ||82.114.181.233^
+||82.139.187.78^
 ||82.139.95.202^
 ||82.146.62.232^
 ||82.148.194.54^
@@ -136415,7 +136649,9 @@ gamcore.com##li.d-md-block > a[rel]
 ||85.130.160.219^
 ||85.137.245.141^
 ||85.141.98.244^
+||85.15.119.255^
 ||85.163.234.15^
+||85.175.101.203^
 ||85.187.54.142^
 ||85.203.4.64^
 ||85.25.72.70^
@@ -136440,11 +136676,11 @@ gamcore.com##li.d-md-block > a[rel]
 ||89.184.185.198^
 ||89.189.181.54^
 ||89.216.100.166^
-||89.216.107.99^
 ||89.231.14.137^
 ||89.32.41.16^
 ||89.35.233.220^
 ||89.40.31.51^
+||90.174.93.135^
 ||90.180.227.121^
 ||90.224.208.161^
 ||90.224.208.190^
@@ -136477,7 +136713,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||93.116.56.78^
 ||93.126.1.30^
 ||93.182.76.169^
-||93.182.77.20^
 ||93.39.215.44^
 ||93.43.53.67^
 ||93.55.251.246^
@@ -136485,8 +136720,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||93.87.31.84^
 ||93.87.42.154^
 ||94.154.35.240^
-||94.154.43.189^
-||94.19.130.58^
 ||94.203.254.14^
 ||94.231.164.10^
 ||94.244.113.217^
@@ -136494,12 +136727,12 @@ gamcore.com##li.d-md-block > a[rel]
 ||94.26.90.90^
 ||94.28.39.38^
 ||94.42.177.12^
-||94.76.156.101^
+||94.72.35.59^
 ||95.154.194.17^
 ||95.155.243.196^
 ||95.158.175.214^
 ||95.170.116.28^
-||95.170.119.100^
+||95.220.126.209^
 ||95.230.215.65^
 ||95.255.114.11^
 ||95.43.76.100^
@@ -136534,6 +136767,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||archivoscrosoft.com^
 ||ardguisser.com^
 ||areyouready.co.za^
+||atasapka.com.tr^
 ||atkcgnew.evgeni7e.beget.tech^
 ||atom.freehosting.dev^
 ||attach.66rpg.com^
@@ -136541,7 +136775,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||audicontadores.com^
 ||authowareinc1.screenconnect.com^
 ||automobile-bk.de^
-||awarenessexhibition.com^
 ||backupallfresh2030.com^
 ||backupso.com^
 ||balanced-red-emhnkdfj-dp7g2kvqxx8n.edgeone.dev^
@@ -136578,6 +136811,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||catbaparadisehotel.com.vn^
 ||cdaonline.com.ar^
 ||cdn-10049480.file.myqcloud.com^
+||cdn.file6.goodid.com^
 ||cdn.gomlab.com^
 ||cdn.novoline.top^
 ||cdn.xiaoduoai.com^
@@ -136614,6 +136848,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||cqintzfep6rw6jc9.public.blob.vercel-storage.com^
 ||crazywickedaddiction.com^
 ||creativevoltage.com^
+||cryptovectorhub1.lol^
 ||crystalpvp.ru^
 ||cs.go.kg^
 ||cta.edu.pe^
@@ -136645,6 +136880,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||doc.e-statements.app^
 ||dongyu.us^
 ||donkeytourscroatia.com^
+||down.54nb.com^
 ||down.ftp21.cc^
 ||down.fwqlt.com^
 ||down.pcclear.com^
@@ -136682,7 +136918,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||fd.v2downf.shop^
 ||femade.co.uk^
 ||file.blackint3.com^
-||file.uhsea.com^
 ||filerit.com^
 ||first-security-verden.de^
 ||fkoqonr2vgbsw7qu.public.blob.vercel-storage.com^
@@ -136701,7 +136936,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||galerisenimutiara.com^
 ||gestionycobranzas.com^
 ||ghanioilandgas.com^
-||github-software.su^
 ||globalbank.us^
 ||goto.stnts.com^
 ||graficaminascard.com.br^
@@ -136715,6 +136949,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||hitman-pro.ru^
 ||hitstation.nl^
 ||hnjgdl.geps.glodon.com^
+||hobobot.net^
 ||horion-static.pages.dev^
 ||host-195-103-203-106.business.telecomitalia.it^
 ||host-95-230-215-65.business.telecomitalia.it^
@@ -136725,7 +136960,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||hotelsep.blogspot.com^
 ||hqsblog.com^
 ||hseda.com^
-||htdentshop.com^
 ||hzxcaq-github-io.pages.dev^
 ||icoffeecloud.com^
 ||ignetwork.us^
@@ -136733,6 +136967,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||ikincielesyaciankara.com.tr^
 ||imagefiles-backup.oss-ap-southeast-7.aliyuncs.com^
 ||impectorinternational.com^
+||indusenterprises.co^
 ||intelligradeeducation.vicentecisnerospub.com^
 ||ircftp.net^
 ||isiore.com.co^
@@ -136761,7 +136996,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^
 ||lezysoptimizations.lovable.app^
 ||lifeisabouthavingfun448.duckdns.org^
-||lindnerelektroanlagen.de^
 ||local-update.com^
 ||lomejordesalamanca.es^
 ||lomeqpe.com^
@@ -136795,11 +137029,8 @@ gamcore.com##li.d-md-block > a[rel]
 ||namuvpn.com^
 ||nccommunication.be^
 ||ncxps.com^
-||neilshairdressers.co.uk^
 ||nerve.untergrund.net^
 ||newkey.co.kr^
-||nimblenumbers.screenconnect.com^
-||nishiwaki.ne.jp^
 ||noithaticon.vn^
 ||nossl.segfault.net^
 ||notbak.com^
@@ -136815,6 +137046,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||outpost.co.ke^
 ||p3.zbjimg.com^
 ||paccbet.pages.dev^
+||palharesinformatica.com.br^
 ||paradox924x.pages.dev^
 ||pardu.pages.dev^
 ||paretandassociates.screenconnect.com^
@@ -136846,17 +137078,19 @@ gamcore.com##li.d-md-block > a[rel]
 ||pub-cdd0dd27ae6a4aee9841d397e0496374.r2.dev^
 ||pub-ec081eb0fab74385a17d8d77afeeda3b.r2.dev^
 ||public.demo.securecloudsandbox.com^
+||puschl.langhaar-schaeferhunde.com^
 ||pvsa.gxfugy.cn^
+||qiniuyunxz.yxflzs.com^
 ||quick-load.vercel.app^
 ||qv.co.ke^
 ||ramirex.ro^
 ||rcf.co.mz^
+||rdm.91yunma.cn^
 ||records.dennisign.se^
 ||redeamazoniaazul.org^
 ||redlk.com^
 ||refaccionesalma.com.mx^
 ||reifenquick.de^
-||reservphotoinstay.one^
 ||reutilizemais.co.mz^
 ||rheddh.com^
 ||riderspin.com^
@@ -136893,7 +137127,6 @@ gamcore.com##li.d-md-block > a[rel]
 ||smartermail.host^
 ||sochibeer.ru^
 ||soft.110route.com^
-||soft.wsyhn.com^
 ||softbank126023203236.bbtec.net^
 ||softdl.360tpcdn.com^
 ||softdl2.360tpcdn.com^
@@ -136905,6 +137138,7 @@ gamcore.com##li.d-md-block > a[rel]
 ||ss-01.com^
 ||starcountry.net^
 ||static.3001.net^
+||static.ilclock.com^
 ||static.topxgun.com^
 ||static.youdm.cn^
 ||static.zongheng.com^
