@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608291033
+! Version: 202608291611
 ! Title: EasyPrivacy
-! Last modified: 29 Aug 2026 10:33 UTC
+! Last modified: 29 Aug 2026 16:11 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 729fe9f036c4599790f1e3d71bb033499b379414
+! Commit: 2f13cf4e5d28c61956e90a8261c60c79434be3a8
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -1563,6 +1563,7 @@
 /mediateGA.js
 /megacounter.php
 /mendelstats.js
+/metaPixelTracker.js
 /metatraffic/track.asp?
 /metric/?mid=
 /metric/?wid=
