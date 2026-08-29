@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608281951
+! Version: 202608290238
 ! Title: EasyPrivacy
-! Last modified: 28 Aug 2026 19:51 UTC
+! Last modified: 29 Aug 2026 02:38 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 5b54ebf38fd803e429f2680971a529fc1b424376
+! Commit: 3586157db4b0b8763c934d48ef6fc79b5084171d
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7331,6 +7331,7 @@ omni.soundestlink.com$image
 ||drollwharf.com^
 ||drumfills.com^
 ||drydrum.com^
+||dryerwasher.com^
 ||dualping.com^
 ||dustydime.com^
 ||dustyhammer.com^
@@ -7476,6 +7477,7 @@ omni.soundestlink.com$image
 ||fieldconfig.com^
 ||figsprotein.com^
 ||figurehunter.net^
+||fileshareengine.com^
 ||fillthemap.com^
 ||filtercutter.com^
 ||finalizeforce.com^
@@ -56859,7 +56861,7 @@ www.google.*###main a[href][ping^="/url?"]:remove-attr(ping)
 !#if !env_mobile
 !#if !ext_ubol
 www.google.com##+js(aeld, mouseover, b.src, elements, #search #rso div[data-rpos] > div[data-ved])
-www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l)return;let s=Object.values(l)?.[0]?.[32];if(console.log(s),s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&(console.log(s),e.setAttribute("href",s[11][7]))}))}))}));this.gbar_=`)
+www.google.com##+js(rpnt, script, this.gbar_=, `window.addEventListener("mousemove",(()=>{W_jd&&document.querySelectorAll("#search #rso div[data-rpos]").forEach((t=>{let e=t.querySelector('div[data-hveid] span[jsaction^="trigger."] > a[href^="/goto?url="]');if(!e)return;let r=t.querySelector('div[id^="atritem-"]')?.attributes?.jsdata?.value?.split?.(";_;")?.[1];r&&Object.getOwnPropertySymbols(W_jd[r]).map((t=>{let l=W_jd[r][t];if("object"!=typeof l||null===l)return;let s=Object.values(l)?.[0]?.[32];if(s?.[3]?.[0]?.startsWith?.("http"))e.setAttribute("href",s[3][0]);else if(null!==s?.[3]){let t=Object.values(s?.[3]);t?.[0]?.[0]?.startsWith?.("http")&&e.setAttribute("href",t[0][0])}else null===s?.[3]&&s[11]?.[7]?.startsWith?.("http")&&e.setAttribute("href",s[11][7])}))}))}));this.gbar_=`)
 !#endif
 !#endif
 
