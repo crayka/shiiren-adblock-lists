@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202608292217
+! Version: 202608300356
 ! Title: EasyPrivacy
-! Last modified: 29 Aug 2026 22:17 UTC
+! Last modified: 30 Aug 2026 03:56 UTC
 ! Expires: 4 days (update frequency)
-! Commit: dccbfc225a5f8e854ca3775c56041888cdf1c54a
+! Commit: 240d224b117803bd2091ffc60e1aa750796ae54d
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -16305,6 +16305,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||okx.com/jsstat/sb?
 ||ol-collector.quillbot.com^
 ||onboarding-ui.frontiersin.org/api/onboarding-ui/v1/session/logged
+||ondigitalocean.app/tracker.js
 ||oneroof.co.nz/*/record-log/
 ||online-umwandeln.de/analytics.js
 ||online.marketing/a.js
