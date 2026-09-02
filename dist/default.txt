@@ -4235,10 +4235,6 @@ rp-online.de,saarbruecker-zeitung.de,volksfreund.de##.park-portal
 @@||mylivesignature.com/$script,1p
 mylivesignature.com##.topadscontainer
 
-! https://github.com/NanoMeow/QuickReports/issues/62
-hungama.com##+js(set, showAds, true)
-||imasdk.googleapis.com/js/sdkloader/ima3.js$script,redirect=google-ima.js,domain=hungama.com
-
 ! https://github.com/NanoAdblocker/NanoFilters/issues/176
 ! https://github.com/NanoMeow/QuickReports/issues/2500
 @@||crazyhd.com^$ghide
@@ -39256,12 +39252,12 @@ explorecams.com,minecraft.buzz,rarepike.com##+js(aeld, np.detect)
 ! https://www.chess.com/game/daily/984248594
 ! https://github.com/uBlockOrigin/uAssets/issues/34118
 ! https://www.reddit.com/r/uBlockOrigin/comments/1vn8ft3/copypaste_blocked/p3vqbpl/
-*,~127.0.0.1,~amazon.*,~apple.com,~archlinux.org,~azure.com,~bsky.app,~bing.com,~bitwarden.com,~captcha-delivery.com,~chatango.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~codeberg.org,~dailymotion.com,~disqus.com,~ebay.*,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~gitlab.com,~google.com,~hcaptcha.com,~huggingface.co,~instagram.com,~kimi.com,~lichess.org,~linkedin.com,~live.com,~localhost,~mega.nz,~microsoft.com,~mozilla.org,~netflix.com,~openrouter.ai,~pinterest.com,~privacy-mgmt.com,~proton.me,~rakuten.co.jp,~rakuten.com,~recaptcha.net,~reddit.com,~spotify.com,~stripe.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~vscode-cdn.net,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~yandexcloud.net,~youtube.com,~www.digitalocean.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+*,~127.0.0.1,~amazon.*,~apple.com,~archlinux.org,~azure.com,~bsky.app,~bing.com,~bitwarden.com,~captcha-delivery.com,~chatango.com,~chatgpt.com,~chess.com,~claude.ai,~cloudflare.com,~codeberg.org,~dailymotion.com,~disqus.com,~ebay.*,~facebook.com,~fbsbx.com,~flickr.com,~github.com,~gitlab.com,~google.com,~hcaptcha.com,~huggingface.co,~instagram.com,~kimi.com,~lichess.org,~linkedin.com,~live.com,~localhost,~mega.nz,~microsoft.com,~mozilla.org,~netflix.com,~openrouter.ai,~pinterest.com,~privacy-mgmt.com,~proton.me,~rakuten.co.jp,~rakuten.com,~recaptcha.net,~reddit.com,~spotify.com,~stripe.com,~tiktok.com,~tinypass.com,~tumblr.com,~twitch.tv,~twitchcdn.net,~twitter.com,~virustotal.com,~vscode.dev,~vscode-cdn.net,~whatsapp.com,~wikipedia.org,~x.com,~yahoo.com,~yandex.*,~yandexcloud.net,~youtube.com,~www.digitalocean.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^http|^import /i)
 ! https://github.com/uBlockOrigin/uAssets/issues/34022
 ! https://github.com/uBlockOrigin/uAssets/issues/34335
-community-scripts.org,massgrave.dev,natfrp.com#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+community-scripts.org,massgrave.dev,natfrp.com#@#+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware, uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^http|^import /i)
 ! Specific cases
-sites.google.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^import /i)
+sites.google.com##+js(prevent-clipboard-write, /^mshta |^msiexec |^(bash <<<|curl -kfsSL) \$\(echo .+? base64 -d\b|^cmd \/c .*?\bcurl .+?(\.exe|\.bat)\b|^cmd .*?\bfor \/f .*?\bdelims .*?\bpow |^powershell .*?-w(indowStyle)? h(idden)?\b|^powershell .*?-NoP\b|^powershell .*?-ep bypass\b|^powershell .*?-EP (B|U)\b|^powershell.+?-ExecutionPolicy (Bypass|Unrestricted)|\\PowerShell\.exe.+?-ep bypass\b|^powershell.+?\biex\(|^powershell.+?Invoke-Expression|^powershell.+?Invoke-WebRequest|^powershell.+?-UseBasicParsing|^cmd .*?\/c .+? -nop .+? iex\b|^(cmd|powershell)\b.+?recaptcha|^(cmd|powershell)\b.+?#(Verification|     )|^(cmd|powershell)\b.+?     #|^osascript .+?\bcurl http|^curl -s\b.+?\| (bash|sh|zsh)\b|^\/bin\/(bash|sh|zsh) -c\b.+?\bcurl|^bash -c\b.+?\$\(curl|^python3? -c\b.+?\b(exec|urllib|subprocess)\b|^echo .+?base64 .+?\b(bash|osascript|z?sh)\b|openssl base64 -d|^curl\b .+?chmod \+x.+?&&|^(bash|sh|osascript)\b.+?recaptcha|^(bash|sh|osascript)\b.+?#(Verification|     )|^(bash|sh|osascript)\b.+?     #|^wget .+?\| (bash|sh)\b|^curl\b.+?-o\b.+?\/tmp\/.+?&&|^nc .+?-e \/bin\/(bash|sh)\b|^\/tmp\/.+?chmod \+x.+?&&|^wget -q.+?\.(sh|py|bin|elf)\b|^cmd .+?\bcertutil .+?\b(\.exe|\.bat)\b|^powershell .+?\birm .+?\.[a-z]+\/.+?powershell|\bpcalua(\.exe)? .*?\b(curl|powershell|saps|cmd)\b|^cmd .+?\bcmdkey .+?\bschtasks|^Invoke-Command .+?Base64String|^conhost .*?--headless .*?\bcmd\b|^iex\(i(rm|wr) |^irm .+? iex\b/msi, domAlert, 'Beware. uBlock Origin blocked a potential ClickFix attack: ${text}', excludeMatches, /Maintainer|Contributor|^http|^import /i)
 
 ! !SECTION: Temporal
 
@@ -44384,7 +44380,8 @@ www.cambe.pr.gov.br##+js(noeval-if, tigervip2)
 ! https://www.virustotal.com/gui/url/cb39c3fd6faa42c07328f8e73f8a4d2258523b557b9f4e5a134ef4ec3cf4698c
 /^https:\/\/telegram-[a-z]{2}\.[a-z]{2,3}\//$doc,to=~gov|~edu|~com|~net|~org|~telegram.org
 ! https://www.virustotal.com/gui/url/d69ea33854b1c9f85ec27cee7cd98ecff0e2933c2644e43df657671ebacb003e
-/^https:\/\/telegram-[a-z]{3,4}\.com\//$doc,to=com|~telegram.org
+! https://github.com/uBlockOrigin/uAssets/issues/34345
+/^https:\/\/telegram-[a-z]{3,4}\.com\//$doc,to=com|~telegram.org|~telegram-gif.com
 ! https://www.virustotal.com/gui/url/6f1f98c84a061d10586c11ca7ad04f568724b0853aeb98b5139af1dabbfe3677
 ! https://www.virustotal.com/gui/url/943c29c6dc0b25ee5badf1810e99e29fe22889cc632f2221b5a6e7c2aeadf05b
 /^https?:\/\/web\.t(el)?gram[a-z][a-z][a-z]?\.top\//$doc,to=top
@@ -55422,11 +55419,11 @@ link.snipcash.com##+js(set, blurred, false)
 ! ---- source: EasyList (https://easylist.to/easylist/easylist.txt) ----
 
 [Adblock Plus 2.0]
-! Version: 202609020312
+! Version: 202609020816
 ! Title: EasyList
-! Last modified: 02 Sep 2026 03:12 UTC
+! Last modified: 02 Sep 2026 08:16 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 4421ac05eda530b694ecbce24e8a6d2e5dffe2a6
+! Commit: 8505c2909f8d3bc12b4d2a5c246664b87b201214
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -74109,6 +74106,7 @@ browsershots.org#@#.advert_area
 ||aoglfrntimnre.space^
 ||aoicixdnneinb.online^
 ||aokbsmygff.com^
+||aokhxalifwmhm.site^
 ||aokqftjypnrrg.website^
 ||aokrbjfklqvsd.space^
 ||aokxcojgnjjkv.online^
@@ -74432,6 +74430,7 @@ browsershots.org#@#.advert_area
 ||asafesite.com^
 ||asaumbakblnpj.space^
 ||asaumpimlqysg.site^
+||asaunmavgitw.com^
 ||asayfwihbwkii.space^
 ||asbfala.com^
 ||asbolanablauts.shop^
@@ -74711,6 +74710,7 @@ browsershots.org#@#.advert_area
 ||audmrk.com^
 ||audubonbustersgammers.cyou^
 ||auetowakondaabiding.cfd^
+||aufaitties.com^
 ||auforau.com^
 ||augakwdximgsz.online^
 ||augpgcsnbrsks.space^
@@ -74888,6 +74888,7 @@ browsershots.org#@#.advert_area
 ||awesomeststuff.com^
 ||awesomewash.pro^
 ||awestatic.com^
+||aweyqleerrwm.top^
 ||awfsukzkitwhp.site^
 ||awfulagency.pro^
 ||awfullyninghakeem.qpon^
@@ -75112,6 +75113,7 @@ browsershots.org#@#.advert_area
 ||baalishreswore.qpon^
 ||baalistlipemiastoled.qpon^
 ||baauefhlsruga.online^
+||babbagephloxin.qpon^
 ||babbitttalitha.cyou^
 ||babblyrondeau.qpon^
 ||babmc.com^
@@ -75515,6 +75517,7 @@ browsershots.org#@#.advert_area
 ||becassebesan.com^
 ||becketcoffee.com^
 ||becketincog.cyou^
+||becomekulan.cfd^
 ||becomeraoulia.cfd^
 ||becorsolaom.com^
 ||becostbastes.cfd^
@@ -75992,6 +75995,7 @@ browsershots.org#@#.advert_area
 ||binomnet.com^
 ||binomnet3.com^
 ||binousgrf.cyou^
+||binwlhffwbmjl.site^
 ||biodegradable-building.pro^
 ||biodegradablegrand.com^
 ||biodegradabletrouble.pro^
@@ -76652,6 +76656,7 @@ browsershots.org#@#.advert_area
 ||bq91y77zzxvihk.cfd^
 ||bqaijuqtjwpbf.website^
 ||bqajoisaiwlxs.site^
+||bqbwvfofginwp.online^
 ||bqenzxdijbdov.space^
 ||bqglwzsuxvfsr.space^
 ||bqgwxqoqjqvbz.online^
@@ -76802,6 +76807,7 @@ browsershots.org#@#.advert_area
 ||brittlesturdyunlovable.com^
 ||brivola.net^
 ||brixura1234.net^
+||brizaazofier.shop^
 ||brjhzmubffzja.site^
 ||brknsixyyhw.com^
 ||brluhyuqqizos.space^
@@ -77031,6 +77037,7 @@ browsershots.org#@#.advert_area
 ||bulletytwi.com^
 ||bullionglidingscuttle.com^
 ||bullionyield.com^
+||bullishwaisemenise.cyou^
 ||bullosetremie.shop^
 ||bulochka.xyz^
 ||bulrev.com^
@@ -77269,6 +77276,7 @@ browsershots.org#@#.advert_area
 ||bzpoa.com^
 ||bzpogcssaxbmc.space^
 ||bzpqekgjvaqkn.website^
+||bztcjooivbndu.space^
 ||bztzpzqpltlad.site^
 ||bzuifguapodmcs.com^
 ||bzux-protect.pro^
@@ -77451,6 +77459,7 @@ browsershots.org#@#.advert_area
 ||canesfederalnewspapers.com^
 ||canganzimbi.com^
 ||canguesyarpha.cfd^
+||canidquott.shop^
 ||caninusrauraci.qpon^
 ||canionscowshut.shop^
 ||cank.xyz^
@@ -79006,6 +79015,7 @@ browsershots.org#@#.advert_area
 ||contentproxy10.cz^
 ||contents-search-windows.com^
 ||contesphloeum.qpon^
+||contextelvira.cyou^
 ||contextrewindfreed.com^
 ||contextweb.com^
 ||contingentsolemnlykettle.com^
@@ -80458,6 +80468,7 @@ browsershots.org#@#.advert_area
 ||dejebitmmmzpb.online^
 ||dejectawills.cfd^
 ||dejectedineptvary.com^
+||dejectmedley.com^
 ||dekaresdosing.cyou^
 ||dekkopinolin.com^
 ||dekkosteedthurgi.cyou^
@@ -82021,6 +82032,7 @@ browsershots.org#@#.advert_area
 ||dudaimarake.cyou^
 ||dudgeonideo.com^
 ||dudinebacchar.qpon^
+||dudleycutches.cfd^
 ||dudleyrevolutioninconsistent.com^
 ||dudppbtqgdvam.site^
 ||dudragonitean.com^
@@ -82382,6 +82394,7 @@ browsershots.org#@#.advert_area
 ||easygoingtouchybribe.com^
 ||easylummos.com^
 ||eatenmockingoverwhelm.com^
+||eatersstoopsenflesh.cyou^
 ||eatingclientconfine.com^
 ||eatingremeantsarum.cfd^
 ||eatvvxxcaszwi.space^
@@ -83283,6 +83296,7 @@ browsershots.org#@#.advert_area
 ||eprgsfzkoakpj.site^
 ||eprqjmvpz2846c.cfd^
 ||eprqryhpwjmox.site^
+||epsbasbuiyhbm.space^
 ||epthmgzgztzxt.online^
 ||eptrpomofmqtx.website^
 ||eptwm.com^
@@ -84733,6 +84747,7 @@ browsershots.org#@#.advert_area
 ||flexlinks.com^
 ||flfazfrdjpntc.website^
 ||flfmmxdfhdisj.online^
+||flfngtjd.com^
 ||flfsoqkileuin.website^
 ||flgxixtl.com^
 ||flhimqjbg.com^
@@ -85035,6 +85050,7 @@ browsershots.org#@#.advert_area
 ||forkconnectinghead.com^
 ||forkinane.com^
 ||forkykabaka.shop^
+||forlesetreey.cfd^
 ||forlumineoner.com^
 ||formalswingsubquery.com^
 ||formanentsyshru.org^
@@ -85367,6 +85383,7 @@ browsershots.org#@#.advert_area
 ||fryboldlymalice.com^
 ||fryduxmudk.in^
 ||fryhzcadnypnn.online^
+||fryqtvjohwknh.online^
 ||frzsblxklkuoa.site^
 ||frztpfjmnuexn.space^
 ||fsaaianvapxeh.site^
@@ -85808,6 +85825,7 @@ browsershots.org#@#.advert_area
 ||garlandcelaeno.shop^
 ||garlicbourlawupfolds.cfd^
 ||garlicice.store^
+||garlionsaffronnonacid.cyou^
 ||garlopakites.shop^
 ||garmentcivilizepitcher.com^
 ||garmentclimbinghotel.com^
@@ -85838,6 +85856,7 @@ browsershots.org#@#.advert_area
 ||gassycupcake.qpon^
 ||gastfulabeles.com^
 ||gastrincantiltissue.cyou^
+||gastzat.shop^
 ||gate4learn.com^
 ||gateageneifs.shop^
 ||gateauburkes.qpon^
@@ -87717,6 +87736,7 @@ browsershots.org#@#.advert_area
 ||heldsadness.com^
 ||heleric.com^
 ||helesandoral.com^
+||helewouaskaris.com^
 ||helib.xyz^
 ||helicient.com^
 ||heliumads.com^
@@ -88148,6 +88168,7 @@ browsershots.org#@#.advert_area
 ||hnmonkedguxxl.website^
 ||hnnqbxhvpbgvf.site^
 ||hnnwonwjeiqpq.space^
+||hnqqvagxfnrgr.website^
 ||hnrgmc.com^
 ||hnsbsgnqcvqmn.site^
 ||hnsrvcjnrmzd.com^
@@ -88742,6 +88763,7 @@ browsershots.org#@#.advert_area
 ||hylrncjzgdtgi.site^
 ||hymenicasarumsara.cyou^
 ||hymenicshi.qpon^
+||hymenicunfiery.cyou^
 ||hymenssnarled.qpon^
 ||hynvvtkmdvjdv.website^
 ||hynycrgzzevgb.space^
@@ -88953,6 +88975,7 @@ browsershots.org#@#.advert_area
 ||iebhbkzfwcwoq.space^
 ||iecxpghbv.com^
 ||iedjdpmpnm.com^
+||ieecfjcwadvrz.online^
 ||ieecjjfzmbhgs.site^
 ||ieenhijxbigyt.space^
 ||ieeucpssxsepw.online^
@@ -89582,6 +89605,7 @@ browsershots.org#@#.advert_area
 ||inplbvbxtlpnu.online^
 ||inpoundaymidyd.com^
 ||inppcdn.com^
+||inputcarping.com^
 ||inputcavia.cfd^
 ||inputtwelfthrealistic.com^
 ||inquiredmystic.com^
@@ -89734,6 +89758,7 @@ browsershots.org#@#.advert_area
 ||inticedrooled.qpon^
 ||intimacyreduce.com^
 ||intimacysupervisor.com^
+||intimagluma.shop^
 ||intimastrust.qpon^
 ||intimidatingsideway.com^
 ||intonesrevellysailage.qpon^
@@ -90609,6 +90634,7 @@ browsershots.org#@#.advert_area
 ||jingobreaths.cfd^
 ||jinniespottagy.com^
 ||jinraoiahbrhg.online^
+||jinsinganay.shop^
 ||jinsoppidum.cyou^
 ||jiprgfzcpdjmp.online^
 ||jiptcrzamhujz.space^
@@ -90937,6 +90963,7 @@ browsershots.org#@#.advert_area
 ||jravekvrvywkq.top^
 ||jrbbavkejwloz.top^
 ||jreanjvuvpmy.in^
+||jrhameobeihmv.space^
 ||jrjexx.com^
 ||jrjmgjfefawpy.site^
 ||jrkihvllezsla.space^
@@ -91265,6 +91292,7 @@ browsershots.org#@#.advert_area
 ||jzklxzldskqok.online^
 ||jzmgykztfsjwd.website^
 ||jzmwxos.com^
+||jzpgspqbmbhxk.site^
 ||jzrmxnvcniwmj.online^
 ||jzszrfzi.com^
 ||jztxtlsupbqcu.site^
@@ -92258,6 +92286,7 @@ browsershots.org#@#.advert_area
 ||kyaungloaners.cyou^
 ||kycgrnuxacgcn.site^
 ||kyecnhpxp.com^
+||kyfrqnupucfnu.space^
 ||kyggpktctzozd.space^
 ||kygwbcvevmaoz.store^
 ||kyigqvraimsly.space^
@@ -93254,6 +93283,7 @@ browsershots.org#@#.advert_area
 ||llwgmjndizraf.website^
 ||llwgnafyieumn.store^
 ||llwiazpvumalz.online^
+||llxejxkxxlcaqjl.com^
 ||llxemmopmuitk.space^
 ||llxhgmptlnuxe.space^
 ||llxmbjgtshhd.com^
@@ -93852,6 +93882,7 @@ browsershots.org#@#.advert_area
 ||lxvwxujlyvfyp.website^
 ||lxwmazdgleyxy.website^
 ||lxyvpfalzuhnx.space^
+||lxzduwepfkhiu.site^
 ||lyaauumakulfq.site^
 ||lyccjoyj.com^
 ||lycopusunsteck.com^
@@ -94154,6 +94185,7 @@ browsershots.org#@#.advert_area
 ||manxcomet.cfd^
 ||manyielding.com^
 ||maomaoschout.com^
+||maooiyexpvwde.com^
 ||mapamnni.com^
 ||mapcawing.com^
 ||mapdevelopcleverness.com^
@@ -94705,6 +94737,7 @@ browsershots.org#@#.advert_area
 ||mhixmkuhwtbfp.space^
 ||mhjasudirbgqs.website^
 ||mhkikldmrpgjj.store^
+||mhkm5voqlh2wj96x.rest^
 ||mhkrmdpluhscy.online^
 ||mhktxzxqhlzik.online^
 ||mhkufxshpxgps.website^
@@ -94865,6 +94898,7 @@ browsershots.org#@#.advert_area
 ||misguidedconclusion.com^
 ||misguidedshelves.com^
 ||mishandlepretty.com^
+||mishearanhimae.qpon^
 ||misjudgebuoyeye.com^
 ||misleadgifted.com^
 ||mismeetchelpwur.cyou^
@@ -95216,6 +95250,7 @@ browsershots.org#@#.advert_area
 ||mongrelacor.qpon^
 ||mongrelonsetstray.com^
 ||monhax.com^
+||monitorchives.cfd^
 ||monitoringoutsettings.net^
 ||monkessplovery.shop^
 ||monkeyarmiesdisturbing.com^
@@ -96179,6 +96214,7 @@ browsershots.org#@#.advert_area
 ||neglectoffset.com^
 ||neglectsquad.com^
 ||negligpigged.cfd^
+||negligwormian.cyou^
 ||negocemouseeluckly.qpon^
 ||negusplicatelinks.cyou^
 ||negxkj5ca.com^
@@ -97462,6 +97498,7 @@ browsershots.org#@#.advert_area
 ||oelhofejacqod.website^
 ||oempafnyfiexpe.com^
 ||oepahvkqvihnh.space^
+||oepejgxsdnfbsr.com^
 ||oepkdmcujxace.space^
 ||oeqloiksnepwl.website^
 ||oerxzdstepphr.store^
@@ -98221,6 +98258,7 @@ browsershots.org#@#.advert_area
 ||ossianpand.shop^
 ||osspalkiaom.com^
 ||osspinsira.com^
+||ostendenlists.cyou^
 ||ostensiblechambers.com^
 ||ostentatiousimplement.com^
 ||ostgcawizznse.online^
@@ -99016,6 +99054,7 @@ browsershots.org#@#.advert_area
 ||pcmpcszarkerr.space^
 ||pcnerliukctck.online^
 ||pcnuhzoxhjhvd.website^
+||pcodfpdleaaqlft.com^
 ||pcpsbdikueqle.online^
 ||pcrwmppj.com^
 ||pcsaitqabthnujh.com^
@@ -99588,6 +99627,7 @@ browsershots.org#@#.advert_area
 ||pinnategourd.cyou^
 ||pinnedploat.shop^
 ||pinnersslab.qpon^
+||pinningimbrier.shop^
 ||pinnulepagedom.com^
 ||pinsonsnunnari.qpon^
 ||pintanoembaysohmic.cfd^
@@ -99755,6 +99795,7 @@ browsershots.org#@#.advert_area
 ||plasmidjerky.com^
 ||plasmonbogier.cyou^
 ||plasmsmoses.cyou^
+||plassprimsiecoontah.qpon^
 ||plasticdamage.com^
 ||plastleislike.com^
 ||platchwwraojk.online^
@@ -100257,6 +100298,7 @@ browsershots.org#@#.advert_area
 ||ppyluxrhatij.com^
 ||ppytbzff.com^
 ||ppyvadtepkkxu.store^
+||pq3zyi4mjnii5o.cfd^
 ||pqbjuufejlasa.website^
 ||pqdlodgilkcxz.website^
 ||pqdwrezlbjezz.website^
@@ -101894,6 +101936,7 @@ browsershots.org#@#.advert_area
 ||qvvurjgilhgbd.space^
 ||qvwcrygyfqeih.site^
 ||qvwvsajsiwmhb.site^
+||qvywpyxrwqugw.site^
 ||qvzynkitqiook.site^
 ||qwcohdprvst.com^
 ||qwfmqkysepqin.online^
@@ -101944,6 +101987,7 @@ browsershots.org#@#.advert_area
 ||qxucibukvklk.com^
 ||qxuebkyiexuez.online^
 ||qxummanifgrjp.site^
+||qxyjxolskbrqok.com^
 ||qxyvvfwjiqonx.online^
 ||qxzfdeagblwys.space^
 ||qybratedbxyac.online^
@@ -103130,6 +103174,7 @@ browsershots.org#@#.advert_area
 ||rimiertittup.qpon^
 ||rimousupwax.shop^
 ||rinbospisdt.com^
+||rinceausecedes.qpon^
 ||rineuganda.shop^
 ||ringatumalheur.cyou^
 ||ringdisgustpostman.com^
@@ -103585,6 +103630,7 @@ browsershots.org#@#.advert_area
 ||rrijuekqotlri.site^
 ||rrkvgegrywbkf.site^
 ||rrlpfsdammzii.site^
+||rrmlejjwebmv.top^
 ||rrobbybeywkvw.top^
 ||rrobbybmkwjww.top^
 ||rrpcjhtacwgki.space^
@@ -104862,6 +104908,7 @@ browsershots.org#@#.advert_area
 ||sfzeqzazjmowe.space^
 ||sfzhpuxozrvdf.site^
 ||sgaijlnojrrok.site^
+||sgarszzwnjfzt.site^
 ||sgben.com^
 ||sgbrftxioksgf.online^
 ||sgcjwdshiacfv.space^
@@ -104911,6 +104958,7 @@ browsershots.org#@#.advert_area
 ||shaliercassian.cfd^
 ||shallbuilds.com^
 ||shallowconsumeconstrain.com^
+||shamalotrefahdespot.qpon^
 ||shamansouthymn.shop^
 ||shamefullecture.com^
 ||shameless-respond.pro^
@@ -105155,6 +105203,7 @@ browsershots.org#@#.advert_area
 ||sickerweakish.shop^
 ||sicklerpestify.qpon^
 ||sicknessbingo.com^
+||sicksakey.com^
 ||sickshareping.com^
 ||siclikeinhumepick.cfd^
 ||sicqybon.com^
@@ -106893,6 +106942,7 @@ browsershots.org#@#.advert_area
 ||sulkweapon.com^
 ||sultrymomentarily.com^
 ||sumatradanizeagonize.cfd^
+||sumcdmkbznict.site^
 ||summaspence.cyou^
 ||summeanwhile.com^
 ||summerleftover.com^
@@ -107222,6 +107272,7 @@ browsershots.org#@#.advert_area
 ||syehsmzxfaspp.space^
 ||syeniteexodoi.com^
 ||syfcuabbmpcbl.online^
+||sygvwadaxjesn.space^
 ||syhnohomkjzth.website^
 ||syigfmoeoaono.space^
 ||syinga.com^
@@ -109007,6 +109058,7 @@ browsershots.org#@#.advert_area
 ||ttnjzfmlupknf.site^
 ||ttoc8ok.com^
 ||ttoejmxwlecin.site^
+||ttoqvluihdcbr.site^
 ||ttowi6zx72gxz33c8xh4to8njl3q.cfd^
 ||ttpbpjxcpdcep.website^
 ||ttqpvpnrtmg.com^
@@ -110032,6 +110084,7 @@ browsershots.org#@#.advert_area
 ||unrzmszjmldfr.website^
 ||unsafebernice.cyou^
 ||unsaltyrisala.qpon^
+||unsavorparava.cfd^
 ||unsawedetypicbevies.cyou^
 ||unseenprovisionsparts.com^
 ||unseenreport.com^
@@ -110135,6 +110188,7 @@ browsershots.org#@#.advert_area
 ||uosvpkrplvxlr.online^
 ||uoutube.com^
 ||uovveljjaoxfe.store^
+||uovvobtfxeekw.site^
 ||uoxocwxakddyq.space^
 ||uoydzaom.xyz^
 ||uozbwocqypahe.site^
@@ -113095,6 +113149,7 @@ browsershots.org#@#.advert_area
 ||wrouitslhznhn.online^
 ||wrpqqnurjtljv.space^
 ||wrqywyffqfpnf.online^
+||wrqziykmythxm.space^
 ||wrrqigpzmekcd.space^
 ||wrsmcehsvfgjmc.com^
 ||wrsmnqmpopund.net^
@@ -113300,6 +113355,7 @@ browsershots.org#@#.advert_area
 ||wyvcioftcidpi.space^
 ||wyvllloeqlaok.top^
 ||wyvlllooalwlj.top^
+||wyvqbmlssvuda.site^
 ||wyvtoicgngifo.website^
 ||wywdtudphanbt.store^
 ||wywgohkuukfin.online^
@@ -113943,6 +113999,7 @@ browsershots.org#@#.advert_area
 ||xuvxaknemnska.site^
 ||xuxeji5h8qmkhnk1e7eifi774v8he4w9kq.cfd^
 ||xuxtzbczsxcrs.website^
+||xuzkqjhnleqoq.space^
 ||xv2bget593zq1zv62ki3.cfd^
 ||xvcefcdyvbyyx.website^
 ||xvcpswjhknnwy.site^
@@ -113974,6 +114031,7 @@ browsershots.org#@#.advert_area
 ||xvwqzyslwwvld.site^
 ||xvwurhwbe.com^
 ||xvyaytgqrduup.website^
+||xwavuyzxzansy.website^
 ||xwdsofoflwimy.website^
 ||xweaczbjyftvd.site^
 ||xwfafjiihnpmy.space^
@@ -114180,6 +114238,7 @@ browsershots.org#@#.advert_area
 ||ybtdxfqdnwzly.space^
 ||ybtevzivkqolm.website^
 ||ybtyvbzvxpvex.store^
+||ybuimwfyzkzzf.space^
 ||ybycgilqhqyib.website^
 ||ycabzuutwyjqh.online^
 ||ycafuymxouvbq.store^
@@ -114244,6 +114303,7 @@ browsershots.org#@#.advert_area
 ||yectwxcyecvqb.site^
 ||yecytiqior.net^
 ||yedftrwashosh.space^
+||yeeumgjxfifku.space^
 ||yefhhuanqlbky.site^
 ||yegtaizxtftpo.online^
 ||yegvjrkcasiwf.space^
@@ -114407,6 +114467,8 @@ browsershots.org#@#.advert_area
 ||yjiakbkecywgij.com^
 ||yjiqwytzluwhs.site^
 ||yjjfvcbzbrppe.store^
+||yjjolfvavjvff.space^
+||yjnuxcucnp8qlf2.rest^
 ||yjonbxthuxllt.website^
 ||yjonspllguxz.com^
 ||yjopmnjbxlgys.site^
@@ -115220,6 +115282,7 @@ browsershots.org#@#.advert_area
 ||zipcrypticbroadsheet.com^
 ||zipdealtdomestic.com^
 ||zipperstorta.cfd^
+||zirducwpedro.in^
 ||zireemilsoude.net^
 ||zirkitecantelrussine.qpon^
 ||zitdither.com^
