@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609031543
+! Version: 202609031904
 ! Title: EasyPrivacy
-! Last modified: 03 Sep 2026 15:43 UTC
+! Last modified: 03 Sep 2026 19:04 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 65034e4d363385d513fa54406724218948db113b
+! Commit: edc98c516975ca417b1e65493bf38e80344c3562
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8469,6 +8469,7 @@ omni.soundestlink.com$image
 ||royalrabbit.net^
 ||royalsbagels.com^
 ||royalsweeper.com^
+||rubouthunger.com^
 ||rubyswinehouse.com^
 ||ruralrobin.com^
 ||rusticfrench.com^
@@ -8479,6 +8480,7 @@ omni.soundestlink.com$image
 ||sablesong.com^
 ||sadloaf.com^
 ||saffronrefuge.com^
+||sagetrack.net^
 ||saladbarrel.com^
 ||saladfuel.com^
 ||salmonfin.com^
@@ -53752,7 +53754,6 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||cltr.willhaben.at^
 ||cmp2.channelpartner.de^
 ||cnt.wetteronline.de^
-||collector.orf.at^
 ||comparis.ch/comparis/Tracking/
 ||computerbase.de/analytics
 ||computerbase.de/api2/$ping,xmlhttprequest
@@ -60110,6 +60111,9 @@ adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/18504
 ||analytics.meaww.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/34368
+||analytics.freezehost.pro^
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
