@@ -5,9 +5,9 @@
 ! ---- source: EasyList-Cookie (https://secure.fanboy.co.nz/fanboy-cookiemonster_ubo.txt) ----
 
 [Adblock Plus 2.0]
-! Checksum: Kmed7gZQI5WF1o/8FQAymg
+! Checksum: X0Vins5JujyDLCPW7azWbg
 ! Title: Easylist Cookie List
-! Last modified: 2026-09-10 05:25 UTC
+! Last modified: 2026-09-10 12:50 UTC
 ! Expires: 9 days (update frequency)
 ! License: http://creativecommons.org/licenses/by/3.0/
 ! Please report any unblocked content or problems by email or in our forums
@@ -19655,8 +19655,6 @@ freudtools.com##.x-consent
 spoonflower.com##.x-global-dialog
 eneba.com##.xIPhuO
 xterraplanet.com##.xt-ccokie-container
-thomas-krenn.com##.xtxNavigationOffCanvasOverlay
-thomas-krenn.com##.xtxNavigationOffCanvasOverlayCookie
 dideo.tv##.youtube-terms-banner
 youtube.com##.yt-consent
 yahoo.com##.yucs-eprivacy
@@ -29774,6 +29772,8 @@ linsenplatz.de##+js(aeld, DOMContentLoaded, cookieConsent)
 ! formula1.com##[id^="sp_message_container_"]
 ! reject consent
 consent.formula1.com##+js(trusted-click-element, button[aria-label="Essential only cookies"])
+! https://github.com/uBlockOrigin/uAssets/issues/34442
+thomas-krenn.com##+js(trusted-set-cookie, copol_www_thomas-krenn_com_optin_categories, %5B%22essential%22%5D, , , domain, .www.thomas-krenn.com)
 
 !! Needs additional cookies
 
