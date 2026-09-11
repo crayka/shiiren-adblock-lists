@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609110311
+! Version: 202609110827
 ! Title: EasyPrivacy
-! Last modified: 11 Sep 2026 03:11 UTC
+! Last modified: 11 Sep 2026 08:27 UTC
 ! Expires: 4 days (update frequency)
-! Commit: b568c4aa66e50d04ac33d40802e421f95b0e8b7a
+! Commit: 9229ab73b9b1bf03cfe1efcba667e2af3f674808
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -60142,6 +60142,9 @@ adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34368
 ||analytics.freezehost.pro^
+
+! https://github.com/uBlockOrigin/uAssets/issues/31947
+||umami-*.sufrah.net^
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
