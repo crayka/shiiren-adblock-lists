@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609130849
+! Version: 202609131525
 ! Title: EasyPrivacy
-! Last modified: 13 Sep 2026 08:49 UTC
+! Last modified: 13 Sep 2026 15:25 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 57b8949783b802559510f2c4b53ce8fc75558fb7
+! Commit: 12e506f74cea3e08e1098097735ebfcae60e66f2
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -3730,6 +3730,7 @@ omni.soundestlink.com$image
 ||imzahrwl.xyz^
 ||ineed2s.ro^
 ||infisecure.com^
+||inmobicdn.net^
 ||innerskinresearch.com^
 ||instantfox.co^
 ||intellimizeio.com^
@@ -11427,6 +11428,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||events.ocdn.eu^
 ||events.paramount.tech^
 ||events.pickrr.com^
+||events.plutus.ninja^
 ||events.realgravity.com^
 ||events.release.narrativ.com^$subdocument,xmlhttprequest
 ||events.shareably.net^
@@ -60168,6 +60170,9 @@ adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31947
 ||umami-*.sufrah.net^
+
+! https://github.com/uBlockOrigin/uAssets/issues/34187
+||igorslab.de/?ilgha_jump=$urlskip=/\?ilgha_jump=(ey[^.]+)\..+/ -base64 /"u":"(https?:[^"]+)"/
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
