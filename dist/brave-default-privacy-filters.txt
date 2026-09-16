@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609160858
+! Version: 202609161601
 ! Title: EasyPrivacy
-! Last modified: 16 Sep 2026 08:58 UTC
+! Last modified: 16 Sep 2026 16:01 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d09538084a2a0b78899721fb3e5f60f89f90ff55
+! Commit: 6a77b24416c45ce7bb50a58303b375cfef8d874b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -2038,6 +2038,7 @@
 /retargeting-pixels.php
 /revinit.js
 /rgea.min.js
+/ria.analytics.js
 /risk_fp_log?
 /riveted.min.js
 /rivraddon.js
@@ -3269,7 +3270,7 @@ _WebVitalsReporter_
 .sendcloud.net/track/$image
 .sendemail.gate.io/o/$image
 .sendibm1.com/*.gif?
-.sendibm1.com/mk/
+.sendibm1.com/mk/op/$image
 .sendibt2.com/tr/op/$image
 .sendibt3.com/tr/op/$image
 .simplicitycrm.com/rd/
@@ -8451,6 +8452,7 @@ omni.soundestlink.com$image
 ||retrocrypt.com^
 ||retrorays.com^
 ||reversetickets.com^
+||reviewacousticguitar.com^
 ||revivalvoice.com^
 ||rhetoricalactivity.com^
 ||rhetoricalloss.com^
@@ -11517,6 +11519,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||feedblitz.com/imp?$third-party
 ||feedblitz.com^*.gif?$third-party
 ||feedify.net/thirdparty/json/track/
+||feliz.data.tm-awx.com/smile-web-v2/batch
 ||fem.gprod.postmedia.digital/*/IIQUniversalID.js
 ||fgip.rosehosting.com^
 ||filament-stats.herokuapp.com^
