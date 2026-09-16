@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609160337
+! Version: 202609160858
 ! Title: EasyPrivacy
-! Last modified: 16 Sep 2026 03:37 UTC
+! Last modified: 16 Sep 2026 08:58 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a077719c77ab44ef3e64662d5cfc6987f66cfae8
+! Commit: d09538084a2a0b78899721fb3e5f60f89f90ff55
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -282,6 +282,7 @@
 /analytics-reporter/*
 /analytics-sdk.
 /analytics-secure.js
+/analytics-talk-content-tracking.
 /analytics-tracker/*
 /analytics-tracking.js
 /analytics-worker.iife.js
@@ -1194,6 +1195,7 @@
 /gtm.js
 /gtm.min.js
 /gtm/gtm-
+/gtm4wp-$script
 /gtmDataLayer.js
 /gtmTracking.js
 /gv-analytics/riveted.js
@@ -1884,7 +1886,6 @@
 /plugins/affiliate-wp/assets/js/tracking.min.js
 /plugins/catman/*
 /plugins/civic-science/js/pixel.js
-/plugins/duracelltomi-google-tag-manager/*
 /plugins/exactmetrics-
 /plugins/nimiq/*$script
 /plugins/nsmg-tracking/*
@@ -6857,6 +6858,7 @@ omni.soundestlink.com$image
 ||barkfactor.com^
 ||barqueue.com^
 ||barrelcider.com^
+||bartcons.com^
 ||baseboosters.com^
 ||basketballbelieve.com^
 ||baskettexture.com^
@@ -7825,6 +7827,7 @@ omni.soundestlink.com$image
 ||joyfulharbor.com^
 ||joyouspool.com^
 ||joyoussurprise.com^
+||jqioregvpxgte.website^
 ||jubilantaura.com^
 ||jubilantcanyon.com^
 ||jubilantglimmer.com^
@@ -7883,6 +7886,7 @@ omni.soundestlink.com$image
 ||lazyexplore.com^
 ||lazylivingroom.com^
 ||lazypecan.com^
+||ldrws.com^
 ||leafpilot.com^
 ||leaplunchroom.com^
 ||leapquick.com^
@@ -8265,6 +8269,7 @@ omni.soundestlink.com$image
 ||pluckypocket.com^
 ||pluckyzone.com^
 ||pluggedlabs.com^
+||pluxpdzouwubj.space^
 ||pocketfaucet.com^
 ||podname.com^
 ||poemprompt.com^
@@ -9115,6 +9120,7 @@ omni.soundestlink.com$image
 ||viewresource.com^
 ||vilenexus.com^
 ||violetdemise.com^
+||viowrel.com^
 ||viralfoodie.net^
 ||virtualvincent.com^
 ||vividcache.com^
@@ -55350,6 +55356,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||sidecar.unext.jp/track/
 ||so-zou.jp/js/ga.js
 ||socialxup.com/api/sale-accounts
+||socialxup.com/api/track
 ||softonic.jp/web-stats
 ||ssai.api.streaks.jp/*/ad_info?
 ||stats.nhk.or.jp^
