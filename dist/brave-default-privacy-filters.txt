@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609172239
+! Version: 202609180328
 ! Title: EasyPrivacy
-! Last modified: 17 Sep 2026 22:39 UTC
+! Last modified: 18 Sep 2026 03:28 UTC
 ! Expires: 4 days (update frequency)
-! Commit: fac35d246eaa57884edefb4a9149acc9416b6834
+! Commit: 97e4b76f53e2f056939ff00c6d022c85b3ac84b4
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -57905,6 +57905,9 @@ lit.link##+js(href-sanitizer, a[href^="/redirects/link-ad?redirectUrl=aHR0c"], ?
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-17978685
 /^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -base64
+
+! https://github.com/uBlockOrigin/uAssets/issues/34528
+||s.click.aliexpress.com/deep_link.*^dl_target_url=http$doc,urlskip=?dl_target_url
 
 ! Click Trackers
 ! https://reddit.com/r/uBlockOrigin/comments/14t3y1d/
