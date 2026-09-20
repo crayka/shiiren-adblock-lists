@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609200856
+! Version: 202609201511
 ! Title: EasyPrivacy
-! Last modified: 20 Sep 2026 08:56 UTC
+! Last modified: 20 Sep 2026 15:11 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 82041691454710cf6da148ff4e28ee5daf690890
+! Commit: 213fd68d17dc72fed048452b8c0156938f0f3846
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8896,6 +8896,7 @@ omni.soundestlink.com$image
 ||superficialeyes.com^
 ||superficialspring.com^
 ||superficialsquare.com^
+||superstarorganizer.com^
 ||supplyreward.com^
 ||supportwaves.com^
 ||surfacesmedia.com^
@@ -16721,6 +16722,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||secure.teamtalk.com/tag/
 ||secure.tennis365.com/tag/
 ||seekingalpha.com/mone_event
+||seekingalpha.com/mone_v2
 ||segapi.whop.com^
 ||seismic.com/playerservice/api/v1/log?
 ||service.techzine.eu^
