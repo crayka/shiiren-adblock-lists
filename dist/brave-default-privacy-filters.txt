@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609210331
+! Version: 202609210930
 ! Title: EasyPrivacy
-! Last modified: 21 Sep 2026 03:31 UTC
+! Last modified: 21 Sep 2026 09:30 UTC
 ! Expires: 4 days (update frequency)
-! Commit: b42592fe092358a84f53fe9e6f56f4db4973246b
+! Commit: 4c38dfb841964eab090d01a5854798ccd2f818e8
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -16932,6 +16932,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||support.google.com/apis/logjourney
 ||svcs.ebay.com/ufeservice/v1/metrics
 ||swarm.video/stats/
+||swasc.homedepot.com^$ping
 ||swissquote.com/SQB.Microsoft.Tracking/TrackPage.aspx?
 ||szrpr.raen.com^
 ||t-mobile.com/self-service-commerce/v1/logging
@@ -20653,6 +20654,7 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ! ||target.microsoft.com^
 ! ||aamt.msnbc.com^
 ! ||visit.asb.co.nz^
+! ||swasc.homedepot.com^
 ! 
 ||0tfsd2rwwu3xjstb.edge41.testandtarget.omniture.com^
 ||1ps6e7sort397gy9.edge46.testandtarget.omniture.com^
@@ -29705,7 +29707,6 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||swa.vodafone.pt^
 ||swa.wowcher.co.uk^
 ||swasc.homedepot.ca^
-||swasc.homedepot.com^
 ||swasc.kaufland.bg^
 ||swasc.kaufland.com^
 ||swasc.kaufland.cz^
