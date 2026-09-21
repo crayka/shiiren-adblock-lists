@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609211746
+! Version: 202609212246
 ! Title: EasyPrivacy
-! Last modified: 21 Sep 2026 17:46 UTC
+! Last modified: 21 Sep 2026 22:46 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 792e8de1ec298804285fea0d4d579bdae104efef
+! Commit: dd4ee534b7978f3c0db85a5a85d25d59f54284c4
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8597,6 +8597,7 @@ omni.soundestlink.com$image
 ||secretturtle.com^
 ||securityannex.net^
 ||seedscissors.com^
+||seekingdreams.com^
 ||seekingquest.com^
 ||seekremote.com^
 ||seenvault.com^
@@ -8655,6 +8656,7 @@ omni.soundestlink.com$image
 ||siderain.com^
 ||sidetrades.com^
 ||sierrakermit.com^
+||signalartists.com^
 ||signalszone.com^
 ||signaturepod.com^
 ||silentcredit.com^
@@ -54769,7 +54771,6 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||ftwo-receiver.autohome.com.cn^
 ||gentian-frd.hjapi.com^
 ||gia.jd.com^
-||gias.jd.com/js/pc-tk.js
 ||gk.sina.cn^
 ||h5.analytics.126.net^
 ||h5log.zongheng.com^
