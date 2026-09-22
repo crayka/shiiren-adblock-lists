@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609220336
+! Version: 202609220850
 ! Title: EasyPrivacy
-! Last modified: 22 Sep 2026 03:36 UTC
+! Last modified: 22 Sep 2026 08:50 UTC
 ! Expires: 4 days (update frequency)
-! Commit: d16c3d6520163bd341b267c0ec6da6480f0330e1
+! Commit: da01f6af4eb27e8825d545e94fae6f16acba56a6
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -3316,6 +3316,7 @@ _WebVitalsReporter_
 /beacon.krxd.net/*
 /beacon?data=$image
 /beaconimages.netflix.net/*$image
+/bmo.mercari.jp/?s=$image
 /c.vialoops.com/*$image
 /CI0/0$image
 /ck.m.honto.jp/c/*$image
@@ -14211,6 +14212,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||etwun.com:8080/counter.php?
 ||event.tagtoo.co^
 ||experiments.sparanoid.net^
+||fourier.alibaba.com^
 ||fourier.taobao.com^
 ||g.yccdn.com^
 ||gdt.qq.com^
