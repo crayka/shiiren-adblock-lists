@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609251629
+! Version: 202609252259
 ! Title: EasyPrivacy
-! Last modified: 25 Sep 2026 16:29 UTC
+! Last modified: 25 Sep 2026 22:59 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 857c2026866a750abf067a39dd018af7af5670f5
+! Commit: 7811ea68bc7c33705d98e571da8804c37495c492
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -6819,6 +6819,7 @@ omni.soundestlink.com$image
 ||aromamirror.com^
 ||arrivegrowth.com^
 ||artbranch.net^
+||artcat.net^
 ||artfulsavage.com^
 ||articledemon.com^
 ||arubahello.com^
@@ -10418,6 +10419,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||1.1.1.1/dns-query$xmlhttprequest,domain=allmodern.com|birchlane.com|catbirdnyc.com|gametime.co|jossandmain.com|ladym.com|libertylondon.com|mediamarkt.de|nobullproject.com|paynow.pmnts.io|perigold.com|theathletesfoot.co.nz|theathletesfoot.com.au|wayfair.*
 ||100widgets.com^$third-party
 ||105app.com/report/?
+||1414.hexa.su/script.js
 ||1worldsync.com/log?
 ||216.18.176.4/logger/
 ||360buyimg.com/jdf/1.0.0/unit/log/
@@ -13324,6 +13326,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||twitter.com/oct.js
 ||twitter.com/scribe/
 ||typeform.com/*/insights/events^
+||u.tetas.pt/script.js
 ||uaas.yandex.ru^
 ||ubm.docu.info^
 ||uc.cn/collect?
@@ -60321,6 +60324,11 @@ adhs-zentrum.de##+js(no-xhr-if, method:POST body:/"track"|adblock/)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34573
 ||mtm.sms-ol.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/29467
+okteve.com##+js(no-fetch-if, method:POST body:tracker)
+||okteve.com/xplay/embed-beacon.php
+||okteve.com/p/e
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
