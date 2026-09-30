@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202609301433
+! Version: 202609302022
 ! Title: EasyPrivacy
-! Last modified: 30 Sep 2026 14:33 UTC
+! Last modified: 30 Sep 2026 20:22 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 38a9f9cc30ada07769ec4dbfe36addc25ace7da1
+! Commit: 31be66e668816be5dd8095c8645c809bb1c83ecd
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7389,6 +7389,7 @@ omni.soundestlink.com$image
 ||echotop.com^
 ||echoturkey.com^
 ||economysoil.com^
+||edshowpigs.com^
 ||educationcar.com^
 ||effervescentcoral.com^
 ||effervescentvista.com^
@@ -58024,7 +58025,7 @@ lit.link##+js(href-sanitizer, a[href^="/redirects/link-ad?redirectUrl=aHR0c"], ?
 ||c.pc.qq.com^$urlskip=?pfurl
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-17978685
-/^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -base64
+/^https:\/\/link\.theverge\.com\/click\/[0-9]+\.[0-9]+\/aHR0c/$doc,urlskip=/(aHR0c[a-zA-Z0-9%_-]+)/ -safebase64
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34528
 ||s.click.aliexpress.com/deep_link.*^dl_target_url=http$doc,urlskip=?dl_target_url
