@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610050413
+! Version: 202610051639
 ! Title: EasyPrivacy
-! Last modified: 05 Oct 2026 04:13 UTC
+! Last modified: 05 Oct 2026 16:39 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 6e12fbdcc8fca665d8f77f91dd7e3f1a608318c1
+! Commit: 811425ddba3b5d07ceb4be3969ca9106e91d00b7
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -9193,6 +9193,7 @@ omni.soundestlink.com$image
 ||viowrel.com^
 ||viralfoodie.net^
 ||virtualvincent.com^
+||visualcommservices.com^
 ||vividcache.com^
 ||vividcanopy.com^
 ||vividfrost.com^
@@ -58917,7 +58918,7 @@ coursera.org##+js(no-fetch-if, eventing)
 ||coursera.org/*/eventing/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22076
-gazeta.press,gazeta.ru,rambler.ru##+js(trusted-replace-fetch-response, /#rcmrclid=[a-zA-Z0-9]+/g, '', rcm.rambler.ru)
+gazeta.press,gazeta.ru,rambler.ru##+js(trusted-rpfr, /#rcmrclid=[a-zA-Z0-9]+/g, '', rcm.rambler.ru)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22295
 ||cmp.*.no^*/metrics/$important
