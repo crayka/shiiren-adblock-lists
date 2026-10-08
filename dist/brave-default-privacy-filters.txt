@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610080438
+! Version: 202610081459
 ! Title: EasyPrivacy
-! Last modified: 08 Oct 2026 04:38 UTC
+! Last modified: 08 Oct 2026 14:59 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 7f165b9332bca7948d2bf9c47851d4a13e4ff8b0
+! Commit: dff7226b2e951c5ad60448321f5beec5537b9b9b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -6932,6 +6932,7 @@ omni.soundestlink.com$image
 ||bikepaws.com^
 ||bikesboard.com^
 ||bilingualgeek.com^
+||billionpet.com^
 ||billowybead.com^
 ||billowybelief.com^
 ||billtable.com^
@@ -6981,6 +6982,7 @@ omni.soundestlink.com$image
 ||boomboomcloud.com^
 ||boostbehavior.com^
 ||boredcrown.com^
+||borefee.com^
 ||boringberry.com^
 ||boringpirate.com^
 ||bouncyproperty.com^
@@ -15675,6 +15677,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||collider.com/strpixel.png
 ||colvk.viki.io^
 ||comms.bps.org.uk^
+||community.netweather.tv/4p9v/
 ||compare-static.flightconnections.com/tag.js
 ||confiant.msn.com^
 ||configurator.ecom-mobile-samsung.com/api/logger
@@ -16975,6 +16978,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||stats.ibtimes.co.in^
 ||stats.ibtimes.sg^
 ||stats.justpaste.it^
+||stats.lrb.co.uk^
 ||stats.mempool.space^
 ||stats.newsweek.com^
 ||stats.qwant.com^
@@ -55437,8 +55441,8 @@ aliexpress.com,aliexpress.ru,aliexpress.us##+js(set, navigator.bluetooth, undefi
 ||doda.jp/resources/dcfront/js/usrclkTracking.js
 ||dxlive.com/js/dtrace.js
 ||ek-tracker.ekitan.com^
-||ekitan.com/*-tracker.js
-||ekitan.com/cmn/js/ekitan.log.js
+||ekitan.com/*-analytics.js
+||ekitan.com/common/ek-tracker/
 ||eq-beacon.stream.co.jp^
 ||eq-player-log.cdnext.stream.ne.jp^
 ||eropuru.com/plugin/tracking/
@@ -60414,6 +60418,9 @@ oklivetv.com##+js(no-fetch-if, method:POST body:tracker)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34694
 ||t.xfeed.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/22977
+||ua.xstory-fr.com^
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
