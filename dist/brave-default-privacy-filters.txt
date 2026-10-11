@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610102301
+! Version: 202610110401
 ! Title: EasyPrivacy
-! Last modified: 10 Oct 2026 23:01 UTC
+! Last modified: 11 Oct 2026 04:01 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 014d93696b24c20fd5427f747cc95556f58ee68a
+! Commit: c0802b1be029013121e15b9101c28c5118b2c53a
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -58843,6 +58843,10 @@ $removeparam=igshid,domain=instagram.com|threads.net
 ||sonar.viously.com^$removeparam=r
 ! Exceptions
 @@||web.archive.org/*/http$removeparam
+! https://github.com/AdguardTeam/AdguardFilters/issues/243495
+@@||archive.*/http$removeparam,doc,to=archive.fo|archive.is|archive.li|archive.md|archive.ph|archive.vn
+@@||wayback.archive-it.org/*/http$removeparam
+@@||megalodon.jp/*/http$removeparam
 ! https://github.com/uBlockOrigin/uAssets/issues/25350
 @@||urldefense.com^$removeparam
 ! https://github.com/uBlockOrigin/uAssets/issues/30090
