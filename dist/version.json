@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-12T04:45:56.520Z",
+  "generatedAt": "2026-10-12T17:28:04.513Z",
   "catalogUrl": "https://raw.githubusercontent.com/brave/adblock-resources/master/filter_lists/list_catalog.json",
   "lists": [
     {
       "uuid": "default",
       "title": "Brave Default Adblock Filters",
       "file": "default.txt",
-      "sha256": "a5f055f2a7523b9ed14b45881799cbd948f423392cda89ea22722605d83b2326",
-      "bytes": 5403401,
+      "sha256": "60b4b2ad781729ec7091ffb05d18537bc4ca47a833c883ef9bec7a3b3cb887b1",
+      "bytes": 5408169,
       "sourceCount": 22
     },
     {
       "uuid": "4D715457-307C-4383-8873-73A2FD263F71",
       "title": "Brave Default Privacy Filters",
       "file": "brave-default-privacy-filters.txt",
-      "sha256": "78de3180e83fe974e68c7c552ba378ad2da08aa293f13aec91b8dcd51527b83a",
-      "bytes": 1693033,
+      "sha256": "1ea68f969f112cd91b75517ad6b712cc8c1f02631e59b1acad0e28fe25d2fa70",
+      "bytes": 1693087,
       "sourceCount": 2
     },
     {
@@ -30,24 +30,24 @@
       "uuid": "E99CBD02-FFD1-4651-9BDD-6A9ED7B87819",
       "title": "Brave First Party Adblock Filters",
       "file": "brave-first-party-adblock-filters.txt",
-      "sha256": "87f75885bdc815d5afad806129204edf0e4f6cdddaa977d35992dea6161a21c1",
-      "bytes": 270522,
+      "sha256": "11971e5097af874e1cd08106f762ef240282a7064e642d1f8fc671f4361eeeee",
+      "bytes": 270606,
       "sourceCount": 2
     },
     {
       "uuid": "AC023D22-AE88-4060-A978-4FEEEC4221693",
       "title": "Cookie notice blocker",
       "file": "cookie-notice-blocker.txt",
-      "sha256": "0b47ce68405d3b8e484d81553e532c19ce0303069a3a8edfb7bf884589798c6a",
-      "bytes": 1613126,
+      "sha256": "d71e0fd1afb341d8da2f2e15f30db392bfe9511268d0a7ad17ec71be524349b0",
+      "bytes": 1613207,
       "sourceCount": 3
     },
     {
       "uuid": "2F3DCE16-A19A-493C-A88F-2E110FBD37D6",
       "title": "Mobile app promo blocker",
       "file": "mobile-app-promo-blocker.txt",
-      "sha256": "0296f01a3353990c5113d997d567f8c7ff962641b5a13a0af818e3ebe2cc0750",
-      "bytes": 50720,
+      "sha256": "1b4665069bf5e1e5e0a131143a70e4b12e8c74966ef7df6cf88353d7c4f305f1",
+      "bytes": 50790,
       "sourceCount": 1
     },
     {
