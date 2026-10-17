@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610171458
+! Version: 202610171808
 ! Title: EasyPrivacy
-! Last modified: 17 Oct 2026 14:58 UTC
+! Last modified: 17 Oct 2026 18:08 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 91a403a0202eb2ec71bd0f6f3b66c31608eb9f46
+! Commit: 8ce5ee98d63e15ceeb57b5ebded98d82e7f37884
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7561,6 +7561,7 @@ omni.soundestlink.com$image
 ||fillthemap.com^
 ||filtercutter.com^
 ||finalizeforce.com^
+||finalleague.com^
 ||finaloptics.com^
 ||financefear.com^
 ||findcalculator.com^
@@ -7579,6 +7580,7 @@ omni.soundestlink.com$image
 ||fitnessmapper.com^
 ||fitnesssponsor.com^
 ||fitwithalpine.com^
+||fiveplusthree.com^
 ||fivesidedsquare.com^
 ||fixedfold.com^
 ||fjordsand.com^
@@ -12917,7 +12919,6 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||static-tracking.klaviyo.com^
 ||static.fengkongcloud.com^
 ||static.guance.com/browser-sdk/
-||static.klaviyo.com/onsite/js/event_adapter.
 ||static.myshlf.us/Affiliates/sms_aff_clicktrack-deciem.js
 ||static.parsely.com^$third-party
 ||static.rebelboost.com/tracking/
@@ -56503,7 +56504,6 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 @@||static.amazon.jobs/assets/analytics-$script,domain=amazon.jobs
 @@||static.cloud.coveo.com/coveo.analytics.js/$domain=cabelas.com
 @@||static.foxnews.com^*/VisitorAPI.js$domain=foxbusiness.com|foxnews.com
-@@||static.klaviyo.com/onsite/js/event_adapter.$domain=gear.blizzard.com
 @@||static.knowledgehub.com/global/images/ping.gif?$~third-party
 @@||static.myfinance.com/widget/$domain=savingspro.org
 @@||static.pinpoll.com^$subdocument,domain=iframely.net
