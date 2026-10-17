@@ -29318,6 +29318,10 @@ metro-cc.hr##body:style(overflow: auto !important;)
 ||trk.cultura.com/privacy/
 ! https://github.com/uBlockOrigin/uAssets/issues/34878
 ||ccm.merudata.app^
+! https://github.com/uBlockOrigin/uAssets/issues/33342
+||cdn.ing.com/ing-feat-cookie-preference/
+! https://github.com/uBlockOrigin/uAssets/issues/22663#issuecomment-6218657450
+/wrapperMessagingWithoutDetection.js$important,domain=tomsguide.com
 
 !!! Trusted scriptlets------------------------------------------------------------
 
