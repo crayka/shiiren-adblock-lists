@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610170313
+! Version: 202610170809
 ! Title: EasyPrivacy
-! Last modified: 17 Oct 2026 03:13 UTC
+! Last modified: 17 Oct 2026 08:09 UTC
 ! Expires: 4 days (update frequency)
-! Commit: ce63b1f2fd8e326d8440759e2e95ae93c3008189
+! Commit: 5d33ae3aa751e9968d83f944d685352f7f1ec0d5
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -56683,6 +56683,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 @@||dd.qwant.com.first-party-js.datadome.co^$domain=qwant.com
 @@||dd.thetrainline.com.first-party-js.datadome.co^$domain=thetrainline.com
 @@||dd.wizzair.com.first-party-js.datadome.co^$domain=wizzair.com
+@@||ddbm2.paypal.com.first-party-js.datadome.co^$script,xmlhttprequest,domain=id.venmo.com
 @@||dwt.soundcloud.com.first-party-js.datadome.co^$script,xmlhttprequest,domain=soundcloud.com
 @@||gva.et-gv.fr^$script,domain=culture.gouv.fr
 @@||mycleverpush.com/iframe?$domain=bsdex.de
