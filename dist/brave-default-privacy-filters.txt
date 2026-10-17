@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610171808
+! Version: 202610172148
 ! Title: EasyPrivacy
-! Last modified: 17 Oct 2026 18:08 UTC
+! Last modified: 17 Oct 2026 21:48 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 8ce5ee98d63e15ceeb57b5ebded98d82e7f37884
+! Commit: 61152985b07c542cdaf25d05511d518fea5ee53d
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -60501,6 +60501,9 @@ oklivetv.com##+js(no-fetch-if, method:POST body:tracker)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/34882
 ||crunchyscan.st/api/insights
+
+! https://github.com/uBlockOrigin/uAssets/issues/34905
+||emudesk.com/api/analytics/
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
