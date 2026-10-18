@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610180828
+! Version: 202610181522
 ! Title: EasyPrivacy
-! Last modified: 18 Oct 2026 08:28 UTC
+! Last modified: 18 Oct 2026 15:22 UTC
 ! Expires: 4 days (update frequency)
-! Commit: bc4c6a306b128ac09d1e15743c3ac0693aae534a
+! Commit: 2bb2c8492a81636b03e360f7fc56b6535c65a302
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7730,6 +7730,7 @@ omni.soundestlink.com$image
 ||granlite.com^
 ||gravitygive.com^
 ||gravitykick.com^
+||graychalk.com^
 ||grayoranges.com^
 ||grayreceipt.com^
 ||grayscaleart.com^
@@ -60316,9 +60317,6 @@ fileditchfiles.me##+js(no-fetch-if, method:POST body:/pageview|engagement/)
 ! https://github.com/uBlockOrigin/uAssets/issues/24154
 ||cza.crazygames.com^
 ||web-platform.bytebrew.io/api/game/logs/
-
-! https://github.com/uBlockOrigin/uAssets/issues/7164
-||pornhub.*/redirect/$doc,urlskip=/(https%253A%252F%252F[^?#]+)/ -uricomponent -uricomponent
 
 ! https://github.com/uBlockOrigin/uAssets/issues/31536
 pooembed.eu##+js(no-xhr-if, body:pageview method:POST)
