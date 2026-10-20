@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610200911
+! Version: 202610201618
 ! Title: EasyPrivacy
-! Last modified: 20 Oct 2026 09:11 UTC
+! Last modified: 20 Oct 2026 16:18 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 3176f8ae879802a40268c2abf5ed21be1381001d
+! Commit: ef377ec1b35c75a36f96e6420c31a21123295448
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -3700,6 +3700,7 @@ omni.soundestlink.com$image
 ||g990421675.co^
 ||g9904216750.co^
 ||g990421676.co^
+||gaij.app^
 ||gbqofs.com^
 ||gcprivacy.com^
 ||geoedge.be^
@@ -7686,6 +7687,7 @@ omni.soundestlink.com$image
 ||gemlithium.com^
 ||gemorganic.com^
 ||generalprose.com^
+||genomicswire.com^
 ||getbanquet.com^
 ||getbendyyoga.com^
 ||getwagtail.com^
@@ -7831,6 +7833,7 @@ omni.soundestlink.com$image
 ||hoorayplay.com^
 ||hospitablehall.com^
 ||hospitablehat.com^
+||hostchutney.com^
 ||howdoesthislook.com^
 ||hubcapcafe.net^
 ||humbleroots.net^
@@ -8198,6 +8201,7 @@ omni.soundestlink.com$image
 ||newscompiler.com^
 ||newsuccesssecret.com^
 ||newsvehicles.com^
+||nextsmarty.com^
 ||nexttopchef.com^
 ||nicefollows.com^
 ||nicehuh.com^
@@ -8769,6 +8773,7 @@ omni.soundestlink.com$image
 ||skillfuldrop.com^
 ||skillfullyfrugal.com^
 ||skillpuppy.com^
+||skinnytea.net^
 ||skisofa.com^
 ||skullmagnets.com^
 ||skullteeth.com^
@@ -12295,6 +12300,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||museter.com/track.php?
 ||musvc2.net/e/c?
 ||mv.treehousei.com^
+||mxanalytics.youruncensoredai.workers.dev^
 ||mxmfb.com/rsps/img/
 ||myblueday.com^*/count.asp?
 ||myfinance.com/widget/
@@ -13042,6 +13048,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||sulia.com/papi/sulia_partner.js/$third-party
 ||sunlightmetrics.b-cdn.net^
 ||sunset.com/tia/
+||supabase.co/*/track-visitor
 ||surfshark.events^
 ||surfside.io/event/
 ||survey.interquest.com^
@@ -15460,6 +15467,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||api.samsungfind.com/log-collector
 ||api.streamelements.com/science/
 ||api.takealot.com^$ping
+||api.tempmailvip.io.vn/api/track
 ||api.thefantazy.com/web-vitals
 ||api.tsc.ca/Tracking/v1/events/
 ||api.vk.com/method/statEvents.
@@ -16047,6 +16055,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||foxsports.com.au/akam/
 ||fp.bizjournals.com^
 ||fp.measure.office.com^
+||fp.uncensored.com^
 ||fpa-cdn.adweek.com^
 ||fpa-cdn.arstechnica.com^
 ||fpc.fingerprint.com^
@@ -16826,6 +16835,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||relay-prod.typeracer.com/flags/
 ||relay.fiverr.com^
 ||remarkable.com/api/proxy/marker
+||report.senzia.cc^
 ||reports.tunein.com^
 ||researchgate.net/beacon/
 ||researchgate.net/track/
@@ -17150,6 +17160,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||t.prageru.com^
 ||t.producthunt.com^
 ||t.regionsjob.com^
+||t.venice.ai^
 ||t.wayfair.ca^
 ||t.wayfair.co.uk^
 ||t.wayfair.com^
@@ -17396,6 +17407,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||umami.spencerdevs.xyz^
 ||umami.vidfast.pro^
 ||umami.wakarimasen.moe^
+||uncensored.ai/*/trackevents
 ||unity3d.com/v1/events
 ||unl1zvy2zuyn.franchiseplus.nl^
 ||unleash.zenchef.com/api/frontend/client/metrics
