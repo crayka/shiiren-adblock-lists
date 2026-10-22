@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610220907
+! Version: 202610221634
 ! Title: EasyPrivacy
-! Last modified: 22 Oct 2026 09:07 UTC
+! Last modified: 22 Oct 2026 16:34 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 28f31a8a39b533116308fb451f2a1a90aabb9028
+! Commit: 67cc7ac291fd4eb311eb7190b0e98f22a5979b2b
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -3582,6 +3582,7 @@ omni.soundestlink.com$image
 ||ckies.net^
 ||cland.fyi^
 ||clarity.ms^
+||clcksrv.com^
 ||clcktrax.com^
 ||clearbitscripts.com^
 ||click360.io^
@@ -3645,6 +3646,7 @@ omni.soundestlink.com$image
 ||eu-1-id5-sync.com^
 ||everesttech.net^
 ||ew3.io^
+||exfdg.com^
 ||experianmatch.info^
 ||ezstat.ru^
 ||f27tltnd.de^
@@ -3653,6 +3655,7 @@ omni.soundestlink.com$image
 ||fastfinch.co^
 ||fastgull.io^
 ||fasttiger.io^
+||fdgcore.com^
 ||featuregates.org^
 ||ffbbbdc6d3c353211fe2ba39c9f744cd.com^
 ||ffe390afd658c19dcbf707e0597b846d.de^
@@ -3667,6 +3670,7 @@ omni.soundestlink.com$image
 ||fptls3.com^
 ||fptls4.com^
 ||fran.pro^
+||fservr.com^
 ||fsrv.io^
 ||ftlaunchpad.ai^
 ||funnelserv.systems^
@@ -4009,6 +4013,7 @@ omni.soundestlink.com$image
 ||yottlyscript.com^
 ||youborafds01.com^
 ||youboranqs01.com^
+||yrtace.com^
 ||zdbb.net^
 ||zenaps.com^
 ||zippyfrog.co^
@@ -8057,6 +8062,7 @@ omni.soundestlink.com$image
 ||maliciousmusic.com^
 ||manamoment.com^
 ||manateemotors.com^
+||manawell.net^
 ||manydiamonds.com^
 ||manyfishes.com^
 ||mapbasin.com^
@@ -8893,6 +8899,7 @@ omni.soundestlink.com$image
 ||spuriousair.com^
 ||spurioussquirrel.com^
 ||spuriousstranger.com^
+||spyrep.com^
 ||spysubstance.com^
 ||squadtee.net^
 ||squalidscrew.com^
@@ -9335,6 +9342,7 @@ omni.soundestlink.com$image
 ||wistfulwaste.com^
 ||withsharks.com^
 ||withsounds.com^
+||wittyfamous.com^
 ||wittypopcorn.com^
 ||wittyshack.com^
 ||wizardbuck.com^
@@ -55554,6 +55562,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 ||fensi.plus^*/tracking/
 ||fp.kakaku.com^
 ||fspark-ap.com/ft/analytics_log
+||ftbucket.info/*/track.php
 ||g123.jp/stats?
 ||game-i.daa.jp/skin/analytics.php
 ||game8.jp/logs^
