@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610231620
+! Version: 202610232251
 ! Title: EasyPrivacy
-! Last modified: 23 Oct 2026 16:20 UTC
+! Last modified: 23 Oct 2026 22:51 UTC
 ! Expires: 4 days (update frequency)
-! Commit: bbad57f967d461bd560a2ee9cf238cf26e5b6fe7
+! Commit: 70dc95a4a14e12dcc0a8837d90fca622cc110228
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -11014,6 +11014,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||beacon.securestudies.com^
 ||beacon.sftoaa.com^
 ||beacon.sojern.com^
+||beacon.viafoura.io^
 ||beacon.webpresence.work^
 ||beacons.mediamelon.com^
 ||beam.mjhlifesciences.com^
@@ -55610,6 +55611,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 ||nicolive.cdn.nimg.jp/relive/sp/trackingService.
 ||nicovideo.jp/analyze/
 ||nicovideo.jp/api/counter/
+||nijiurachan.net/analytics/
 ||nikkei.com/.resources/tracking/
 ||nkis.nikkei.com/imp?
 ||note.com/api/v3/trackings/
