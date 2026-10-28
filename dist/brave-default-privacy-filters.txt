@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610272021
+! Version: 202610280416
 ! Title: EasyPrivacy
-! Last modified: 27 Oct 2026 20:21 UTC
+! Last modified: 28 Oct 2026 04:16 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 25e8c1558a367f939eefe29a2e7536040845d107
+! Commit: ec8e9b67b3e654f24be4a993b5394e85031d9017
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7759,6 +7759,7 @@ omni.soundestlink.com$image
 ||gripcorn.com^
 ||grocerycrew.com^
 ||grocerydog.com^
+||groglog.com^
 ||groovespacing.com^
 ||groovyornament.com^
 ||grouchybrothers.com^
@@ -12489,6 +12490,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||paramount.tech/lookup/
 ||parkwhiz.com/events/
 ||parsely.com/keys/$script,third-party
+||parsely.com/plogger/
 ||partner.awscconsumerinfo.autotrader.com/accdab/beacon/
 ||partners.etoro.com^$script
 ||patreon.com/api/tracking
