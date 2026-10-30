@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610300435
+! Version: 202610301442
 ! Title: EasyPrivacy
-! Last modified: 30 Oct 2026 04:35 UTC
+! Last modified: 30 Oct 2026 14:42 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 598317c5874edf5194afa88aabbc32c2d2401db9
+! Commit: 27afe040b0f3639afb22cce735d4b8a534bcf426
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -15602,6 +15602,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||bhphotovideo.com/aperture/shared/js/dataLayer.js
 ||bi.banggood.com^
 ||bicp-analytics.postscript.io^
+||bifrost-api.hotstar.com^
 ||bigw.com.au/api/event/
 ||bigw.com.au/events/
 ||bing.com/fd/ls/GLinkPing.aspx?
@@ -58911,6 +58912,8 @@ $removeparam=s,to=twitter.com|x.com
 ! https://github.com/uBlockOrigin/uAssets/issues/20941
 ! https://github.com/uBlockOrigin/uAssets/issues/30129
 ||com/*/status/$removeparam=t,to=twitter.com|x.com
+! "copy link" tracking parameters
+||x.com/*/status/$doc,removeparam=a
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-8955444
 ! https://github.com/brave/adblock-lists/pull/1455
 ! eBay tracking parameters
