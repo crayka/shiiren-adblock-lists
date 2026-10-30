@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610301442
+! Version: 202610302021
 ! Title: EasyPrivacy
-! Last modified: 30 Oct 2026 14:42 UTC
+! Last modified: 30 Oct 2026 20:21 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 27afe040b0f3639afb22cce735d4b8a534bcf426
+! Commit: 7dcc3d4baf3fad3753263b59796ac683fe99a110
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -6929,6 +6929,7 @@ omni.soundestlink.com$image
 ||bestboundary.com^
 ||bestclimbers.net^
 ||bestcoffeemachine.net^
+||bestpriceonly.com^
 ||bestshoesboot.com^
 ||bestsportsbra.com^
 ||betazebra.com^
@@ -7088,6 +7089,7 @@ omni.soundestlink.com$image
 ||cardmethod.com^
 ||cardproducer.com^
 ||carefuldolls.com^
+||cargrasp.com^
 ||caringcast.com^
 ||carloforward.com^
 ||carpoolmatch.com^
@@ -7624,6 +7626,7 @@ omni.soundestlink.com$image
 ||floweryfact.com^
 ||floweryflavor.com^
 ||floweryoperation.com^
+||fluffybirds.com^
 ||flushingbeast.com^
 ||flutteringfireman.com^
 ||flyflightstar.com^
@@ -7886,6 +7889,7 @@ omni.soundestlink.com$image
 ||incomehippo.com^
 ||incompetentjoke.com^
 ||inconclusiveaction.com^
+||indscout.com^
 ||infamousstream.com^
 ||infinityhedge.com^
 ||informalbook.com^
@@ -57045,6 +57049,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 @@||moneypartners.co.jp/web/*/fingerprint.js$~third-party
 @@||nakanohito.jp^*/bi.js$domain=kenko-tokina.co.jp|myna.go.jp|nexon.com
 @@||navacom.info/count.php?$~third-party
+@@||neruco-search.ec-optimizer.com^$script,domain=i-office1.net
 @@||nittsu.com/Tracking/Scripts/Tracking/track.js
 @@||onesignal.com/api/v1/sync/$domain=oshibuta.com
 @@||play.dlsite.com/csr/viewer/lib/newrelic.js
@@ -60486,10 +60491,10 @@ vaughn.live##+js(no-fetch-if, method:POST body:zaraz)
 ||vaughn.live/vsz/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33072#issuecomment-4937969164
-x.com##+js(prevent-xhr, /i/api/1.1/flow/viewer.json)
-x.com##+js(prevent-xhr, /i/api/1.1/flow/timeline.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/viewer.json)
+x.com##+js(prevent-xhr, /api/1.1/flow/timeline.json)
 x.com##+js(proxy-apply-config, {"skipToString":true})
-x.com##+js(prevent-xhr, /i/api/1.1/graphql/viewer_context.json)
+x.com##+js(prevent-xhr, /api/1.1/graphql/viewer_context.json)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/12635#issuecomment-4982050273
 telegraph.co.uk##.onward-journey
