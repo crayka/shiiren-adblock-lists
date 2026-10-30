@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202610292040
+! Version: 202610300435
 ! Title: EasyPrivacy
-! Last modified: 29 Oct 2026 20:40 UTC
+! Last modified: 30 Oct 2026 04:35 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 671609153daaf10d770102f8c003f653a6f56c22
+! Commit: 598317c5874edf5194afa88aabbc32c2d2401db9
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7011,6 +7011,7 @@ omni.soundestlink.com$image
 ||boxandcover.com^
 ||brainybasin.com^
 ||branchborder.com^
+||brandcasters.com^
 ||brandsfive.com^
 ||brandybison.com^
 ||bravebone.com^
@@ -59432,7 +59433,7 @@ r.mail.wowvegas.com%2Ftr%2Fop%2F*$image
 ! github.com
 /github.com/notifications/beacon/*$image
 *%2Fgithub.com%2Fnotifications%2Fbeacon%2F*$image
-||api.github.com/_private/browser/rum?*beacon$ping
+||api.github.com/_private/browser/rum?
 ! vistaprint.com
 *%2Flinks.mail.vistaprint.com%2Fs%2F*$image
 ! controld.com
@@ -60604,6 +60605,9 @@ bol.com##+js(json-edit-fetch-request, $[?.operationName=="sendExperimentMeasurem
 
 ! https://github.com/uBlockOrigin/uAssets/issues/35036
 ||tarnkappe.info/matABC.js
+
+! https://github.com/uBlockOrigin/uAssets/issues/35086
+||analytics.fullstak.pl^
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
