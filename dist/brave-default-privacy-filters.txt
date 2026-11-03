@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202611030158
+! Version: 202611031133
 ! Title: EasyPrivacy
-! Last modified: 03 Nov 2026 01:58 UTC
+! Last modified: 03 Nov 2026 11:33 UTC
 ! Expires: 4 days (update frequency)
-! Commit: a3c873a23f679147f9896e771caa9f62e71cad00
+! Commit: e69d6f7ff8624a4b985b46593fb3f787fbdb5e7f
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -56441,6 +56441,7 @@ search.rakuten.co.jp##+js(aeld, mouseup, sendClickEvent)
 @@||hello.myfonts.net/count/$stylesheet,domain=cfr.org|condor.com|corsair.com|furniturevillage.co.uk|luggagehero.com
 @@||hobbyking.com^*/gtm.js$script,~third-party
 @@||hotstarext.com/web-messages/core/error/v52.json$xmlhttprequest,domain=hotstar.com
+@@||hyundaicanada.com/scripts/analytics/analytics.js$script,~third-party
 @@||identity.mparticle.com^$xmlhttprequest
 @@||ignitetv.rogers.com/js/api/fingerprint.js$script,~third-party
 @@||ignitetv.shaw.ca/js/api/fingerprint.js$~third-party
@@ -58417,20 +58418,8 @@ arstechnica.com,dermnetnz.org##.gsc-webResult a[data-cturl]:remove-attr(/^data-c
 !#if !ext_ubol
 ! Block Attribution reporting
 www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d+&cbr=.+?&fexp=v1%[-%0-9C]{300\,}&.+?&muted=\d(&vis=3)?&docid=/ method:POST)
-! https://github.com/uBlockOrigin/uAssets/issues/33267
-! https://github.com/uBlockOrigin/uAssets/issues/33328
-! https://github.com/AdguardTeam/AdguardFilters/issues/233800
-||observe.runpod.io/static/web-vitals.js
-! https://github.com/uBlockOrigin/uAssets/issues/33914
-/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-
-/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-
-! https://www.rd.com/
-/wp-content/plugins/tmbi-assertive-yield/*
-/wp-content/plugins/tmbi-data-analytics
-/wp-content/plugins/tmbi-brandmetrics
-/wp-content/plugins/tmbi-ad-density
-/wp-content/plugins/tmbi-permutive
-/wp-content/plugins/tmbi*-affiliate
+! 1st-party google tag manager script
+/^https:\/\/(www\.)?[a-z0-9-]+\.[a-z]+(\.[a-z]+)?\/[A-Z0-9]{6}\/$/$script,1p,match-case
 !#endif
 /e/*^ip=*^beacon=
 /e/*^ip=*^compression=
@@ -58470,6 +58459,20 @@ www.youtube.com##+js(no-xhr-if, /\/api\/stats\/atr\?.+?&rt=\d+\.\d+.+?&volume=\d
 ! https://github.com/AdguardTeam/AdguardFilters/issues/240598
 ||otrium.*/static/newrelic.js
 ||otrium.*/measure/
+! https://github.com/uBlockOrigin/uAssets/issues/33267
+! https://github.com/uBlockOrigin/uAssets/issues/33328
+! https://github.com/AdguardTeam/AdguardFilters/issues/233800
+||observe.runpod.io/static/web-vitals.js
+! https://github.com/uBlockOrigin/uAssets/issues/33914
+/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-consent-mode-
+/wp-content/plugins/google-site-kit/dist/assets/js/googlesitekit-events-provider-
+! https://www.rd.com/
+/wp-content/plugins/tmbi-assertive-yield/*
+/wp-content/plugins/tmbi-data-analytics
+/wp-content/plugins/tmbi-brandmetrics
+/wp-content/plugins/tmbi-ad-density
+/wp-content/plugins/tmbi-permutive
+/wp-content/plugins/tmbi*-affiliate
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/213240
 ||bdvmetricas.banvenez.com.ve^
