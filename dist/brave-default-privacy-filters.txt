@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202611110457
+! Version: 202611111551
 ! Title: EasyPrivacy
-! Last modified: 11 Nov 2026 04:57 UTC
+! Last modified: 11 Nov 2026 15:51 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 3c1f1f911f3836143d26c8be4cdb710ac3c3acd5
+! Commit: fc3b648db048fd52d91dd657ebcf1097d335ed77
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7229,6 +7229,7 @@ omni.soundestlink.com$image
 ||clumsycar.com^
 ||clutchcourses.com^
 ||coalkitchen.com^
+||coalmerchants.com^
 ||coastersim.com^
 ||coatfood.com^
 ||cobaltoverture.com^
@@ -8121,6 +8122,7 @@ omni.soundestlink.com$image
 ||lowkeypalmtree.com^
 ||lowlatencydata.com^
 ||lowvolumes.com^
+||loyaltymatrix.com^
 ||luckyshelf.com^
 ||luckysportsgear.com^
 ||ludicrousarch.com^
@@ -8903,6 +8905,7 @@ omni.soundestlink.com$image
 ||sizzlingoven.com^
 ||sizzlingsmoke.com^
 ||sketchpals.com^
+||sketchpodcast.com^
 ||skilledview.com^
 ||skillfuldrop.com^
 ||skillfullyfrugal.com^
@@ -60804,6 +60807,10 @@ tiktok.com##+js(set-local-storage-item, /__tea_cache_events_.*/, $remove$)
 
 ! https://www.reddit.com/r/uBlockOrigin/comments/1i83y7t/a_certain_website_detected_that_im_using_an/
 ||analytics.fsicomics.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/29412
+||mediamarkt.be/api/v1/msg
+||1.1.1.1/dns-query$domain=mediamarkt.be,method=post,xhr
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
