@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202611152047
+! Version: 202611160508
 ! Title: EasyPrivacy
-! Last modified: 15 Nov 2026 20:47 UTC
+! Last modified: 16 Nov 2026 05:08 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 5f252a4b780d8a15f85205db8567189e55961364
+! Commit: 37e6c1337eb3758aac1b21057e0607ecc0250ea0
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -9330,6 +9330,7 @@ omni.soundestlink.com$image
 ||tuplebar.com^
 ||turtleface.net^
 ||tutorshelf.com^
+||tuxedocard.com^
 ||twelvedawn.com^
 ||twentyerr.com^
 ||twistloss.com^
@@ -60864,6 +60865,13 @@ tiktok.com##+js(set-local-storage-item, /__tea_cache_events_.*/, $remove$)
 
 ! https://github.com/uBlockOrigin/uAssets/issues/33031
 ||pxtrkapp.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/24654#issuecomment-5649876266
+/prod/pni/g2i.min.js?
+/prod/pni/fp.min.js?
+
+! https://github.com/uBlockOrigin/uAssets/issues/34843
+fcportables.com,filecatchers.com##+js(no-fetch-if, method:POST body:/detect|trigger/)
 
 ! Merge in resource-abuse.txt
 !#include resource-abuse.txt
