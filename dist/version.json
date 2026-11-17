@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-11-16T18:00:13.584Z",
+  "generatedAt": "2026-11-17T02:47:54.170Z",
   "catalogUrl": "https://raw.githubusercontent.com/brave/adblock-resources/master/filter_lists/list_catalog.json",
   "lists": [
     {
       "uuid": "default",
       "title": "Brave Default Adblock Filters",
       "file": "default.txt",
-      "sha256": "6aa7ec4744efd6950e67c6f44a3f7c76128228425bc308cc59c7aa1f9c524030",
-      "bytes": 5366984,
+      "sha256": "a0e5ea1d64562468a5f42e6285efb8d7579bb9690a2c04a19208072fedadb042",
+      "bytes": 5371926,
       "sourceCount": 22
     },
     {
       "uuid": "4D715457-307C-4383-8873-73A2FD263F71",
       "title": "Brave Default Privacy Filters",
       "file": "brave-default-privacy-filters.txt",
-      "sha256": "85e6808d7361becb65105528176e8c67031fce5471ce914b2747de34c75bace7",
-      "bytes": 1704181,
+      "sha256": "797d085ce7092122ca2ef38d855c32b11d5eca60b8c0d39401cd2ec2bf013e9e",
+      "bytes": 1704309,
       "sourceCount": 2
     },
     {
@@ -38,8 +38,8 @@
       "uuid": "AC023D22-AE88-4060-A978-4FEEEC4221693",
       "title": "Cookie notice blocker",
       "file": "cookie-notice-blocker.txt",
-      "sha256": "c5fb8cc129ffd01b4bf021aeed47e92fb96403d6eadca59782f54ca7f286ff66",
-      "bytes": 1623166,
+      "sha256": "286d492bd57fdd2226610b8e0ba46253ff8666e7e1a17d3c22810a3e703feca8",
+      "bytes": 1623201,
       "sourceCount": 3
     },
     {
