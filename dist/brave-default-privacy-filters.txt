@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202611190130
+! Version: 202611191218
 ! Title: EasyPrivacy
-! Last modified: 19 Nov 2026 01:30 UTC
+! Last modified: 19 Nov 2026 12:18 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 9ec1e95557b0ca86d073cc651c8031f52e79a183
+! Commit: 997f028b203d900b1eb6afcb747b87991dee7daf
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -8423,6 +8423,7 @@ omni.soundestlink.com$image
 ||outdoorthingy.com^
 ||outerwords.com^
 ||outletpeople.com^
+||outpro.net^
 ||outsidevibe.com^
 ||overconfidentfood.com^
 ||overkick.com^
@@ -9562,6 +9563,7 @@ omni.soundestlink.com$image
 ||yellowscissors.com^
 ||yetiminis.com^
 ||yieldingwoman.com^
+||youanonymous.com^
 ||youcandrawanything.com^
 ||yourgiftedbaby.com^
 ||yourlifedream.com^
@@ -11484,6 +11486,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||cnstrc.com/behavior?
 ||cnzz.com/stat.
 ||cod.bitrec.com^
+||code.trygravity.ai/gr-pix.js
 ||codedrink.com/api/inbound
 ||coefficy.com/ip/
 ||coherentpath.com/tracker/
@@ -11687,6 +11690,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||dgcollector.evidon.com^
 ||diagnose.igstatic.com^
 ||dig.ultimedia.com^
+||digifaro-digital.uk.monitoringsolutions.sky^
 ||digimedia.com/pageviews.php?
 ||digitaloceanspaces.com/pixel.min.js
 ||digitaloceanspaces.com/pixel/
@@ -11694,6 +11698,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||direct-collect.dy-api.eu^
 ||direct-events-collector.spot.im^
 ||directnews.co.uk/feedtrack/
+||directory.cookieyes.com/api/v1/ip
 ||discovery.evvnt.com/prd/evvnt_discovery_plugin-latest.min.js
 ||disqus.com/api/ping
 ||disqus.com/event.js?$script
@@ -12743,6 +12748,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||petametrics.com/*/activity
 ||petametrics.com/*/modal
 ||pets.channeladvisor.com^
+||ph.cto.new^
 ||photobox.com/event
 ||photobox.com/logs
 ||phrasetech.com/api/collect
