@@ -5,11 +5,11 @@
 ! ---- source: EasyPrivacy (https://easylist.to/easylist/easyprivacy.txt) ----
 
 [Adblock Plus 1.1]
-! Version: 202611261326
+! Version: 202611270008
 ! Title: EasyPrivacy
-! Last modified: 26 Nov 2026 13:26 UTC
+! Last modified: 27 Nov 2026 00:08 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 835e54a38a290cfe8f7045f6da8ef4c0da5c971a
+! Commit: 85ceea520e5c871393b9c489bb3de865feee37e9
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -7928,6 +7928,7 @@ omni.soundestlink.com$image
 ||healthyclad.com^
 ||heartbreakingmind.com^
 ||hearthow.com^
+||heathstyle.com^
 ||heatrave.com^
 ||heavydetail.com^
 ||heavyplayground.com^
@@ -7975,6 +7976,7 @@ omni.soundestlink.com$image
 ||hostchutney.com^
 ||housewheels.com^
 ||howdoesthislook.com^
+||howglam.com^
 ||hubcapcafe.net^
 ||humbleroots.net^
 ||humdrumhobbies.com^
@@ -8230,6 +8232,7 @@ omni.soundestlink.com$image
 ||marriedvalue.com^
 ||marsnextdoor.com^
 ||mascguys.com^
+||maskdomains.com^
 ||maskedadmin.com^
 ||masondown.com^
 ||masseurexpress.com^
@@ -13791,6 +13794,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||trygravity.ai/ack?
 ||ts.tradetracker.net^
 ||turnto.com/event
+||tvid.in/api/track
 ||tvpage.com/tvpa.min.js
 ||tvpage.com^*/__tvpa.gif?
 ||twitter.com/jot.html
@@ -18183,6 +18187,7 @@ $third-party,xmlhttprequest,domain=opensubtitles.org
 ||ss.partner.life360.com/bwcrqwpxgng.js
 ||svc2.sc.com^
 ||taboola.com/gtm/
+||techbarrista.com/api/event
 ||theverge.com/metrics/
 ||tips.delt.io^
 ||tm-eps.neutrino.nu^
